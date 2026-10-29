@@ -20,6 +20,8 @@ def read_data():
     categories = {c['id'] for c in catalog['categories']}
     prompts = set()
     for p in catalog['prompts']:
+        if p['mode'] not in ('diagnose', 'revise', 'draft'):
+            raise ValueError(f"Invalid prompt mode: {p['id']}")
         if p['category'] not in categories or p['example_id'] not in example_ids:
             raise ValueError(f"Invalid category or example: {p['id']}")
         for lang in ('zh', 'en'):
@@ -52,7 +54,8 @@ def build(catalog, examples):
         target = ROOT / 'docs/library' / lang
         title = '按场景找提示词' if zh else 'Browse prompts by task'
         intro = ('选择任务，复制提示词，填入自己的材料；点击案例查看输入事实、修改结果与理由。' if zh else 'Choose a task, copy a prompt and add your material. Follow the case link for supplied facts, a revision and the reasoning behind it.')
-        index = [f'# {title}', '', f'{count} prompts · {case_count} examples · 中文 / English', '', intro, '', '[简体中文](../zh/index.md) | [English](../en/index.md)', '', ('先看 [完整案例](examples.md) 或 [安装说明](../../INSTALL.md)。' if zh else 'Start with [complete examples](examples.md) or [installation](../../INSTALL.md).'), '', '| ' + ('类别 | 模板数 |' if zh else 'Category | Prompts |'), '|---|---:|']
+        counts = f'{count} 套提示词 · {case_count} 组案例 · 中英文' if zh else f'{count} prompts · {case_count} cases · English / Chinese'
+        index = [f'# {title}', '', counts, '', intro, '', '[简体中文](../zh/index.md) | [English](../en/index.md)', '', ('先看 [完整案例](examples.md) 或 [安装说明](../../INSTALL.md)。' if zh else 'Start with [complete examples](examples.md) or [installation](../../INSTALL.md).'), '', '| ' + ('类别 | 模板数 |' if zh else 'Category | Prompts |'), '|---|---:|']
         for cat in catalog['categories']:
             items = [p for p in catalog['prompts'] if p['category'] == cat['id']]
             index.append(f"| [{cat['title'][lang]}]({cat['id']}.md) | {len(items)} |")
@@ -61,7 +64,9 @@ def build(catalog, examples):
             lines += [f"- [{p['id']} {p['title'][lang]}](#{p['id'].lower()})" for p in items]
             for p in items:
                 e = example_map[p['example_id']]
-                lines += ['', f'<a id="{p["id"].lower()}"></a>', '', f"## {p['id']} · {p['title'][lang]}", '', '```text', p['prompt'][lang], '```', '', '<details>', f"<summary>{'查看相关案例' if zh else 'See a related case'} · {e['id']} · {e['title'][lang]}</summary>", '']
+                modes = {'diagnose': '诊断', 'revise': '改写', 'draft': '起草'}
+                mode_label = f"**使用方式**：{modes[p['mode']]}" if zh else f"**Mode**: {p['mode'].capitalize()}"
+                lines += ['', f'<a id="{p["id"].lower()}"></a>', '', f"## {p['id']} · {p['title'][lang]}", '', mode_label, '', '```text', p['prompt'][lang], '```', '', '<details>', f"<summary>{'查看相关案例' if zh else 'See a related case'} · {e['id']} · {e['title'][lang]}</summary>", '']
                 for field, label in [('facts', '输入事实' if zh else 'Facts'), ('verbose_or_flawed', '修改前' if zh else 'Before'), ('revision', '修改后' if zh else 'After'), ('why', '修改理由' if zh else 'Reason')]:
                     lines += [f'**{label}**', '', e[field][lang], '']
                 lines += [f"[{'完整案例与保留条件' if zh else 'Full case and conditions to preserve'}](examples.md#{e['id'].lower()})", '', '</details>']
@@ -70,7 +75,8 @@ def build(catalog, examples):
             skill_switch = f"[English]({cat['id']}-en.md) | **简体中文**" if zh else f"**English** | [简体中文]({cat['id']}-zh.md)"
             skill_lines = [f"# {cat['title'][lang]}", '', skill_switch, '', intro]
             for p in items:
-                skill_lines += ['', f"## {p['id']} · {p['title'][lang]}", '', p['prompt'][lang], '', f"Related case: {p['example_id']} in examples-{lang}.md"]
+                related = f"相关案例：{p['example_id']}，见 examples-{lang}.md" if zh else f"Related case: {p['example_id']} in examples-{lang}.md"
+                skill_lines += ['', f"## {p['id']} · {p['title'][lang]}", '', p['prompt'][lang], '', related]
             write(SKILL / 'references' / f"{cat['id']}-{lang}.md", '\n'.join(skill_lines))
         write(target / 'index.md', '\n'.join(index))
         local_index = [f'# {title}', '', ('选择分类，再复制对应提示词。' if zh else 'Choose a category and copy the matching prompt.'), '']

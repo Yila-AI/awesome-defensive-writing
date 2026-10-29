@@ -17,12 +17,14 @@ Choose a task, copy a prompt and add your material. Follow the case link for sup
 
 ## DW-019 · Weekly update
 
+**Mode**: Draft
+
 ```text
-Make the supplied material clear, direct and informative. Organize it around the
-judgment or action the reader needs. Remove repetitive retreat and empty preambles.
-Ground facts, numbers, scope, responsibility and commitments in the material; keep
-meaningful conditions next to the claims they qualify. List missing facts
-separately.
+Make the supplied material clear, direct and informative. Organize it around
+the judgment or action the reader needs. Remove repetitive retreat and empty
+preambles. Ground facts, numbers, scope, responsibility and commitments in
+the material; keep meaningful conditions next to the claims they qualify.
+List missing facts separately.
 
 Task: Organize completed work, blockers, next steps and requests. Preserve status
 and dates; remove empty assurances without hiding important blockers.
@@ -31,9 +33,9 @@ Output: Completed work, current blockers, next steps and requests.
 
 Input material:
 Progress notes: [fill in]
-plan: [fill in]
-blockers: [fill in]
-requests: [fill in]
+Plan: [fill in]
+Blockers: [fill in]
+Requests: [fill in]
 ```
 
 <details>
@@ -49,7 +51,7 @@ Overall progress is good and we are working hard. Due to complexity, there might
 
 **After**
 
-Page development is complete, but API access is still unavailable and integration testing has not started. Delivery of a testable build moves from Tuesday to Thursday. Please coordinate API access today.
+Page development is complete, but API access is still unavailable and integration testing has not started. Delivery of a testable build moves from Tuesday to Thursday. The project manager is asked to coordinate API access today.
 
 **Reason**
 
@@ -63,25 +65,27 @@ State completion, blocker, revised commitment and requested action rather than e
 
 ## DW-020 · Delay notice
 
+**Mode**: Draft
+
 ```text
-Make the supplied material clear, direct and informative. Organize it around the
-judgment or action the reader needs. Remove repetitive retreat and empty preambles.
-Ground facts, numbers, scope, responsibility and commitments in the material; keep
-meaningful conditions next to the claims they qualify. List missing facts
-separately.
+Make the supplied material clear, direct and informative. Organize it around
+the judgment or action the reader needs. Remove repetitive retreat and empty
+preambles. Ground facts, numbers, scope, responsibility and commitments in
+the material; keep meaningful conditions next to the claims they qualify.
+List missing facts separately.
 
 Task: State the original plan, change, known cause and recovery arrangement.
-Distinguish committed dates from estimates; acknowledge responsibility and avoid
-invented remedies.
+Distinguish committed dates from estimates; acknowledge responsibility and
+avoid invented remedies.
 
 Output: A sendable delay notice containing the original plan, change, cause and
 revised arrangement.
 
 Input material:
 Original schedule: [fill in]
-status: [fill in]
-cause: [fill in]
-revised arrangement: [fill in]
+Status: [fill in]
+Cause: [fill in]
+Revised arrangement: [fill in]
 ```
 
 <details>
@@ -97,7 +101,7 @@ Overall progress is good and we are working hard. Due to complexity, there might
 
 **After**
 
-Page development is complete, but API access is still unavailable and integration testing has not started. Delivery of a testable build moves from Tuesday to Thursday. Please coordinate API access today.
+Page development is complete, but API access is still unavailable and integration testing has not started. Delivery of a testable build moves from Tuesday to Thursday. The project manager is asked to coordinate API access today.
 
 **Reason**
 
@@ -111,25 +115,27 @@ State completion, blocker, revised commitment and requested action rather than e
 
 ## DW-021 · Decision summary
 
-```text
-Make the supplied material clear, direct and informative. Organize it around the
-judgment or action the reader needs. Remove repetitive retreat and empty preambles.
-Ground facts, numbers, scope, responsibility and commitments in the material; keep
-meaningful conditions next to the claims they qualify. List missing facts
-separately.
+**Mode**: Draft
 
-Task: Lead with a recommendation and decisive grounds, then switching conditions and
-costs. If evidence does not support a choice, specify the missing test rather than
-offering empty balance.
+```text
+Make the supplied material clear, direct and informative. Organize it around
+the judgment or action the reader needs. Remove repetitive retreat and empty
+preambles. Ground facts, numbers, scope, responsibility and commitments in
+the material; keep meaningful conditions next to the claims they qualify.
+List missing facts separately.
+
+Task: Lead with a recommendation and decisive grounds, then switching conditions
+and costs. If evidence does not support a choice, specify the missing test
+rather than offering empty balance.
 
 Output: A recommendation followed by decisive evidence, costs and switching
 conditions.
 
 Input material:
 Options: [fill in]
-criteria: [fill in]
-evidence: [fill in]
-constraints: [fill in]
+Criteria: [fill in]
+Evidence: [fill in]
+Constraints: [fill in]
 ```
 
 <details>
@@ -159,12 +165,14 @@ Turn empty balance into a comparable assessment and conditional choice, stating 
 
 ## DW-022 · Retrospective
 
+**Mode**: Draft
+
 ```text
-Make the supplied material clear, direct and informative. Organize it around the
-judgment or action the reader needs. Remove repetitive retreat and empty preambles.
-Ground facts, numbers, scope, responsibility and commitments in the material; keep
-meaningful conditions next to the claims they qualify. List missing facts
-separately.
+Make the supplied material clear, direct and informative. Organize it around
+the judgment or action the reader needs. Remove repetitive retreat and empty
+preambles. Ground facts, numbers, scope, responsibility and commitments in
+the material; keep meaningful conditions next to the claims they qualify.
+List missing facts separately.
 
 Task: Separate facts, explanations and improvements. Identify supported,
 controllable causes; remove vague reflection and self-justification without
@@ -174,9 +182,9 @@ Output: A retrospective organized around facts, verified causes and improvements
 
 Input material:
 Timeline: [fill in]
-outcomes: [fill in]
-verified causes: [fill in]
-improvements: [fill in]
+Outcomes: [fill in]
+Verified causes: [fill in]
+Improvements: [fill in]
 ```
 
 <details>
@@ -206,24 +214,26 @@ Use a verified cause and concrete improvement, with an explicit pending resource
 
 ## DW-023 · Update for a decision-maker
 
+**Mode**: Draft
+
 ```text
-Make the supplied material clear, direct and informative. Organize it around the
-judgment or action the reader needs. Remove repetitive retreat and empty preambles.
-Ground facts, numbers, scope, responsibility and commitments in the material; keep
-meaningful conditions next to the claims they qualify. List missing facts
-separately.
+Make the supplied material clear, direct and informative. Organize it around
+the judgment or action the reader needs. Remove repetitive retreat and empty
+preambles. Ground facts, numbers, scope, responsibility and commitments in
+the material; keep meaningful conditions next to the claims they qualify.
+List missing facts separately.
 
 Task: Lead with what the reader needs to know or decide, followed by impact and
-evidence. Make the pending decision explicit while preserving relevant protocol and
-courtesy.
+evidence. Make the pending decision explicit while preserving relevant
+protocol and courtesy.
 
 Output: The information or decision needed first, followed by impact and evidence.
 
 Input material:
 Issue: [fill in]
-impact: [fill in]
-requested decision: [fill in]
-protocol: [fill in]
+Impact: [fill in]
+Requested decision: [fill in]
+Protocol: [fill in]
 ```
 
 <details>
@@ -253,25 +263,29 @@ Use a verified cause and concrete improvement, with an explicit pending resource
 
 ## DW-024 · Resource request
 
+**Mode**: Draft
+
 ```text
-Make the supplied material clear, direct and informative. Organize it around the
-judgment or action the reader needs. Remove repetitive retreat and empty preambles.
-Ground facts, numbers, scope, responsibility and commitments in the material; keep
-meaningful conditions next to the claims they qualify. List missing facts
-separately.
+Make the supplied material clear, direct and informative. Organize it around
+the judgment or action the reader needs. Remove repetitive retreat and empty
+preambles. Ground facts, numbers, scope, responsibility and commitments in
+the material; keep meaningful conditions next to the claims they qualify.
+List missing facts separately.
 
 Task: Specify resources, purpose, rationale and the supported consequence of
-nonapproval. Distinguish requests from authorized resources; avoid self-effacement
-and invented returns.
+nonapproval. Distinguish requests from authorized resources; avoid
+self-effacement and invented returns. If impact information is missing, list
+it for confirmation.
 
 Output: A resource request stating supplied quantities or budget, purpose, grounds
 and requested approval.
 
 Input material:
 Requested resources: [fill in]
-purpose: [fill in]
-cost: [fill in]
-supporting facts: [fill in]
+Purpose: [fill in]
+Cost: [fill in]
+Supporting facts: [fill in]
+Known consequence of nonapproval: [fill in]
 ```
 
 <details>

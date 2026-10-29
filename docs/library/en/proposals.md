@@ -17,15 +17,17 @@ Choose a task, copy a prompt and add your material. Follow the case link for sup
 
 ## DW-013 · Problem statement
 
-```text
-Make the supplied material clear, direct and informative. Organize it around the
-judgment or action the reader needs. Remove repetitive retreat and empty preambles.
-Ground facts, numbers, scope, responsibility and commitments in the material; keep
-meaningful conditions next to the claims they qualify. List missing facts
-separately.
+**Mode**: Draft
 
-Task: Explain the affected group, current obstacle and consequences. Describe scale
-and urgency only when supported; remove grand openings and unsupported
+```text
+Make the supplied material clear, direct and informative. Organize it around
+the judgment or action the reader needs. Remove repetitive retreat and empty
+preambles. Ground facts, numbers, scope, responsibility and commitments in
+the material; keep meaningful conditions next to the claims they qualify.
+List missing facts separately.
+
+Task: Explain the affected group, current obstacle and consequences. Describe
+scale and urgency only when supported; remove grand openings and unsupported
 self-justification.
 
 Output: A problem statement identifying affected users, obstacle, consequence and
@@ -33,8 +35,8 @@ evidence.
 
 Input material:
 Background: [fill in]
-affected users: [fill in]
-evidence: [fill in]
+Affected users: [fill in]
+Evidence: [fill in]
 ```
 
 <details>
@@ -64,23 +66,25 @@ Replace fabricated scale, vague attempts and false completion with the supported
 
 ## DW-014 · Research objectives
 
+**Mode**: Draft
+
 ```text
-Make the supplied material clear, direct and informative. Organize it around the
-judgment or action the reader needs. Remove repetitive retreat and empty preambles.
-Ground facts, numbers, scope, responsibility and commitments in the material; keep
-meaningful conditions next to the claims they qualify. List missing facts
-separately.
+Make the supplied material clear, direct and informative. Organize it around
+the judgment or action the reader needs. Remove repetitive retreat and empty
+preambles. Ground facts, numbers, scope, responsibility and commitments in
+the material; keep meaningful conditions next to the claims they qualify.
+List missing facts separately.
 
 Task: Separate research questions, planned actions and assessable outputs. Keep
-objectives distinct from achieved results; avoid vague attempts that cannot be
-evaluated.
+objectives distinct from achieved results; avoid vague attempts that cannot
+be evaluated.
 
 Output: Objectives with the research question, planned action and assessable output.
 
 Input material:
 Research questions: [fill in]
-resources: [fill in]
-objectives draft: [fill in]
+Resources: [fill in]
+Objectives draft: [fill in]
 ```
 
 <details>
@@ -110,46 +114,48 @@ Replace fabricated scale, vague attempts and false completion with the supported
 
 ## DW-015 · Novelty without inflation
 
+**Mode**: Draft
+
 ```text
-Make the supplied material clear, direct and informative. Organize it around the
-judgment or action the reader needs. Remove repetitive retreat and empty preambles.
-Ground facts, numbers, scope, responsibility and commitments in the material; keep
-meaningful conditions next to the claims they qualify. List missing facts
-separately.
+Make the supplied material clear, direct and informative. Organize it around
+the judgment or action the reader needs. Remove repetitive retreat and empty
+preambles. Ground facts, numbers, scope, responsibility and commitments in
+the material; keep meaningful conditions next to the claims they qualify.
+List missing facts separately.
 
 Task: Compare additions against prior approaches with evidence. Avoid first-ever
-claims without a sufficient search, while retaining supported contributions without
-ritual modesty.
+claims without a sufficient search, while retaining supported contributions
+without ritual modesty.
 
 Output: A comparison of prior approaches, the proposed addition and evidence; then
 novelty copy.
 
 Input material:
 Proposed additions: [fill in]
-prior approaches: [fill in]
-search scope: [fill in]
+Prior approaches: [fill in]
+Search scope: [fill in]
 ```
 
 <details>
-<summary>See a related case · EX-05 · Distinguish an objective from an achievement</summary>
+<summary>See a related case · EX-04 · Contribution and revision status</summary>
 
 **Facts**
 
-Fictional project: a library logs bookings manually in spreadsheets; three staff interviews report duplicate entry. The team has two weeks of sandbox access and plans a booking-form prototype, checking required fields and duplicate-submission blocking with five predefined test records. Development has not been completed; no user-scale data are available.
+Fictional study: the team harmonized public budget fields for three cities in 2019–2023 and supplied scripts. Notes cover only two related papers and cannot support a first-ever claim. A reviewer requested evidence for nationwide generalization. The authors narrowed the conclusion to the three cities; they added no regions or representativeness tests.
 
 **Before**
 
-Booking management is a serious issue affecting tens of thousands. We might try to explore improvements and have already substantially solved duplicate entry.
+Our work merely performs some preliminary organization and has very limited value. We fully agree with the reviewer and have added extensive analysis demonstrating applicability.
 
 **After**
 
-Three staff interviews identified duplicate entry in booking records. During the two-week sandbox period, the project plans to develop a booking-form prototype and test required fields and duplicate-submission blocking with five predefined records.
+The study harmonizes public budget-field coding for three cities in 2019–2023 and provides processing scripts. In response to the generalization concern, we narrowed the conclusion to these cities; the current data do not support nationwide generalization.
 
 **Reason**
 
-Replace fabricated scale, vague attempts and false completion with the supported problem and assessable objective.
+Retain the actual contribution and completed scope revision while removing self-deprecation and a fabricated analysis.
 
-[Full case and conditions to preserve](examples.md#ex-05)
+[Full case and conditions to preserve](examples.md#ex-04)
 
 </details>
 
@@ -157,24 +163,26 @@ Replace fabricated scale, vague attempts and false completion with the supported
 
 ## DW-016 · Technical approach
 
+**Mode**: Draft
+
 ```text
-Make the supplied material clear, direct and informative. Organize it around the
-judgment or action the reader needs. Remove repetitive retreat and empty preambles.
-Ground facts, numbers, scope, responsibility and commitments in the material; keep
-meaningful conditions next to the claims they qualify. List missing facts
-separately.
+Make the supplied material clear, direct and informative. Organize it around
+the judgment or action the reader needs. Remove repetitive retreat and empty
+preambles. Ground facts, numbers, scope, responsibility and commitments in
+the material; keep meaningful conditions next to the claims they qualify.
+List missing facts separately.
 
 Task: Describe stages, inputs, outputs, dependencies and decision points. Keep
-prerequisites and fallback paths; remove nonoperational caution without inventing
-experimental parameters.
+prerequisites and fallback paths; remove nonoperational caution without
+inventing experimental parameters.
 
 Output: Stages with inputs, actions, outputs, dependencies and decision points.
 
 Input material:
 Stages: [fill in]
-dependencies: [fill in]
-known parameters: [fill in]
-options: [fill in]
+Dependencies: [fill in]
+Known parameters: [fill in]
+Options: [fill in]
 ```
 
 <details>
@@ -204,24 +212,26 @@ Replace blanket pessimism with available resources, a decision trigger and a fea
 
 ## DW-017 · Feasibility assessment
 
+**Mode**: Draft
+
 ```text
-Make the supplied material clear, direct and informative. Organize it around the
-judgment or action the reader needs. Remove repetitive retreat and empty preambles.
-Ground facts, numbers, scope, responsibility and commitments in the material; keep
-meaningful conditions next to the claims they qualify. List missing facts
-separately.
+Make the supplied material clear, direct and informative. Organize it around
+the judgment or action the reader needs. Remove repetitive retreat and empty
+preambles. Ground facts, numbers, scope, responsibility and commitments in
+the material; keep meaningful conditions next to the claims they qualify.
+List missing facts separately.
 
 Task: Separate available capabilities, pending resources and untested assumptions.
-Assess feasibility proportionately; do not treat all risk as failure or planned
-resources as available.
+Assess feasibility proportionately; do not treat all risk as failure or
+planned resources as available.
 
 Output: Available, pending and unverified conditions; then a feasibility assessment
 with grounds.
 
 Input material:
 Current resources: [fill in]
-dependencies: [fill in]
-preliminary results: [fill in]
+Dependencies: [fill in]
+Preliminary results: [fill in]
 ```
 
 <details>
@@ -251,24 +261,26 @@ Replace blanket pessimism with available resources, a decision trigger and a fea
 
 ## DW-018 · Risks and fallbacks
 
-```text
-Make the supplied material clear, direct and informative. Organize it around the
-judgment or action the reader needs. Remove repetitive retreat and empty preambles.
-Ground facts, numbers, scope, responsibility and commitments in the material; keep
-meaningful conditions next to the claims they qualify. List missing facts
-separately.
+**Mode**: Draft
 
-Task: Include risks that change selection, cost or schedule. Give trigger, impact
-and response; do not invent probabilities. State what information is needed for
-unresolved assessments.
+```text
+Make the supplied material clear, direct and informative. Organize it around
+the judgment or action the reader needs. Remove repetitive retreat and empty
+preambles. Ground facts, numbers, scope, responsibility and commitments in
+the material; keep meaningful conditions next to the claims they qualify.
+List missing facts separately.
+
+Task: Include only risks that change selection, cost or schedule. Give trigger,
+impact and response; do not invent probabilities. State what information is
+needed for unresolved assessments.
 
 Output: Risk triggers, impacts, responses and priorities.
 
 Input material:
 Goal: [fill in]
-resources: [fill in]
-dependencies: [fill in]
-fallback actions: [fill in]
+Resources: [fill in]
+Dependencies: [fill in]
+Fallback actions: [fill in]
 ```
 
 <details>

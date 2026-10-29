@@ -69,8 +69,8 @@
         "en": "An observational finding"
       },
       "facts": {
-        "zh": "教学虚构数据：单中心观察研究，120 名成年人；A 与 B 的 Pearson r=0.32，95% CI 0.15–0.47。未随机分配，也未进行因果识别。示例不是健康建议。",
-        "en": "Fictional teaching data: a single-center observational study of 120 adults found Pearson r=0.32 between A and B, 95% CI 0.15–0.47. There was no random assignment or causal identification. This is not health advice."
+        "zh": "教学虚构数据：单中心观察研究，120 名成年人；A 与 B 的 Pearson r=0.32，95% CI 0.15–0.47。未随机分配，也未进行因果识别。",
+        "en": "Fictional teaching data: a single-center observational study of 120 adults found Pearson r=0.32 between A and B, 95% CI 0.15–0.47. There was no random assignment or causal identification."
       },
       "verbose_or_flawed": {
         "zh": "结果可能在一定程度上提示 A 或许与 B 存在某种联系。还需更多研究，不能草率下结论。",
@@ -198,7 +198,7 @@
       },
       "revision": {
         "zh": "页面开发已完成，接口权限尚未开通，联调未开始。可联调版本由周二调整为周四交付，请项目经理今天协调接口权限。",
-        "en": "Page development is complete, but API access is still unavailable and integration testing has not started. Delivery of a testable build moves from Tuesday to Thursday. Please coordinate API access today."
+        "en": "Page development is complete, but API access is still unavailable and integration testing has not started. Delivery of a testable build moves from Tuesday to Thursday. The project manager is asked to coordinate API access today."
       },
       "why": {
         "zh": "写出完成状态、实际阻塞、新排期和需要的动作，删空泛努力表态。",
@@ -340,7 +340,7 @@
       },
       "facts": {
         "zh": "虚构案例：用户甲授权匿名使用原话“我把零散笔记整理成了一份提纲”。记录显示用户先导入笔记、再人工修改生成提纲。没有用时、对照组或质量评分。FAQ 问“能否保证不用人工修改”。产品团队确认不能保证。",
-        "en": "Fictional case: user A permits anonymous use of 'I turned scattered notes into an outline.' Records show notes imported and the generated outline manually revised. No timing, comparison group or quality score exists. The team confirms it cannot guarantee freedom from manual editing."
+        "en": "Fictional case: user A permits anonymous use of 'I turned scattered notes into an outline.' Records show notes imported and the generated outline manually revised. No timing, comparison group or quality score exists. The FAQ asks whether manual editing can be avoided in every task. The team confirms it cannot guarantee freedom from manual editing."
       },
       "verbose_or_flawed": {
         "zh": "这只是很初步的一点尝试，也许对某些人有帮助；已经证明能让所有用户效率提升十倍，完全不用修改。",
@@ -519,24 +519,24 @@
         "en": "An inconclusive result is not equivalence"
       },
       "facts": {
-        "zh": "情景研究估计两组差异为 2 分，95% CI −1 到 5 分，p=0.18；无预设等效界值。目标是报告本次分析结果。",
-        "en": "A constructed study estimates a 2-point group difference, 95% CI −1 to 5, p=0.18, with no prespecified equivalence margin. The task is to report the analysis."
+        "zh": "情景研究报告两组差异检验：估计差异为 2 分，95% CI −1 到 5 分，p=0.18；未预设等效界值，也未报告等效性检验。目标是报告本次分析结果。",
+        "en": "A constructed study reports a difference test: the estimated group difference is 2 points, 95% CI −1 to 5, p=0.18. No equivalence margin was prespecified and no equivalence test was reported. The task is to report the analysis."
       },
       "verbose_or_flawed": {
         "zh": "结果没有显著性，可能说明研究没有什么价值。不过情况很复杂，也可能还需要更多研究，暂时似乎不宜得出任何结论。",
         "en": "The result is not significant, which may mean the study has little value. The situation is complex and more research may be needed, so it seems best to draw no conclusion."
       },
       "revision": {
-        "zh": "本次分析未检出显著差异：估计差异为 2 分，95% CI −1 至 5 分，p=0.18。区间仍包含正负两个方向的差异，现有结果不能判定两组等效。",
-        "en": "The analysis did not detect a significant difference: the estimate was 2 points, 95% CI −1 to 5, p=0.18. The interval includes differences in both directions, so the results do not establish equivalence."
+        "zh": "本次差异检验未检出显著差异：估计差异为 2 分，95% CI −1 至 5 分，p=0.18。研究未预设等效界值，也未报告等效性检验，因此这些结果不构成两组等效的证据。",
+        "en": "The difference test did not detect a significant difference: the estimate was 2 points, 95% CI −1 to 5, p=0.18. No equivalence margin was prespecified and no equivalence test was reported, so these results do not provide evidence of equivalence."
       },
       "why": {
         "zh": "用估计值、区间和可作出的判断替代空泛自我否定。",
         "en": "Replace blanket self-dismissal with the estimate, interval and supported interpretation."
       },
       "preserve": {
-        "zh": "保留区间和不显著的含义；不显著不能改成证明无效应或等效。",
-        "en": "Retain the interval and interpretation of nonsignificance; it does not establish no effect or equivalence."
+        "zh": "差异检验和等效性检验回答不同问题；跨过 0 的区间不能单独用来判断等效性。",
+        "en": "Difference and equivalence tests address different questions; an interval crossing zero alone does not determine equivalence."
       },
       "author": "Yila",
       "license": "CC-BY-4.0"
@@ -717,6 +717,36 @@
       "preserve": {
         "zh": "保留明确回答和真实可用的查看入口，按目标产品填入价格规则。",
         "en": "Keep the direct answer and real viewing option; supply the pricing rules of the target product."
+      },
+      "author": "Yila",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "id": "EX-25",
+      "kind": "fictional-editorial-example",
+      "title": {
+        "zh": "催进度：明确约定与回复时间",
+        "en": "A progress follow-up with a clear reply time"
+      },
+      "facts": {
+        "zh": "情景协作：陈同学已约定周五交设计图，今天是周四。负责人为了安排联调，需要陈同学今天 17:00 前确认当前进度，以及周五是否能按时交付。没有材料表明对方已延期。",
+        "en": "Constructed collaboration: Chen agreed to deliver design figures Friday; today is Thursday. To schedule integration testing, the owner needs Chen to confirm progress and whether Friday delivery is on track by 17:00 today. There is no evidence of a missed deadline."
+      },
+      "verbose_or_flawed": {
+        "zh": "不好意思又打扰了，知道你可能比较忙，图的事情或许方便的时候再看看，不着急，给你添麻烦了。",
+        "en": "Sorry to trouble you again; I know you may be busy. Perhaps you could look at the figures whenever convenient. No rush, and sorry for the inconvenience."
+      },
+      "revision": {
+        "zh": "陈同学，按约定请周五交设计图。为安排联调，请今天 17:00 前确认当前进度，以及周五能否按时交付。谢谢。",
+        "en": "Chen, the design figures are due Friday as agreed. To schedule integration testing, please confirm current progress and whether Friday delivery is on track by 17:00 today. Thank you."
+      },
+      "why": {
+        "zh": "保留正常礼貌，明确既有交付约定和本次需要的回复，删除与实际时间要求矛盾的“不着急”。",
+        "en": "Keep normal courtesy while stating the existing delivery agreement and the reply needed now; remove the conflicting no-rush message."
+      },
+      "preserve": {
+        "zh": "今天 17:00 是回复时间，周五是交图时间；不能写成对方已经延期。",
+        "en": "17:00 today is the reply deadline and Friday is the delivery deadline; do not describe Chen as already late."
       },
       "author": "Yila",
       "license": "CC-BY-4.0"

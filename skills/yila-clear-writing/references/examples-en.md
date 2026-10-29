@@ -29,6 +29,7 @@ These constructed scenarios provide the facts, a flawed draft, a suggested revis
 - [EX-22 Choose against the goal and report the trade-off](#ex-22)
 - [EX-23 A review must not invent its sources](#ex-23)
 - [EX-24 Answer a pricing question directly](#ex-24)
+- [EX-25 A progress follow-up with a clear reply time](#ex-25)
 
 <a id="ex-01"></a>
 ## EX-01 · Say the same thing clearly
@@ -81,7 +82,7 @@ Keep the estimate and data-arrival condition; do not write 'will finish Thursday
 
 **Supplied facts**
 
-Fictional teaching data: a single-center observational study of 120 adults found Pearson r=0.32 between A and B, 95% CI 0.15–0.47. There was no random assignment or causal identification. This is not health advice.
+Fictional teaching data: a single-center observational study of 120 adults found Pearson r=0.32 between A and B, 95% CI 0.15–0.47. There was no random assignment or causal identification.
 
 **Verbose or flawed draft**
 
@@ -181,7 +182,7 @@ Overall progress is good and we are working hard. Due to complexity, there might
 
 **Suggested revision**
 
-Page development is complete, but API access is still unavailable and integration testing has not started. Delivery of a testable build moves from Tuesday to Thursday. Please coordinate API access today.
+Page development is complete, but API access is still unavailable and integration testing has not started. Delivery of a testable build moves from Tuesday to Thursday. The project manager is asked to coordinate API access today.
 
 **Why**
 
@@ -288,7 +289,7 @@ For a real product, supply its confirmed features, eligibility, pricing and avai
 
 **Supplied facts**
 
-Fictional case: user A permits anonymous use of 'I turned scattered notes into an outline.' Records show notes imported and the generated outline manually revised. No timing, comparison group or quality score exists. The team confirms it cannot guarantee freedom from manual editing.
+Fictional case: user A permits anonymous use of 'I turned scattered notes into an outline.' Records show notes imported and the generated outline manually revised. No timing, comparison group or quality score exists. The FAQ asks whether manual editing can be avoided in every task. The team confirms it cannot guarantee freedom from manual editing.
 
 **Verbose or flawed draft**
 
@@ -426,7 +427,7 @@ More completions do not establish better effectiveness; lack of causal identific
 
 **Supplied facts**
 
-A constructed study estimates a 2-point group difference, 95% CI −1 to 5, p=0.18, with no prespecified equivalence margin. The task is to report the analysis.
+A constructed study reports a difference test: the estimated group difference is 2 points, 95% CI −1 to 5, p=0.18. No equivalence margin was prespecified and no equivalence test was reported. The task is to report the analysis.
 
 **Verbose or flawed draft**
 
@@ -434,7 +435,7 @@ The result is not significant, which may mean the study has little value. The si
 
 **Suggested revision**
 
-The analysis did not detect a significant difference: the estimate was 2 points, 95% CI −1 to 5, p=0.18. The interval includes differences in both directions, so the results do not establish equivalence.
+The difference test did not detect a significant difference: the estimate was 2 points, 95% CI −1 to 5, p=0.18. No equivalence margin was prespecified and no equivalence test was reported, so these results do not provide evidence of equivalence.
 
 **Why**
 
@@ -442,7 +443,7 @@ Replace blanket self-dismissal with the estimate, interval and supported interpr
 
 **Boundary to preserve**
 
-Retain the interval and interpretation of nonsignificance; it does not establish no effect or equivalence.
+Difference and equivalence tests address different questions; an interval crossing zero alone does not determine equivalence.
 
 <a id="ex-19"></a>
 ## EX-19 · A learning record is not proficiency
@@ -581,3 +582,26 @@ Answer the known rule directly and offer a real available option instead of evas
 **Boundary to preserve**
 
 Keep the direct answer and real viewing option; supply the pricing rules of the target product.
+
+<a id="ex-25"></a>
+## EX-25 · A progress follow-up with a clear reply time
+
+**Supplied facts**
+
+Constructed collaboration: Chen agreed to deliver design figures Friday; today is Thursday. To schedule integration testing, the owner needs Chen to confirm progress and whether Friday delivery is on track by 17:00 today. There is no evidence of a missed deadline.
+
+**Verbose or flawed draft**
+
+Sorry to trouble you again; I know you may be busy. Perhaps you could look at the figures whenever convenient. No rush, and sorry for the inconvenience.
+
+**Suggested revision**
+
+Chen, the design figures are due Friday as agreed. To schedule integration testing, please confirm current progress and whether Friday delivery is on track by 17:00 today. Thank you.
+
+**Why**
+
+Keep normal courtesy while stating the existing delivery agreement and the reply needed now; remove the conflicting no-rush message.
+
+**Boundary to preserve**
+
+17:00 today is the reply deadline and Friday is the delivery deadline; do not describe Chen as already late.

@@ -17,12 +17,12 @@ Choose a task, copy a prompt and add your material. Follow the case link for sup
 
 ## DW-001 · Sentence-level diagnosis
 
+**Mode**: Diagnose
+
 ```text
-Make the supplied material clear, direct and informative. Organize it around the
-judgment or action the reader needs. Remove repetitive retreat and empty preambles.
-Ground facts, numbers, scope, responsibility and commitments in the material; keep
-meaningful conditions next to the claims they qualify. List missing facts
-separately.
+Inspect the passage and explain the function of each suspect qualification.
+Use the supplied evidence and conditions to distinguish useful information
+from repetition. Return the requested diagnosis.
 
 Task: Identify each suspect sentence's function and what information would be lost
 by removing it. Flag only relevant passages; mark uncertain judgments for
@@ -33,8 +33,8 @@ minimally revised passage.
 
 Input material:
 Text: [fill in]
-audience and purpose: [fill in]
-supporting facts: [fill in]
+Audience and purpose: [fill in]
+Supporting facts: [fill in]
 ```
 
 <details>
@@ -64,23 +64,25 @@ The source contains a firm delivery agreement. Remove wording that weakens it an
 
 ## DW-002 · Minimal editing
 
+**Mode**: Revise
+
 ```text
-Make the supplied material clear, direct and informative. Organize it around the
-judgment or action the reader needs. Remove repetitive retreat and empty preambles.
-Ground facts, numbers, scope, responsibility and commitments in the material; keep
-meaningful conditions next to the claims they qualify. List missing facts
-separately.
+Make the supplied material clear, direct and informative. Organize it around
+the judgment or action the reader needs. Remove repetitive retreat and empty
+preambles. Ground facts, numbers, scope, responsibility and commitments in
+the material; keep meaningful conditions next to the claims they qualify.
+List missing facts separately.
 
 Task: Keep the author's voice and sentence structure where they work. Separate
-grammar and organization edits from changes in claim strength; do not mechanically
-make mild phrasing forceful.
+grammar and organization edits from changes in claim strength; do not
+mechanically make mild phrasing forceful.
 
 Output: Replacement copy followed by the most important language or structural
 edits.
 
 Input material:
 Draft: [fill in]
-tone to preserve: [fill in]
+Tone to preserve: [fill in]
 ```
 
 <details>
@@ -110,23 +112,25 @@ The source contains a firm delivery agreement. Remove wording that weakens it an
 
 ## DW-003 · Claim and grounds
 
-```text
-Make the supplied material clear, direct and informative. Organize it around the
-judgment or action the reader needs. Remove repetitive retreat and empty preambles.
-Ground facts, numbers, scope, responsibility and commitments in the material; keep
-meaningful conditions next to the claims they qualify. List missing facts
-separately.
+**Mode**: Draft
 
-Task: Find the question the paragraph answers. Lead with the supported answer, then
-its grounds and conditions. If no conclusion is available, state the open question
-instead of inventing a position.
+```text
+Make the supplied material clear, direct and informative. Organize it around
+the judgment or action the reader needs. Remove repetitive retreat and empty
+preambles. Ground facts, numbers, scope, responsibility and commitments in
+the material; keep meaningful conditions next to the claims they qualify.
+List missing facts separately.
+
+Task: Find the question the paragraph answers. Lead with the supported answer,
+then its grounds and conditions. If no conclusion is available, state the
+open question instead of inventing a position.
 
 Output: A direct answer followed by grounds and necessary conditions.
 
 Input material:
 Passage: [fill in]
-question: [fill in]
-evidence: [fill in]
+Question: [fill in]
+Evidence: [fill in]
 ```
 
 <details>
@@ -156,23 +160,25 @@ The source contains a firm delivery agreement. Remove wording that weakens it an
 
 ## DW-004 · Remove repeated caveats
 
+**Mode**: Revise
+
 ```text
-Make the supplied material clear, direct and informative. Organize it around the
-judgment or action the reader needs. Remove repetitive retreat and empty preambles.
-Ground facts, numbers, scope, responsibility and commitments in the material; keep
-meaningful conditions next to the claims they qualify. List missing facts
-separately.
+Make the supplied material clear, direct and informative. Organize it around
+the judgment or action the reader needs. Remove repetitive retreat and empty
+preambles. Ground facts, numbers, scope, responsibility and commitments in
+the material; keep meaningful conditions next to the claims they qualify.
+List missing facts separately.
 
 Task: Merge caveats only when they qualify the same claim in the same way. Similar
-wording can serve different purposes. Keep conditions next to claims when needed for
-interpretation.
+wording can serve different purposes. Keep conditions next to claims when
+needed for interpretation.
 
 Output: Revised copy and the repeated qualifications merged, with retained
 conditions located.
 
 Input material:
 Text: [fill in]
-surrounding context: [fill in]
+Surrounding context: [fill in]
 ```
 
 <details>
@@ -202,24 +208,26 @@ Replace stacked hedges with an explicit estimate and the supplied condition that
 
 ## DW-005 · Make advice actionable
 
+**Mode**: Draft
+
 ```text
-Make the supplied material clear, direct and informative. Organize it around the
-judgment or action the reader needs. Remove repetitive retreat and empty preambles.
-Ground facts, numbers, scope, responsibility and commitments in the material; keep
-meaningful conditions next to the claims they qualify. List missing facts
-separately.
+Make the supplied material clear, direct and informative. Organize it around
+the judgment or action the reader needs. Remove repetitive retreat and empty
+preambles. Ground facts, numbers, scope, responsibility and commitments in
+the material; keep meaningful conditions next to the claims they qualify.
+List missing facts separately.
 
 Task: Extract actions, sequence, resources and decision criteria already supported
-by the material. Identify missing owners or deadlines separately without creating
-commitments or arbitrary numbers.
+by the material. Identify missing owners or deadlines separately without
+creating commitments or arbitrary numbers.
 
 Output: Ordered actions, completion checks and known dependencies; missing facts
 separately.
 
 Input material:
 Advice draft: [fill in]
-resources: [fill in]
-goal: [fill in]
+Resources: [fill in]
+Goal: [fill in]
 ```
 
 <details>
@@ -249,12 +257,12 @@ Replace blanket pessimism with available resources, a decision trigger and a fea
 
 ## DW-006 · Evaluate a qualification
 
+**Mode**: Diagnose
+
 ```text
-Make the supplied material clear, direct and informative. Organize it around the
-judgment or action the reader needs. Remove repetitive retreat and empty preambles.
-Ground facts, numbers, scope, responsibility and commitments in the material; keep
-meaningful conditions next to the claims they qualify. List missing facts
-separately.
+Inspect the passage and explain the function of each suspect qualification.
+Use the supplied evidence and conditions to distinguish useful information
+from repetition. Return the requested diagnosis.
 
 Task: For each suspect qualification, explain what it changes and which supplied
 facts justify it. Remove stacked hedges while preserving forecasts, targets,
@@ -265,8 +273,8 @@ qualification.
 
 Input material:
 Sentence: [fill in]
-factual context: [fill in]
-uncertainty sources: [fill in]
+Factual context: [fill in]
+Uncertainty sources: [fill in]
 ```
 
 <details>

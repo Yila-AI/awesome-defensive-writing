@@ -8,6 +8,8 @@ Include complete input and output for content changes. Note source permissions.
 For generated pages, edit data first and run:
 `python tools/build_library.py`
 `python tools/build_library.py --check`
+`python tools/package_draft.py`
+`python tools/check_packages.py`
 
 ## Languages · 语言
 

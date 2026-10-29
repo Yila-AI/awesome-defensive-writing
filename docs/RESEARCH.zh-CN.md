@@ -12,7 +12,6 @@ Junchi Liao, Xiao Huang, Yucheng Liu, Jiawen Deng, Fuji Ren
 
 论文区分了两种改写：根据材料修正过度主张，以及加入没有材料依据的限定。它还比较了写作请求、模型版本与评审反馈带来的变化。
 
-[![论文标题、作者与摘要](../assets/paper/paper-title.png)](../assets/paper/paper-title.png)
 
 ## 2. 图 1：写作与评审如何形成循环
 

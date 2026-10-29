@@ -45,8 +45,8 @@
       "request_zh": "改写下面草稿，让信息明确、减少防御性废话。保持事实与有意义的边界。先给正文，再说明重要修改。",
       "request_en": "Revise the draft for clear information and less defensive padding. Preserve facts and meaningful boundaries. Return copy first, then explain material changes.",
       "facts": {
-        "zh": "教学虚构数据：单中心观察研究，120 名成年人；A 与 B 的 Pearson r=0.32，95% CI 0.15–0.47。未随机分配，也未进行因果识别。示例不是健康建议。",
-        "en": "Fictional teaching data: a single-center observational study of 120 adults found Pearson r=0.32 between A and B, 95% CI 0.15–0.47. There was no random assignment or causal identification. This is not health advice."
+        "zh": "教学虚构数据：单中心观察研究，120 名成年人；A 与 B 的 Pearson r=0.32，95% CI 0.15–0.47。未随机分配，也未进行因果识别。",
+        "en": "Fictional teaching data: a single-center observational study of 120 adults found Pearson r=0.32 between A and B, 95% CI 0.15–0.47. There was no random assignment or causal identification."
       },
       "draft": {
         "zh": "结果可能在一定程度上提示 A 或许与 B 存在某种联系。还需更多研究，不能草率下结论。",
@@ -217,7 +217,7 @@
       "request_en": "Revise the draft for clear information and less defensive padding. Preserve facts and meaningful boundaries. Return copy first, then explain material changes.",
       "facts": {
         "zh": "虚构案例：用户甲授权匿名使用原话“我把零散笔记整理成了一份提纲”。记录显示用户先导入笔记、再人工修改生成提纲。没有用时、对照组或质量评分。FAQ 问“能否保证不用人工修改”。产品团队确认不能保证。",
-        "en": "Fictional case: user A permits anonymous use of 'I turned scattered notes into an outline.' Records show notes imported and the generated outline manually revised. No timing, comparison group or quality score exists. The team confirms it cannot guarantee freedom from manual editing."
+        "en": "Fictional case: user A permits anonymous use of 'I turned scattered notes into an outline.' Records show notes imported and the generated outline manually revised. No timing, comparison group or quality score exists. The FAQ asks whether manual editing can be avoided in every task. The team confirms it cannot guarantee freedom from manual editing."
       },
       "draft": {
         "zh": "这只是很初步的一点尝试，也许对某些人有帮助；已经证明能让所有用户效率提升十倍，完全不用修改。",
@@ -330,8 +330,8 @@
       "request_zh": "改写下面草稿，让信息明确、减少防御性废话。保持事实与有意义的边界。先给正文，再说明重要修改。",
       "request_en": "Revise the draft for clear information and less defensive padding. Preserve facts and meaningful boundaries. Return copy first, then explain material changes.",
       "facts": {
-        "zh": "情景研究估计两组差异为 2 分，95% CI −1 到 5 分，p=0.18；无预设等效界值。目标是报告本次分析结果。",
-        "en": "A constructed study estimates a 2-point group difference, 95% CI −1 to 5, p=0.18, with no prespecified equivalence margin. The task is to report the analysis."
+        "zh": "情景研究报告两组差异检验：估计差异为 2 分，95% CI −1 到 5 分，p=0.18；未预设等效界值，也未报告等效性检验。目标是报告本次分析结果。",
+        "en": "A constructed study reports a difference test: the estimated group difference is 2 points, 95% CI −1 to 5, p=0.18. No equivalence margin was prespecified and no equivalence test was reported. The task is to report the analysis."
       },
       "draft": {
         "zh": "结果没有显著性，可能说明研究没有什么价值。不过情况很复杂，也可能还需要更多研究，暂时似乎不宜得出任何结论。",

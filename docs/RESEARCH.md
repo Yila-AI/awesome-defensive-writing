@@ -12,7 +12,6 @@ Junchi Liao, Xiao Huang, Yucheng Liu, Jiawen Deng, Fuji Ren
 
 The paper distinguishes evidence-grounded corrections from qualifications unsupported by the supplied material, and compares writing requests, model versions and review feedback.
 
-[![Paper title, authors and abstract](../assets/paper/paper-title.png)](../assets/paper/paper-title.png)
 
 ## 2. Figure 1: The writing and review loop
 

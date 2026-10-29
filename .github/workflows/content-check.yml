@@ -11,4 +11,5 @@ jobs:
       - run: python tools/build_library.py --check
       - run: python tools/build_library.py
       - run: git diff --exit-code
-      - run: python tools/check_installers.py --powershell '' --bash bash
+      - run: python tools/check_packages.py
+      - run: python tools/check_installers.py --powershell pwsh --bash bash

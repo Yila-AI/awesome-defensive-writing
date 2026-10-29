@@ -31,6 +31,8 @@ Edit the JSON source and run:
 ```text
 python tools/build_library.py
 python tools/build_library.py --check
+python tools/package_draft.py
+python tools/check_packages.py
 ```
 
 `docs/library` 和 Skill 的分类、案例与清单文件由脚本生成，不要直接维护重复副本。入口 Skill 与领域路由说明可独立编辑。

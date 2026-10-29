@@ -34,7 +34,7 @@ Open the [standalone web instructions](WEB-PROMPT.md), copy the complete instruc
 
 For a specific writing task, copy the matching template from the [catalog](library/en/index.md) and fill in its material.
 
-## 4. Choose a mode
+## 4. Choose a skill mode
 
 | Mode | Request | Output |
 |---|---|---|
@@ -74,8 +74,8 @@ Due to complexity, there might be a slight delay; thank you for understanding.
 
 Example revision:
 
-> Page development is complete, but API access is pending and integration testing has not started. Delivery of a testable build moves from Tuesday to Thursday. Please coordinate API access today.
+> Page development is complete, but API access is pending and integration testing has not started. Delivery of a testable build moves from Tuesday to Thursday. The project manager is asked to coordinate API access today.
 
 For Claude Code, use `/yila-clear-writing`. For web conversations, provide the [standalone instructions](WEB-PROMPT.md) before the task.
 
-[Explore 24 worked scenarios →](library/en/examples.md)
+[Explore 25 worked scenarios →](library/en/examples.md)

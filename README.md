@@ -12,7 +12,7 @@ Turn empty qualifications into clear judgments, evidence and action.
 
 Image: Liao et al., [Defensive Writing in GPT Models](https://arxiv.org/abs/2610.11355v2), Figure 1, CC BY 4.0. [Figure guide and complete charts](docs/RESEARCH.md).
 
-**60 bilingual prompts · 24 worked scenarios · 10 categories**
+**60 bilingual prompts · 25 worked scenarios · 10 categories**
 
 Copy a template for an occasional edit, or install the skill for repeat work.
 
@@ -72,22 +72,22 @@ Supporting material: [paste facts or sources]
 <summary>DW-002 · Minimal editing</summary>
 
 ```text
-Make the supplied material clear, direct and informative. Organize it around the
-judgment or action the reader needs. Remove repetitive retreat and empty preambles.
-Ground facts, numbers, scope, responsibility and commitments in the material; keep
-meaningful conditions next to the claims they qualify. List missing facts
-separately.
+Make the supplied material clear, direct and informative. Organize it around
+the judgment or action the reader needs. Remove repetitive retreat and empty
+preambles. Ground facts, numbers, scope, responsibility and commitments in
+the material; keep meaningful conditions next to the claims they qualify.
+List missing facts separately.
 
 Task: Keep the author's voice and sentence structure where they work. Separate
-grammar and organization edits from changes in claim strength; do not mechanically
-make mild phrasing forceful.
+grammar and organization edits from changes in claim strength; do not
+mechanically make mild phrasing forceful.
 
 Output: Replacement copy followed by the most important language or structural
 edits.
 
 Input material:
 Draft: [fill in]
-tone to preserve: [fill in]
+Tone to preserve: [fill in]
 ```
 
 [See facts, revision and reasoning](docs/library/en/examples.md#ex-01)
@@ -98,23 +98,23 @@ tone to preserve: [fill in]
 <summary>DW-012 · Reviewer response</summary>
 
 ```text
-Make the supplied material clear, direct and informative. Organize it around the
-judgment or action the reader needs. Remove repetitive retreat and empty preambles.
-Ground facts, numbers, scope, responsibility and commitments in the material; keep
-meaningful conditions next to the claims they qualify. List missing facts
-separately.
+Make the supplied material clear, direct and informative. Organize it around
+the judgment or action the reader needs. Remove repetitive retreat and empty
+preambles. Ground facts, numbers, scope, responsibility and commitments in
+the material; keep meaningful conditions next to the claims they qualify.
+List missing facts separately.
 
 Task: Assess each objection and answer its substance before reporting completed
-edits and locations. Label unperformed analyses as plans; do not invent agreement,
-page numbers or experiments.
+edits and locations. Label unperformed analyses as plans; do not invent
+agreement, page numbers or experiments.
 
 Output: A point-by-point response: assessment, answer, completed changes and
 remaining work.
 
 Input material:
 Reviewer comments: [fill in]
-evidence: [fill in]
-completed changes: [fill in]
+Evidence: [fill in]
+Completed changes: [fill in]
 ```
 
 [See facts, revision and reasoning](docs/library/en/examples.md#ex-04)
@@ -125,24 +125,24 @@ completed changes: [fill in]
 <summary>DW-020 · Delay notice</summary>
 
 ```text
-Make the supplied material clear, direct and informative. Organize it around the
-judgment or action the reader needs. Remove repetitive retreat and empty preambles.
-Ground facts, numbers, scope, responsibility and commitments in the material; keep
-meaningful conditions next to the claims they qualify. List missing facts
-separately.
+Make the supplied material clear, direct and informative. Organize it around
+the judgment or action the reader needs. Remove repetitive retreat and empty
+preambles. Ground facts, numbers, scope, responsibility and commitments in
+the material; keep meaningful conditions next to the claims they qualify.
+List missing facts separately.
 
 Task: State the original plan, change, known cause and recovery arrangement.
-Distinguish committed dates from estimates; acknowledge responsibility and avoid
-invented remedies.
+Distinguish committed dates from estimates; acknowledge responsibility and
+avoid invented remedies.
 
 Output: A sendable delay notice containing the original plan, change, cause and
 revised arrangement.
 
 Input material:
 Original schedule: [fill in]
-status: [fill in]
-cause: [fill in]
-revised arrangement: [fill in]
+Status: [fill in]
+Cause: [fill in]
+Revised arrangement: [fill in]
 ```
 
 [See facts, revision and reasoning](docs/library/en/examples.md#ex-07)
@@ -153,24 +153,24 @@ revised arrangement: [fill in]
 <summary>DW-031 · Feature description</summary>
 
 ```text
-Make the supplied material clear, direct and informative. Organize it around the
-judgment or action the reader needs. Remove repetitive retreat and empty preambles.
-Ground facts, numbers, scope, responsibility and commitments in the material; keep
-meaningful conditions next to the claims they qualify. List missing facts
-separately.
+Make the supplied material clear, direct and informative. Organize it around
+the judgment or action the reader needs. Remove repetitive retreat and empty
+preambles. Ground facts, numbers, scope, responsibility and commitments in
+the material; keep meaningful conditions next to the claims they qualify.
+List missing facts separately.
 
 Task: State what eligible users can do, then steps and conditions. Use verified
-capabilities and retain access, pricing, formats and beta scope without unverified
-quality promises.
+capabilities and retain access, pricing, formats and beta scope without
+unverified quality promises.
 
 Output: One sentence describing the user capability, followed by actions and
 necessary conditions.
 
 Input material:
 Verified feature: [fill in]
-eligible users: [fill in]
-conditions: [fill in]
-placement: [fill in]
+Eligible users: [fill in]
+Conditions: [fill in]
+Placement: [fill in]
 ```
 
 [See facts, revision and reasoning](docs/library/en/examples.md#ex-11)
@@ -183,7 +183,7 @@ placement: [fill in]
 
 ## Install the skill
 
-**Windows:** extract the skill ZIP and open PowerShell in the extracted folder:
+**Windows:** extract the skill ZIP and open PowerShell in the folder containing install.ps1:
 
 ```powershell
 powershell -NoProfile -ExecutionPolicy Bypass -File .\install.ps1 -Agent codex
@@ -227,9 +227,9 @@ Output: revised copy first, then reasons for material changes.
 
 ### Web conversations: ChatGPT / Claude / Gemini / Yila
 
-Copy the [standalone web instructions](docs/WEB-PROMPT.md) into a new conversation, then add your task and passage. You can also attach that file with your request. For a specific scenario, copy a complete template from the catalog below.
+Copy the [standalone web instructions](docs/WEB-PROMPT.md) into a new conversation, then add your task and passage. You can also attach that file with your request. For a specific scenario, copy a complete template from the [catalog](docs/library/en/index.md).
 
-**Four modes:** diagnose, revise, draft from material and recommend a prompt. Add “return clean copy only” for text you can replace directly.
+**Web instructions** support diagnosis, revision and drafting. The **installed skill** also recommends prompts from its local library. Add “return clean copy only” for text you can replace directly.
 
 [Full usage guide: modes, output controls and a worked request →](docs/USAGE.md)
 
@@ -244,11 +244,11 @@ The library turns the paper's discussion of ungrounded qualifications into sente
 
 ## Use in the Yila workbench
 
-Bring papers, data or research notes to the [Yila workbench](https://yila.ai/research), choose a research template, and diagnose, revise and check a passage against the material. Use copied prompts for everyday writing or install the local skill in your agent.
+Copy a suitable prompt from this library, then send it with papers, data or research notes to the [Yila workbench](https://yila.ai/research) to diagnose, revise and check the passage against that material. Use copied prompts for everyday writing or install the local skill in your agent.
 
 ## Contribute and reuse
 
-[Contribute prompts and cases](CONTRIBUTING.md) · [FAQ](docs/FAQ.md) · [Sources and acknowledgments](docs/SOURCES.md) · [Licensing](LICENSE.md)
+[Contribute prompts and cases](CONTRIBUTING.md) · [FAQ](docs/FAQ.md) · [Boundary quick reference](docs/BOUNDARIES.md) · [Sources and acknowledgments](docs/SOURCES.md) · [Licensing](LICENSE.md)
 
 Star the collection to keep it handy. Share a useful prompt, a worked case or a translation to help it grow.
 

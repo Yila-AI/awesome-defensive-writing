@@ -17,12 +17,14 @@ Choose a task, copy a prompt and add your material. Follow the case link for sup
 
 ## DW-049 · Chart takeaway
 
+**Mode**: Draft
+
 ```text
-Make the supplied material clear, direct and informative. Organize it around the
-judgment or action the reader needs. Remove repetitive retreat and empty preambles.
-Ground facts, numbers, scope, responsibility and commitments in the material; keep
-meaningful conditions next to the claims they qualify. List missing facts
-separately.
+Make the supplied material clear, direct and informative. Organize it around
+the judgment or action the reader needs. Remove repetitive retreat and empty
+preambles. Ground facts, numbers, scope, responsibility and commitments in
+the material; keep meaningful conditions next to the claims they qualify.
+List missing facts separately.
 
 Task: Check axes, units, denominators, periods and comparability before giving the
 main observation. Separate chart facts from causal interpretation and retain
@@ -33,8 +35,8 @@ interpretation.
 
 Input material:
 Chart data: [fill in]
-axes and units: [fill in]
-comparison definition: [fill in]
+Axes and units: [fill in]
+Comparison definition: [fill in]
 ```
 
 <details>
@@ -64,25 +66,27 @@ Compute the supported rates, retain denominators and correct the causal overclai
 
 ## DW-050 · Association versus causation
 
+**Mode**: Draft
+
 ```text
-Make the supplied material clear, direct and informative. Organize it around the
-judgment or action the reader needs. Remove repetitive retreat and empty preambles.
-Ground facts, numbers, scope, responsibility and commitments in the material; keep
-meaningful conditions next to the claims they qualify. List missing facts
-separately.
+Make the supplied material clear, direct and informative. Organize it around
+the judgment or action the reader needs. Remove repetitive retreat and empty
+preambles. Ground facts, numbers, scope, responsibility and commitments in
+the material; keep meaningful conditions next to the claims they qualify.
+List missing facts separately.
 
 Task: Calibrate claims to design and evidence. Remove hedge stacking without
-upgrading associations, predictions or group differences to causality; correct
-overclaims when warranted.
+upgrading associations, predictions or group differences to causality;
+correct overclaims when warranted.
 
 Output: A design-calibrated conclusion and an explanation of claim-strength wording
 changes.
 
 Input material:
 Claim: [fill in]
-design: [fill in]
-analysis: [fill in]
-results: [fill in]
+Design: [fill in]
+Analysis: [fill in]
+Results: [fill in]
 ```
 
 <details>
@@ -112,25 +116,27 @@ Compute the supported rates, retain denominators and correct the causal overclai
 
 ## DW-051 · Sample and generalization
 
-```text
-Make the supplied material clear, direct and informative. Organize it around the
-judgment or action the reader needs. Remove repetitive retreat and empty preambles.
-Ground facts, numbers, scope, responsibility and commitments in the material; keep
-meaningful conditions next to the claims they qualify. List missing facts
-separately.
+**Mode**: Draft
 
-Task: State sample, period and measurement scope. Do not hide generalization limits
-behind broad wording. Keep an explicit exclusion when positive scope alone would
-invite misuse.
+```text
+Make the supplied material clear, direct and informative. Organize it around
+the judgment or action the reader needs. Remove repetitive retreat and empty
+preambles. Ground facts, numbers, scope, responsibility and commitments in
+the material; keep meaningful conditions next to the claims they qualify.
+List missing facts separately.
+
+Task: State sample, period and measurement scope. Do not hide generalization
+limits behind broad wording. Keep an explicit exclusion when positive scope
+alone would invite misuse.
 
 Output: A scoped conclusion identifying sample, period, measurement and
 generalization conditions.
 
 Input material:
 Sample source: [fill in]
-period: [fill in]
-measures: [fill in]
-target population: [fill in]
+Period: [fill in]
+Measures: [fill in]
+Target population: [fill in]
 ```
 
 <details>
@@ -160,24 +166,26 @@ Compute the supported rates, retain denominators and correct the causal overclai
 
 ## DW-052 · Forecast and scenario
 
-```text
-Make the supplied material clear, direct and informative. Organize it around the
-judgment or action the reader needs. Remove repetitive retreat and empty preambles.
-Ground facts, numbers, scope, responsibility and commitments in the material; keep
-meaningful conditions next to the claims they qualify. List missing facts
-separately.
+**Mode**: Draft
 
-Task: Distinguish forecasts, targets, commitments and hypothetical scenarios. State
-assumptions, ranges or scenario differences without turning conditional estimates
-into certainties.
+```text
+Make the supplied material clear, direct and informative. Organize it around
+the judgment or action the reader needs. Remove repetitive retreat and empty
+preambles. Ground facts, numbers, scope, responsibility and commitments in
+the material; keep meaningful conditions next to the claims they qualify.
+List missing facts separately.
+
+Task: Distinguish forecasts, targets, commitments and hypothetical scenarios.
+State assumptions, ranges or scenario differences without turning
+conditional estimates into certainties.
 
 Output: A forecast stating assumptions, scenarios, ranges or triggering conditions.
 
 Input material:
 Forecast: [fill in]
-assumptions: [fill in]
-ranges: [fill in]
-use: [fill in]
+Assumptions: [fill in]
+Ranges: [fill in]
+Use: [fill in]
 ```
 
 <details>
@@ -207,25 +215,27 @@ Replace stacked hedges with an explicit estimate and the supplied condition that
 
 ## DW-053 · Negative or inconclusive findings
 
-```text
-Make the supplied material clear, direct and informative. Organize it around the
-judgment or action the reader needs. Remove repetitive retreat and empty preambles.
-Ground facts, numbers, scope, responsibility and commitments in the material; keep
-meaningful conditions next to the claims they qualify. List missing facts
-separately.
+**Mode**: Draft
 
-Task: Report what was not detected and the precision available. Distinguish lack of
-significant evidence from evidence of absence; do not hide the result or invent a
-positive finding.
+```text
+Make the supplied material clear, direct and informative. Organize it around
+the judgment or action the reader needs. Remove repetitive retreat and empty
+preambles. Ground facts, numbers, scope, responsibility and commitments in
+the material; keep meaningful conditions next to the claims they qualify.
+List missing facts separately.
+
+Task: Report what was not detected and the precision available. Distinguish lack
+of significant evidence from evidence of absence; do not hide the result or
+invent a positive finding.
 
 Output: A negative-results paragraph reporting estimates, intervals and the
 interpretation they support.
 
 Input material:
 Design: [fill in]
-estimates: [fill in]
-intervals: [fill in]
-test results: [fill in]
+Estimates: [fill in]
+Intervals: [fill in]
+Test results: [fill in]
 ```
 
 <details>
@@ -233,7 +243,7 @@ test results: [fill in]
 
 **Facts**
 
-A constructed study estimates a 2-point group difference, 95% CI −1 to 5, p=0.18, with no prespecified equivalence margin. The task is to report the analysis.
+A constructed study reports a difference test: the estimated group difference is 2 points, 95% CI −1 to 5, p=0.18. No equivalence margin was prespecified and no equivalence test was reported. The task is to report the analysis.
 
 **Before**
 
@@ -241,7 +251,7 @@ The result is not significant, which may mean the study has little value. The si
 
 **After**
 
-The analysis did not detect a significant difference: the estimate was 2 points, 95% CI −1 to 5, p=0.18. The interval includes differences in both directions, so the results do not establish equivalence.
+The difference test did not detect a significant difference: the estimate was 2 points, 95% CI −1 to 5, p=0.18. No equivalence margin was prespecified and no equivalence test was reported, so these results do not provide evidence of equivalence.
 
 **Reason**
 
@@ -255,24 +265,26 @@ Replace blanket self-dismissal with the estimate, interval and supported interpr
 
 ## DW-054 · Multiple-metric trade-offs
 
+**Mode**: Draft
+
 ```text
-Make the supplied material clear, direct and informative. Organize it around the
-judgment or action the reader needs. Remove repetitive retreat and empty preambles.
-Ground facts, numbers, scope, responsibility and commitments in the material; keep
-meaningful conditions next to the claims they qualify. List missing facts
-separately.
+Make the supplied material clear, direct and informative. Organize it around
+the judgment or action the reader needs. Remove repetitive retreat and empty
+preambles. Ground facts, numbers, scope, responsibility and commitments in
+the material; keep meaningful conditions next to the claims they qualify.
+List missing facts separately.
 
 Task: Report gains and costs under consistent conditions and units. Relate the
-choice to the objective without treating one decline as total failure or hiding
-unfavorable metrics.
+choice to the objective without treating one decline as total failure or
+hiding unfavorable metrics.
 
 Output: All relevant metrics and trade-offs, then a choice justified by the task
 objective.
 
 Input material:
 Metrics: [fill in]
-test conditions: [fill in]
-objective priorities: [fill in]
+Test conditions: [fill in]
+Objective priorities: [fill in]
 ```
 
 <details>

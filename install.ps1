@@ -13,7 +13,7 @@ $source = Join-Path $PSScriptRoot 'skills/yila-clear-writing'
 if (-not (Test-Path -LiteralPath (Join-Path $source 'SKILL.md'))) { $source = $PSScriptRoot }
 if (-not (Test-Path -LiteralPath (Join-Path $source 'SKILL.md'))) { throw 'Cannot find yila-clear-writing/SKILL.md beside this installer.' }
 $source = (Resolve-Path -LiteralPath $source).Path
-$installRoot = [IO.Path]::GetFullPath($Dest)
+$installRoot = $PSCmdlet.GetUnresolvedProviderPathFromPSPath($Dest)
 New-Item -ItemType Directory -Path $installRoot -Force | Out-Null
 $installRoot = (Resolve-Path -LiteralPath $installRoot).Path.TrimEnd([IO.Path]::DirectorySeparatorChar, [IO.Path]::AltDirectorySeparatorChar)
 $target = [IO.Path]::GetFullPath((Join-Path $installRoot 'yila-clear-writing'))
@@ -31,14 +31,32 @@ if ([IO.Path]::GetDirectoryName($stage) -ne $installParent) { throw 'Invalid sta
 $backupRoot = [IO.Path]::GetFullPath((Join-Path $installParent 'yila-clear-writing-backups'))
 $backup = [IO.Path]::GetFullPath((Join-Path $backupRoot "backup-$suffix"))
 if ([IO.Path]::GetDirectoryName($backup) -ne $backupRoot) { throw 'Invalid backup path.' }
-Copy-Item -LiteralPath $source -Destination $stage -Recurse
-if (-not (Test-Path -LiteralPath (Join-Path $stage 'references/manifest.json'))) { throw "Incomplete package at $stage" }
-if (Test-Path -LiteralPath $target) {
-    New-Item -ItemType Directory -Path $backupRoot -Force | Out-Null
-    if ((Get-Item -LiteralPath $backupRoot).Attributes -band [IO.FileAttributes]::ReparsePoint) { throw 'Choose a backup directory without a link.' }
-    Move-Item -LiteralPath $target -Destination $backup
-    Write-Output "Previous version: $backup"
+$backedUp = $false
+try {
+    Copy-Item -LiteralPath $source -Destination $stage -Recurse
+    if (-not (Test-Path -LiteralPath (Join-Path $stage 'references/manifest.json'))) { throw "Incomplete package at $stage" }
+    if (Test-Path -LiteralPath $target) {
+        New-Item -ItemType Directory -Path $backupRoot -Force | Out-Null
+        if ((Get-Item -LiteralPath $backupRoot).Attributes -band [IO.FileAttributes]::ReparsePoint) { throw 'Choose a backup directory without a link.' }
+        $backupIgnore = Join-Path $backupRoot '.gitignore'
+        if (-not (Test-Path -LiteralPath $backupIgnore)) { Set-Content -LiteralPath $backupIgnore -Value '*' -Encoding ASCII }
+        Move-Item -LiteralPath $target -Destination $backup
+        $backedUp = $true
+        Write-Output "Previous version: $backup"
+    }
+    Move-Item -LiteralPath $stage -Destination $target
 }
-Move-Item -LiteralPath $stage -Destination $target
+catch {
+    if ($backedUp -and -not (Test-Path -LiteralPath $target)) { Move-Item -LiteralPath $backup -Destination $target }
+    throw
+}
+finally {
+    if (Test-Path -LiteralPath $stage) {
+        $stageItem = Get-Item -LiteralPath $stage
+        if ([IO.Path]::GetDirectoryName($stageItem.FullName) -eq $installParent -and $stageItem.Name.StartsWith('.yila-clear-writing-stage-') -and -not ($stageItem.Attributes -band [IO.FileAttributes]::ReparsePoint)) {
+            Remove-Item -LiteralPath $stageItem.FullName -Recurse -Force
+        }
+    }
+}
 Write-Output "Installed: $target"
 if ($Agent -eq 'claude') { Write-Output 'Use: /yila-clear-writing' } else { Write-Output 'Use: $yila-clear-writing' }

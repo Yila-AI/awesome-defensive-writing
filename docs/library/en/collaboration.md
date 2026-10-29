@@ -17,46 +17,48 @@ Choose a task, copy a prompt and add your material. Follow the case link for sup
 
 ## DW-025 · Progress follow-up
 
+**Mode**: Draft
+
 ```text
-Make the supplied material clear, direct and informative. Organize it around the
-judgment or action the reader needs. Remove repetitive retreat and empty preambles.
-Ground facts, numbers, scope, responsibility and commitments in the material; keep
-meaningful conditions next to the claims they qualify. List missing facts
-separately.
+Make the supplied material clear, direct and informative. Organize it around
+the judgment or action the reader needs. Remove repetitive retreat and empty
+preambles. Ground facts, numbers, scope, responsibility and commitments in
+the material; keep meaningful conditions next to the claims they qualify.
+List missing facts separately.
 
 Task: Ask about a specific deliverable, agreed timing and needed reply. Preserve
-courtesy, remove repeated apologies and do not turn a target date into a prior
-commitment.
+courtesy, remove repeated apologies and do not turn a target date into a
+prior commitment.
 
 Output: A short follow-up naming the deliverable, actual agreement and requested
 reply.
 
 Input material:
 Deliverable: [fill in]
-actual agreement: [fill in]
-requested information: [fill in]
+Actual agreement: [fill in]
+Requested information: [fill in]
 ```
 
 <details>
-<summary>See a related case · EX-07 · A blocker and revised schedule</summary>
+<summary>See a related case · EX-25 · A progress follow-up with a clear reply time</summary>
 
 **Facts**
 
-Fictional update: page development is complete; API access has not been enabled; integration testing has not started. A testable build was due Tuesday and is now committed for Thursday. The owner asks the project manager to coordinate access today. The meeting confirmed this revision.
+Constructed collaboration: Chen agreed to deliver design figures Friday; today is Thursday. To schedule integration testing, the owner needs Chen to confirm progress and whether Friday delivery is on track by 17:00 today. There is no evidence of a missed deadline.
 
 **Before**
 
-Overall progress is good and we are working hard. Due to complexity, there might be a slight delay; thank you for understanding.
+Sorry to trouble you again; I know you may be busy. Perhaps you could look at the figures whenever convenient. No rush, and sorry for the inconvenience.
 
 **After**
 
-Page development is complete, but API access is still unavailable and integration testing has not started. Delivery of a testable build moves from Tuesday to Thursday. Please coordinate API access today.
+Chen, the design figures are due Friday as agreed. To schedule integration testing, please confirm current progress and whether Friday delivery is on track by 17:00 today. Thank you.
 
 **Reason**
 
-State completion, blocker, revised commitment and requested action rather than empty assurances.
+Keep normal courtesy while stating the existing delivery agreement and the reply needed now; remove the conflicting no-rush message.
 
-[Full case and conditions to preserve](examples.md#ex-07)
+[Full case and conditions to preserve](examples.md#ex-25)
 
 </details>
 
@@ -64,23 +66,26 @@ State completion, blocker, revised commitment and requested action rather than e
 
 ## DW-026 · Disagree with reasons
 
+**Mode**: Draft
+
 ```text
-Make the supplied material clear, direct and informative. Organize it around the
-judgment or action the reader needs. Remove repetitive retreat and empty preambles.
-Ground facts, numbers, scope, responsibility and commitments in the material; keep
-meaningful conditions next to the claims they qualify. List missing facts
-separately.
+Make the supplied material clear, direct and informative. Organize it around
+the judgment or action the reader needs. Remove repetitive retreat and empty
+preambles. Ground facts, numbers, scope, responsibility and commitments in
+the material; keep meaningful conditions next to the claims they qualify.
+List missing facts separately.
 
 Task: State the disagreement, evidence, impact and alternative. Keep useful
-relational courtesy without pretending agreement or presenting preferences as facts.
+relational courtesy without pretending agreement or presenting preferences
+as facts.
 
 Output: A sendable disagreement with its reason and alternative.
 
 Input material:
 Proposal: [fill in]
-disagreement: [fill in]
-evidence: [fill in]
-alternative: [fill in]
+Disagreement: [fill in]
+Evidence: [fill in]
+Alternative: [fill in]
 ```
 
 <details>
@@ -110,12 +115,14 @@ Retain the existing obligation and set a truthful boundary for the added request
 
 ## DW-027 · Decline an added request
 
+**Mode**: Draft
+
 ```text
-Make the supplied material clear, direct and informative. Organize it around the
-judgment or action the reader needs. Remove repetitive retreat and empty preambles.
-Ground facts, numbers, scope, responsibility and commitments in the material; keep
-meaningful conditions next to the claims they qualify. List missing facts
-separately.
+Make the supplied material clear, direct and informative. Organize it around
+the judgment or action the reader needs. Remove repetitive retreat and empty
+preambles. Ground facts, numbers, scope, responsibility and commitments in
+the material; keep meaningful conditions next to the claims they qualify.
+List missing facts separately.
 
 Task: State the supported scope and what cannot be committed to, with a relevant
 reason or viable alternative. Do not erase existing obligations or invent
@@ -126,9 +133,9 @@ alternatives.
 
 Input material:
 Request: [fill in]
-responsibilities: [fill in]
-resources: [fill in]
-alternatives: [fill in]
+Responsibilities: [fill in]
+Resources: [fill in]
+Alternatives: [fill in]
 ```
 
 <details>
@@ -158,22 +165,25 @@ Retain the existing obligation and set a truthful boundary for the added request
 
 ## DW-028 · Ask for help
 
+**Mode**: Draft
+
 ```text
-Make the supplied material clear, direct and informative. Organize it around the
-judgment or action the reader needs. Remove repetitive retreat and empty preambles.
-Ground facts, numbers, scope, responsibility and commitments in the material; keep
-meaningful conditions next to the claims they qualify. List missing facts
-separately.
+Make the supplied material clear, direct and informative. Organize it around
+the judgment or action the reader needs. Remove repetitive retreat and empty
+preambles. Ground facts, numbers, scope, responsibility and commitments in
+the material; keep meaningful conditions next to the claims they qualify.
+List missing facts separately.
 
 Task: State the goal, attempts and specific blocker, then an answerable request.
-Remove self-deprecation without assuming the recipient owes a complete solution.
+Remove self-deprecation without assuming the recipient owes a complete
+solution.
 
 Output: A help request with goal, attempted steps, blocker and a specific question.
 
 Input material:
 Problem: [fill in]
-attempted steps: [fill in]
-requested help: [fill in]
+Attempted steps: [fill in]
+Requested help: [fill in]
 ```
 
 <details>
@@ -203,25 +213,27 @@ Replace self-deprecation with actual identity and a specific request; acknowledg
 
 ## DW-029 · Contact a supervisor
 
+**Mode**: Draft
+
 ```text
-Make the supplied material clear, direct and informative. Organize it around the
-judgment or action the reader needs. Remove repetitive retreat and empty preambles.
-Ground facts, numbers, scope, responsibility and commitments in the material; keep
-meaningful conditions next to the claims they qualify. List missing facts
-separately.
+Make the supplied material clear, direct and informative. Organize it around
+the judgment or action the reader needs. Remove repetitive retreat and empty
+preambles. Ground facts, numbers, scope, responsibility and commitments in
+the material; keep meaningful conditions next to the claims they qualify.
+List missing facts separately.
 
 Task: Organize the email around real identity, relevant experience, research
-interest and a specific request. Preserve courtesy; do not fabricate fit, reading
-experience or availability.
+interest and a specific request. Preserve courtesy; do not fabricate fit,
+reading experience or availability.
 
 Output: An email subject and body with actual identity, relevant experience and a
 specific request.
 
 Input material:
 Identity: [fill in]
-actual experience: [fill in]
-interests: [fill in]
-purpose: [fill in]
+Actual experience: [fill in]
+Interests: [fill in]
+Purpose: [fill in]
 ```
 
 <details>
@@ -251,25 +263,27 @@ Replace self-deprecation with actual identity and a specific request; acknowledg
 
 ## DW-030 · Apology and repair
 
+**Mode**: Draft
+
 ```text
-Make the supplied material clear, direct and informative. Organize it around the
-judgment or action the reader needs. Remove repetitive retreat and empty preambles.
-Ground facts, numbers, scope, responsibility and commitments in the material; keep
-meaningful conditions next to the claims they qualify. List missing facts
-separately.
+Make the supplied material clear, direct and informative. Organize it around
+the judgment or action the reader needs. Remove repetitive retreat and empty
+preambles. Ground facts, numbers, scope, responsibility and commitments in
+the material; keep meaningful conditions next to the claims they qualify.
+List missing facts separately.
 
 Task: Keep acknowledgment, actual impact and feasible repair. Remove repetitive
-self-blame and excuses without turning an apology into a responsibility-free status
-update.
+self-blame and excuses without turning an apology into a responsibility-free
+status update.
 
 Output: An apology and repair note stating what happened, impact and feasible
 remedy.
 
 Input material:
 Facts: [fill in]
-responsibility: [fill in]
-impact: [fill in]
-feasible repair: [fill in]
+Responsibility: [fill in]
+Impact: [fill in]
+Feasible repair: [fill in]
 ```
 
 <details>

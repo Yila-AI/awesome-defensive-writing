@@ -1,6 +1,6 @@
 # Browse prompts by task
 
-60 prompts · 24 examples · 中文 / English
+60 prompts · 25 cases · English / Chinese
 
 Choose a task, copy a prompt and add your material. Follow the case link for supplied facts, a revision and the reasoning behind it.
 

@@ -81,8 +81,8 @@
         "en": "Sentence-level diagnosis"
       },
       "prompt": {
-        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：逐句判断信息功能。\n仅标记疑似冗余处，说明删除会不会损失证据、范围或行动信息；\n证据不足时标为待核实，不推断作者动机。\n\n输出：逐句表：原句、信息作用、处理建议、依据；\n最后给最小修改稿。\n\n输入材料：\n正文：[填写]\n读者与用途：[填写]\n可用事实：[填写]",
-        "en": "Make the supplied material clear, direct and informative. Organize it around the\njudgment or action the reader needs. Remove repetitive retreat and empty preambles.\nGround facts, numbers, scope, responsibility and commitments in the material; keep\nmeaningful conditions next to the claims they qualify. List missing facts\nseparately.\n\nTask: Identify each suspect sentence's function and what information would be lost\nby removing it. Flag only relevant passages; mark uncertain judgments for\nverification rather than inferring author motives.\n\nOutput: A sentence table: original, information function, action and grounds; then a\nminimally revised passage.\n\nInput material:\nText: [fill in]\naudience and purpose: [fill in]\nsupporting facts: [fill in]"
+        "zh": "检查给定文字，\n解释每个可疑限定的实际作用。\n以材料中的证据与条件为依据，\n区分有用信息与重复铺垫。\n按本次要求输出诊断。\n\n任务：逐句判断信息功能。\n仅标记疑似冗余处，\n说明删除会不会损失证据、范围或行动信息；\n证据不足时标为待核实，\n不推断作者动机。\n\n输出：逐句表：原句、信息作用、处理建议、依据；\n最后给最小修改稿。\n\n输入材料：\n正文：[填写]\n读者与用途：[填写]\n可用事实：[填写]",
+        "en": "Inspect the passage and explain the function of each suspect qualification.\nUse the supplied evidence and conditions to distinguish useful information\nfrom repetition. Return the requested diagnosis.\n\nTask: Identify each suspect sentence's function and what information would be lost\nby removing it. Flag only relevant passages; mark uncertain judgments for\nverification rather than inferring author motives.\n\nOutput: A sentence table: original, information function, action and grounds; then a\nminimally revised passage.\n\nInput material:\nText: [fill in]\nAudience and purpose: [fill in]\nSupporting facts: [fill in]"
       },
       "example_id": "EX-01",
       "validation": "editorial-draft",
@@ -96,8 +96,8 @@
         ],
         "en": [
           "Text",
-          "audience and purpose",
-          "supporting facts"
+          "Audience and purpose",
+          "Supporting facts"
         ]
       },
       "output": {
@@ -114,8 +114,8 @@
         "en": "Minimal editing"
       },
       "prompt": {
-        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：优先保留原句结构与作者声音，只改影响理解的词句。\n区分语法、组织和主张强度的变化，不把温和措辞机械改成强硬措辞。\n\n输出：可直接替换的正文；\n再列最重要的语言或结构修改。\n\n输入材料：\n原文：[填写]\n作者希望保留的语气：[填写]",
-        "en": "Make the supplied material clear, direct and informative. Organize it around the\njudgment or action the reader needs. Remove repetitive retreat and empty preambles.\nGround facts, numbers, scope, responsibility and commitments in the material; keep\nmeaningful conditions next to the claims they qualify. List missing facts\nseparately.\n\nTask: Keep the author's voice and sentence structure where they work. Separate\ngrammar and organization edits from changes in claim strength; do not mechanically\nmake mild phrasing forceful.\n\nOutput: Replacement copy followed by the most important language or structural\nedits.\n\nInput material:\nDraft: [fill in]\ntone to preserve: [fill in]"
+        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，\n删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：优先保留原句结构与作者声音，\n只改影响理解的词句。\n区分语法、组织和主张强度的变化，\n不把温和措辞机械改成强硬措辞。\n\n输出：可直接替换的正文；\n再列最重要的语言或结构修改。\n\n输入材料：\n原文：[填写]\n作者希望保留的语气：[填写]",
+        "en": "Make the supplied material clear, direct and informative. Organize it around\nthe judgment or action the reader needs. Remove repetitive retreat and empty\npreambles. Ground facts, numbers, scope, responsibility and commitments in\nthe material; keep meaningful conditions next to the claims they qualify.\nList missing facts separately.\n\nTask: Keep the author's voice and sentence structure where they work. Separate\ngrammar and organization edits from changes in claim strength; do not\nmechanically make mild phrasing forceful.\n\nOutput: Replacement copy followed by the most important language or structural\nedits.\n\nInput material:\nDraft: [fill in]\nTone to preserve: [fill in]"
       },
       "example_id": "EX-01",
       "validation": "editorial-draft",
@@ -128,14 +128,14 @@
         ],
         "en": [
           "Draft",
-          "tone to preserve"
+          "Tone to preserve"
         ]
       },
       "output": {
         "zh": "可直接替换的正文；再列最重要的语言或结构修改。",
         "en": "Replacement copy followed by the most important language or structural edits."
       },
-      "mode": "task-specific"
+      "mode": "revise"
     },
     {
       "id": "DW-003",
@@ -145,8 +145,8 @@
         "en": "Claim and grounds"
       },
       "prompt": {
-        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：找到段落真正回答的问题，先写有材料支持的回答，再接依据和必要条件。\n若原文只有问题没有结论，就写明尚待回答，不替作者立场。\n\n输出：先给明确回答，再按依据、必要条件组织段落。\n\n输入材料：\n段落：[填写]\n要回答的问题：[填写]\n证据：[填写]",
-        "en": "Make the supplied material clear, direct and informative. Organize it around the\njudgment or action the reader needs. Remove repetitive retreat and empty preambles.\nGround facts, numbers, scope, responsibility and commitments in the material; keep\nmeaningful conditions next to the claims they qualify. List missing facts\nseparately.\n\nTask: Find the question the paragraph answers. Lead with the supported answer, then\nits grounds and conditions. If no conclusion is available, state the open question\ninstead of inventing a position.\n\nOutput: A direct answer followed by grounds and necessary conditions.\n\nInput material:\nPassage: [fill in]\nquestion: [fill in]\nevidence: [fill in]"
+        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，\n删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：找到段落真正回答的问题，\n先写有材料支持的回答，\n再接依据和必要条件。\n若原文只有问题没有结论，\n就写明尚待回答，\n不替作者立场。\n\n输出：先给明确回答，\n再按依据、必要条件组织段落。\n\n输入材料：\n段落：[填写]\n要回答的问题：[填写]\n证据：[填写]",
+        "en": "Make the supplied material clear, direct and informative. Organize it around\nthe judgment or action the reader needs. Remove repetitive retreat and empty\npreambles. Ground facts, numbers, scope, responsibility and commitments in\nthe material; keep meaningful conditions next to the claims they qualify.\nList missing facts separately.\n\nTask: Find the question the paragraph answers. Lead with the supported answer,\nthen its grounds and conditions. If no conclusion is available, state the\nopen question instead of inventing a position.\n\nOutput: A direct answer followed by grounds and necessary conditions.\n\nInput material:\nPassage: [fill in]\nQuestion: [fill in]\nEvidence: [fill in]"
       },
       "example_id": "EX-01",
       "validation": "editorial-draft",
@@ -160,15 +160,15 @@
         ],
         "en": [
           "Passage",
-          "question",
-          "evidence"
+          "Question",
+          "Evidence"
         ]
       },
       "output": {
         "zh": "先给明确回答，再按依据、必要条件组织段落。",
         "en": "A direct answer followed by grounds and necessary conditions."
       },
-      "mode": "task-specific"
+      "mode": "draft"
     },
     {
       "id": "DW-004",
@@ -178,8 +178,8 @@
         "en": "Remove repeated caveats"
       },
       "prompt": {
-        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：把重复限定按含义合并。\n相同词语可能限制不同主张，只有作用相同才合并；\n会影响读者当场理解的条件留在对应句旁。\n\n输出：合并后的正文；\n列出已合并的重复限定及保留位置。\n\n输入材料：\n正文：[填写]\n上下文：[填写]",
-        "en": "Make the supplied material clear, direct and informative. Organize it around the\njudgment or action the reader needs. Remove repetitive retreat and empty preambles.\nGround facts, numbers, scope, responsibility and commitments in the material; keep\nmeaningful conditions next to the claims they qualify. List missing facts\nseparately.\n\nTask: Merge caveats only when they qualify the same claim in the same way. Similar\nwording can serve different purposes. Keep conditions next to claims when needed for\ninterpretation.\n\nOutput: Revised copy and the repeated qualifications merged, with retained\nconditions located.\n\nInput material:\nText: [fill in]\nsurrounding context: [fill in]"
+        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，\n删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：把重复限定按含义合并。\n相同词语可能限制不同主张，\n只有作用相同才合并；\n会影响读者当场理解的条件留在对应句旁。\n\n输出：合并后的正文；\n列出已合并的重复限定及保留位置。\n\n输入材料：\n正文：[填写]\n上下文：[填写]",
+        "en": "Make the supplied material clear, direct and informative. Organize it around\nthe judgment or action the reader needs. Remove repetitive retreat and empty\npreambles. Ground facts, numbers, scope, responsibility and commitments in\nthe material; keep meaningful conditions next to the claims they qualify.\nList missing facts separately.\n\nTask: Merge caveats only when they qualify the same claim in the same way. Similar\nwording can serve different purposes. Keep conditions next to claims when\nneeded for interpretation.\n\nOutput: Revised copy and the repeated qualifications merged, with retained\nconditions located.\n\nInput material:\nText: [fill in]\nSurrounding context: [fill in]"
       },
       "example_id": "EX-02",
       "validation": "editorial-draft",
@@ -192,14 +192,14 @@
         ],
         "en": [
           "Text",
-          "surrounding context"
+          "Surrounding context"
         ]
       },
       "output": {
         "zh": "合并后的正文；列出已合并的重复限定及保留位置。",
         "en": "Revised copy and the repeated qualifications merged, with retained conditions located."
       },
-      "mode": "task-specific"
+      "mode": "revise"
     },
     {
       "id": "DW-005",
@@ -209,8 +209,8 @@
         "en": "Make advice actionable"
       },
       "prompt": {
-        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：找出建议中已有的动作、先后顺序、资源和判断标准，整理成可执行表达。\n未知负责人或期限列为待确认，不新增承诺或凭空量化。\n\n输出：按顺序列出动作、完成标志与已知依赖；\n缺失信息另列。\n\n输入材料：\n建议草稿：[填写]\n现有资源：[填写]\n目标：[填写]",
-        "en": "Make the supplied material clear, direct and informative. Organize it around the\njudgment or action the reader needs. Remove repetitive retreat and empty preambles.\nGround facts, numbers, scope, responsibility and commitments in the material; keep\nmeaningful conditions next to the claims they qualify. List missing facts\nseparately.\n\nTask: Extract actions, sequence, resources and decision criteria already supported\nby the material. Identify missing owners or deadlines separately without creating\ncommitments or arbitrary numbers.\n\nOutput: Ordered actions, completion checks and known dependencies; missing facts\nseparately.\n\nInput material:\nAdvice draft: [fill in]\nresources: [fill in]\ngoal: [fill in]"
+        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，\n删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：找出建议中已有的动作、先后顺序、资源和判断标准，\n整理成可执行表达。\n未知负责人或期限列为待确认，\n不新增承诺或凭空量化。\n\n输出：按顺序列出动作、完成标志与已知依赖；\n缺失信息另列。\n\n输入材料：\n建议草稿：[填写]\n现有资源：[填写]\n目标：[填写]",
+        "en": "Make the supplied material clear, direct and informative. Organize it around\nthe judgment or action the reader needs. Remove repetitive retreat and empty\npreambles. Ground facts, numbers, scope, responsibility and commitments in\nthe material; keep meaningful conditions next to the claims they qualify.\nList missing facts separately.\n\nTask: Extract actions, sequence, resources and decision criteria already supported\nby the material. Identify missing owners or deadlines separately without\ncreating commitments or arbitrary numbers.\n\nOutput: Ordered actions, completion checks and known dependencies; missing facts\nseparately.\n\nInput material:\nAdvice draft: [fill in]\nResources: [fill in]\nGoal: [fill in]"
       },
       "example_id": "EX-06",
       "validation": "editorial-draft",
@@ -224,15 +224,15 @@
         ],
         "en": [
           "Advice draft",
-          "resources",
-          "goal"
+          "Resources",
+          "Goal"
         ]
       },
       "output": {
         "zh": "按顺序列出动作、完成标志与已知依赖；缺失信息另列。",
         "en": "Ordered actions, completion checks and known dependencies; missing facts separately."
       },
-      "mode": "task-specific"
+      "mode": "draft"
     },
     {
       "id": "DW-006",
@@ -242,8 +242,8 @@
         "en": "Evaluate a qualification"
       },
       "prompt": {
-        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：对每个可疑限定给出它具体改变了什么，以及输入中的依据。\n可以删除重复的可能性表达，但保留预测、目标、估计和条件的性质。\n\n输出：逐项给出限定的作用、依据和保留或改写建议。\n\n输入材料：\n原句：[填写]\n事实背景：[填写]\n不确定性来源：[填写]",
-        "en": "Make the supplied material clear, direct and informative. Organize it around the\njudgment or action the reader needs. Remove repetitive retreat and empty preambles.\nGround facts, numbers, scope, responsibility and commitments in the material; keep\nmeaningful conditions next to the claims they qualify. List missing facts\nseparately.\n\nTask: For each suspect qualification, explain what it changes and which supplied\nfacts justify it. Remove stacked hedges while preserving forecasts, targets,\nestimates and conditions as such.\n\nOutput: The function, grounds and keep-or-revise recommendation for each\nqualification.\n\nInput material:\nSentence: [fill in]\nfactual context: [fill in]\nuncertainty sources: [fill in]"
+        "zh": "检查给定文字，\n解释每个可疑限定的实际作用。\n以材料中的证据与条件为依据，\n区分有用信息与重复铺垫。\n按本次要求输出诊断。\n\n任务：对每个可疑限定给出它具体改变了什么，\n以及输入中的依据。\n可以删除重复的可能性表达，\n但保留预测、目标、估计和条件的性质。\n\n输出：逐项给出限定的作用、依据和保留或改写建议。\n\n输入材料：\n原句：[填写]\n事实背景：[填写]\n不确定性来源：[填写]",
+        "en": "Inspect the passage and explain the function of each suspect qualification.\nUse the supplied evidence and conditions to distinguish useful information\nfrom repetition. Return the requested diagnosis.\n\nTask: For each suspect qualification, explain what it changes and which supplied\nfacts justify it. Remove stacked hedges while preserving forecasts, targets,\nestimates and conditions as such.\n\nOutput: The function, grounds and keep-or-revise recommendation for each\nqualification.\n\nInput material:\nSentence: [fill in]\nFactual context: [fill in]\nUncertainty sources: [fill in]"
       },
       "example_id": "EX-02",
       "validation": "editorial-draft",
@@ -257,8 +257,8 @@
         ],
         "en": [
           "Sentence",
-          "factual context",
-          "uncertainty sources"
+          "Factual context",
+          "Uncertainty sources"
         ]
       },
       "output": {
@@ -275,8 +275,8 @@
         "en": "Abstract claim strength"
       },
       "prompt": {
-        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：按目的、设计、结果与贡献整理摘要。\n将每项结论对齐对应结果；\n没有因果识别依据时保持关联性描述，不能用更强动词充当语言优化。\n\n输出：摘要正文；\n另列需要核对证据强度的主张。\n\n输入材料：\n摘要：[填写]\n研究设计：[填写]\n主要结果：[填写]",
-        "en": "Make the supplied material clear, direct and informative. Organize it around the\njudgment or action the reader needs. Remove repetitive retreat and empty preambles.\nGround facts, numbers, scope, responsibility and commitments in the material; keep\nmeaningful conditions next to the claims they qualify. List missing facts\nseparately.\n\nTask: Organize the abstract around purpose, design, findings and contribution. Tie\neach claim to a result; preserve association language without a causal\nidentification basis.\n\nOutput: Abstract copy, with any claim-strength questions listed separately.\n\nInput material:\nAbstract: [fill in]\ndesign: [fill in]\nmain results: [fill in]"
+        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，\n删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：按目的、设计、结果与贡献整理摘要。\n将每项结论对齐对应结果；\n没有因果识别依据时保持关联性描述，\n不能用更强动词充当语言优化。\n\n输出：摘要正文；\n另列需要核对证据强度的主张。\n\n输入材料：\n摘要：[填写]\n研究设计：[填写]\n主要结果：[填写]",
+        "en": "Make the supplied material clear, direct and informative. Organize it around\nthe judgment or action the reader needs. Remove repetitive retreat and empty\npreambles. Ground facts, numbers, scope, responsibility and commitments in\nthe material; keep meaningful conditions next to the claims they qualify.\nList missing facts separately.\n\nTask: Organize the abstract around purpose, design, findings and contribution. Tie\neach claim to a result; preserve association language without a causal\nidentification basis.\n\nOutput: Abstract copy, with any claim-strength questions listed separately.\n\nInput material:\nAbstract: [fill in]\nDesign: [fill in]\nMain results: [fill in]"
       },
       "example_id": "EX-03",
       "validation": "editorial-draft",
@@ -290,15 +290,15 @@
         ],
         "en": [
           "Abstract",
-          "design",
-          "main results"
+          "Design",
+          "Main results"
         ]
       },
       "output": {
         "zh": "摘要正文；另列需要核对证据强度的主张。",
         "en": "Abstract copy, with any claim-strength questions listed separately."
       },
-      "mode": "task-specific"
+      "mode": "draft"
     },
     {
       "id": "DW-008",
@@ -308,8 +308,8 @@
         "en": "Results paragraph"
       },
       "prompt": {
-        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：先报告观察到的结果、单位和比较对象，再在有依据时解释。\n保留区间、分母、方向和分析口径，不添加未提供的机制或显著性。\n\n输出：结果段落；\n将超出直接观察的解释另列。\n\n输入材料：\n结果表：[填写]\n比较口径：[填写]\n原段落：[填写]",
-        "en": "Make the supplied material clear, direct and informative. Organize it around the\njudgment or action the reader needs. Remove repetitive retreat and empty preambles.\nGround facts, numbers, scope, responsibility and commitments in the material; keep\nmeaningful conditions next to the claims they qualify. List missing facts\nseparately.\n\nTask: Report observed results, units and comparators before supported\ninterpretation. Preserve intervals, denominators, direction and analysis\ndefinitions; do not invent mechanisms or significance.\n\nOutput: A results paragraph, with interpretations beyond direct observation\nseparated.\n\nInput material:\nResults table: [fill in]\ncomparison definitions: [fill in]\ndraft: [fill in]"
+        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，\n删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：先报告观察到的结果、单位和比较对象，\n再在有依据时解释。\n保留区间、分母、方向和分析口径，\n不添加未提供的机制或显著性。\n\n输出：结果段落；\n将超出直接观察的解释另列。\n\n输入材料：\n结果表：[填写]\n比较口径：[填写]\n原段落：[填写]",
+        "en": "Make the supplied material clear, direct and informative. Organize it around\nthe judgment or action the reader needs. Remove repetitive retreat and empty\npreambles. Ground facts, numbers, scope, responsibility and commitments in\nthe material; keep meaningful conditions next to the claims they qualify.\nList missing facts separately.\n\nTask: Report observed results, units and comparators before supported\ninterpretation. Preserve intervals, denominators, direction and analysis\ndefinitions; do not invent mechanisms or significance.\n\nOutput: A results paragraph, with interpretations beyond direct observation\nseparated.\n\nInput material:\nResults table: [fill in]\nComparison definitions: [fill in]\nDraft: [fill in]"
       },
       "example_id": "EX-03",
       "validation": "editorial-draft",
@@ -323,15 +323,15 @@
         ],
         "en": [
           "Results table",
-          "comparison definitions",
-          "draft"
+          "Comparison definitions",
+          "Draft"
         ]
       },
       "output": {
         "zh": "结果段落；将超出直接观察的解释另列。",
         "en": "A results paragraph, with interpretations beyond direct observation separated."
       },
-      "mode": "task-specific"
+      "mode": "draft"
     },
     {
       "id": "DW-009",
@@ -341,8 +341,8 @@
         "en": "Discussion and limitations"
       },
       "prompt": {
-        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：将发现、解释、替代解释和真实局限分开。\n每个局限说明具体限制哪项结论；\n删除只反驳作者未提出主张的重复句，保留读者可能误解的关键边界。\n\n输出：按发现、解释、具体局限组织讨论段落。\n\n输入材料：\n讨论草稿：[填写]\n方法：[填写]\n结果：[填写]\n替代解释材料：[填写]",
-        "en": "Make the supplied material clear, direct and informative. Organize it around the\njudgment or action the reader needs. Remove repetitive retreat and empty preambles.\nGround facts, numbers, scope, responsibility and commitments in the material; keep\nmeaningful conditions next to the claims they qualify. List missing facts\nseparately.\n\nTask: Distinguish findings, explanations, alternatives and material limitations.\nState which claim each limitation constrains. Remove redundant denials while\nretaining boundaries readers need.\n\nOutput: A discussion organized around findings, interpretation and specific\nlimitations.\n\nInput material:\nDiscussion draft: [fill in]\nmethods: [fill in]\nresults: [fill in]\nalternatives: [fill in]"
+        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，\n删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：将发现、解释、替代解释和真实局限分开。\n每个局限说明具体限制哪项结论；\n删除只反驳作者未提出主张的重复句，\n保留读者可能误解的关键边界。\n\n输出：按发现、解释、具体局限组织讨论段落。\n\n输入材料：\n讨论草稿：[填写]\n方法：[填写]\n结果：[填写]\n替代解释材料：[填写]",
+        "en": "Make the supplied material clear, direct and informative. Organize it around\nthe judgment or action the reader needs. Remove repetitive retreat and empty\npreambles. Ground facts, numbers, scope, responsibility and commitments in\nthe material; keep meaningful conditions next to the claims they qualify.\nList missing facts separately.\n\nTask: Distinguish findings, explanations, alternatives and material limitations.\nState which claim each limitation constrains. Remove redundant denials while\nretaining boundaries readers need.\n\nOutput: A discussion organized around findings, interpretation and specific\nlimitations.\n\nInput material:\nDiscussion draft: [fill in]\nMethods: [fill in]\nResults: [fill in]\nAlternatives: [fill in]"
       },
       "example_id": "EX-03",
       "validation": "editorial-draft",
@@ -357,16 +357,16 @@
         ],
         "en": [
           "Discussion draft",
-          "methods",
-          "results",
-          "alternatives"
+          "Methods",
+          "Results",
+          "Alternatives"
         ]
       },
       "output": {
         "zh": "按发现、解释、具体局限组织讨论段落。",
         "en": "A discussion organized around findings, interpretation and specific limitations."
       },
-      "mode": "task-specific"
+      "mode": "revise"
     },
     {
       "id": "DW-010",
@@ -376,8 +376,8 @@
         "en": "Contribution statement"
       },
       "prompt": {
-        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：根据已有成果说明解决了什么问题、相对什么工作增加了什么。\n删除仪式性自贬，也不使用首次、突破或全面等没有比较证据的评价。\n\n输出：贡献段落；\n列出每项贡献对应的现有成果。\n\n输入材料：\n研究成果：[填写]\n相关工作：[填写]\n贡献草稿：[填写]",
-        "en": "Make the supplied material clear, direct and informative. Organize it around the\njudgment or action the reader needs. Remove repetitive retreat and empty preambles.\nGround facts, numbers, scope, responsibility and commitments in the material; keep\nmeaningful conditions next to the claims they qualify. List missing facts\nseparately.\n\nTask: Describe the problem addressed and the addition relative to prior work. Remove\nritual self-deprecation without introducing unsupported novelty or superiority\nclaims.\n\nOutput: A contribution paragraph and the supplied result supporting each\ncontribution.\n\nInput material:\nFindings: [fill in]\nprior work: [fill in]\ncontribution draft: [fill in]"
+        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，\n删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：根据已有成果说明解决了什么问题、相对什么工作增加了什么。\n删除仪式性自贬，\n也不使用首次、突破或全面等没有比较证据的评价。\n\n输出：贡献段落；\n列出每项贡献对应的现有成果。\n\n输入材料：\n研究成果：[填写]\n相关工作：[填写]\n贡献草稿：[填写]",
+        "en": "Make the supplied material clear, direct and informative. Organize it around\nthe judgment or action the reader needs. Remove repetitive retreat and empty\npreambles. Ground facts, numbers, scope, responsibility and commitments in\nthe material; keep meaningful conditions next to the claims they qualify.\nList missing facts separately.\n\nTask: Describe the problem addressed and the addition relative to prior work.\nRemove ritual self-deprecation without introducing unsupported novelty or\nsuperiority claims.\n\nOutput: A contribution paragraph and the supplied result supporting each\ncontribution.\n\nInput material:\nFindings: [fill in]\nPrior work: [fill in]\nContribution draft: [fill in]"
       },
       "example_id": "EX-04",
       "validation": "editorial-draft",
@@ -391,15 +391,15 @@
         ],
         "en": [
           "Findings",
-          "prior work",
-          "contribution draft"
+          "Prior work",
+          "Contribution draft"
         ]
       },
       "output": {
         "zh": "贡献段落；列出每项贡献对应的现有成果。",
         "en": "A contribution paragraph and the supplied result supporting each contribution."
       },
-      "mode": "task-specific"
+      "mode": "draft"
     },
     {
       "id": "DW-011",
@@ -409,8 +409,8 @@
         "en": "A position in a review"
       },
       "prompt": {
-        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：依据给定文献区分共识、分歧与材料空白。\n用具体比较替代一概而论的正反平衡，不把未检索到等同于不存在，不编造引文。\n\n输出：综述段落；\n随后列出文献一致处、差异与材料空白。\n\n输入材料：\n文献笔记与引文：[填写]\n检索范围：[填写]\n段落：[填写]",
-        "en": "Make the supplied material clear, direct and informative. Organize it around the\njudgment or action the reader needs. Remove repetitive retreat and empty preambles.\nGround facts, numbers, scope, responsibility and commitments in the material; keep\nmeaningful conditions next to the claims they qualify. List missing facts\nseparately.\n\nTask: Distinguish agreement, disagreement and gaps in the supplied literature.\nReplace empty balance with concrete comparisons; absence from the search is not\nproof of nonexistence.\n\nOutput: A synthesis paragraph followed by agreement, differences and gaps in the\nsupplied notes.\n\nInput material:\nSource notes and citations: [fill in]\nsearch scope: [fill in]\ndraft: [fill in]"
+        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，\n删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：依据给定文献区分共识、分歧与材料空白。\n用具体比较替代一概而论的正反平衡，\n不把未检索到等同于不存在，\n不编造引文。\n\n输出：综述段落；\n随后列出文献一致处、差异与材料空白。\n\n输入材料：\n文献笔记与引文：[填写]\n检索范围：[填写]\n段落：[填写]",
+        "en": "Make the supplied material clear, direct and informative. Organize it around\nthe judgment or action the reader needs. Remove repetitive retreat and empty\npreambles. Ground facts, numbers, scope, responsibility and commitments in\nthe material; keep meaningful conditions next to the claims they qualify.\nList missing facts separately.\n\nTask: Distinguish agreement, disagreement and gaps in the supplied literature.\nReplace empty balance with concrete comparisons; absence from the search is\nnot proof of nonexistence. Preserve supplied citations; do not invent\ncitations.\n\nOutput: A synthesis paragraph followed by agreement, differences and gaps in the\nsupplied notes.\n\nInput material:\nSource notes and citations: [fill in]\nSearch scope: [fill in]\nDraft: [fill in]"
       },
       "example_id": "EX-23",
       "validation": "editorial-draft",
@@ -424,15 +424,15 @@
         ],
         "en": [
           "Source notes and citations",
-          "search scope",
-          "draft"
+          "Search scope",
+          "Draft"
         ]
       },
       "output": {
         "zh": "综述段落；随后列出文献一致处、差异与材料空白。",
         "en": "A synthesis paragraph followed by agreement, differences and gaps in the supplied notes."
       },
-      "mode": "task-specific"
+      "mode": "draft"
     },
     {
       "id": "DW-012",
@@ -442,8 +442,8 @@
         "en": "Reviewer response"
       },
       "prompt": {
-        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：逐点判断意见成立程度，先回应实质问题，再说明已完成修改与位置。\n未执行的分析写成计划；\n不自动完全同意，不虚构页码或实验。\n\n输出：逐点回复：意见判断、回应、实际修改、待补工作。\n\n输入材料：\n审稿意见：[填写]\n证据：[填写]\n实际完成的修改：[填写]",
-        "en": "Make the supplied material clear, direct and informative. Organize it around the\njudgment or action the reader needs. Remove repetitive retreat and empty preambles.\nGround facts, numbers, scope, responsibility and commitments in the material; keep\nmeaningful conditions next to the claims they qualify. List missing facts\nseparately.\n\nTask: Assess each objection and answer its substance before reporting completed\nedits and locations. Label unperformed analyses as plans; do not invent agreement,\npage numbers or experiments.\n\nOutput: A point-by-point response: assessment, answer, completed changes and\nremaining work.\n\nInput material:\nReviewer comments: [fill in]\nevidence: [fill in]\ncompleted changes: [fill in]"
+        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，\n删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：逐点判断意见成立程度，\n先回应实质问题，\n再说明已完成修改与位置。\n未执行的分析写成计划；\n不自动完全同意，\n不虚构页码或实验。\n\n输出：逐点回复：意见判断、回应、实际修改、待补工作。\n\n输入材料：\n审稿意见：[填写]\n证据：[填写]\n实际完成的修改：[填写]",
+        "en": "Make the supplied material clear, direct and informative. Organize it around\nthe judgment or action the reader needs. Remove repetitive retreat and empty\npreambles. Ground facts, numbers, scope, responsibility and commitments in\nthe material; keep meaningful conditions next to the claims they qualify.\nList missing facts separately.\n\nTask: Assess each objection and answer its substance before reporting completed\nedits and locations. Label unperformed analyses as plans; do not invent\nagreement, page numbers or experiments.\n\nOutput: A point-by-point response: assessment, answer, completed changes and\nremaining work.\n\nInput material:\nReviewer comments: [fill in]\nEvidence: [fill in]\nCompleted changes: [fill in]"
       },
       "example_id": "EX-04",
       "validation": "editorial-draft",
@@ -457,15 +457,15 @@
         ],
         "en": [
           "Reviewer comments",
-          "evidence",
-          "completed changes"
+          "Evidence",
+          "Completed changes"
         ]
       },
       "output": {
         "zh": "逐点回复：意见判断、回应、实际修改、待补工作。",
         "en": "A point-by-point response: assessment, answer, completed changes and remaining work."
       },
-      "mode": "task-specific"
+      "mode": "draft"
     },
     {
       "id": "DW-013",
@@ -475,8 +475,8 @@
         "en": "Problem statement"
       },
       "prompt": {
-        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：用目标人群、现有障碍和后果说明项目必要性。\n只有材料支持时才写规模和紧迫性，删除空泛宏大开场及没有依据的自我辩护。\n\n输出：问题陈述：谁遇到什么障碍、产生什么后果、依据是什么。\n\n输入材料：\n项目背景：[填写]\n对象：[填写]\n已有证据：[填写]",
-        "en": "Make the supplied material clear, direct and informative. Organize it around the\njudgment or action the reader needs. Remove repetitive retreat and empty preambles.\nGround facts, numbers, scope, responsibility and commitments in the material; keep\nmeaningful conditions next to the claims they qualify. List missing facts\nseparately.\n\nTask: Explain the affected group, current obstacle and consequences. Describe scale\nand urgency only when supported; remove grand openings and unsupported\nself-justification.\n\nOutput: A problem statement identifying affected users, obstacle, consequence and\nevidence.\n\nInput material:\nBackground: [fill in]\naffected users: [fill in]\nevidence: [fill in]"
+        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，\n删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：用目标人群、现有障碍和后果说明项目必要性。\n只有材料支持时才写规模和紧迫性，\n删除空泛宏大开场及没有依据的自我辩护。\n\n输出：问题陈述：谁遇到什么障碍、产生什么后果、依据是什么。\n\n输入材料：\n项目背景：[填写]\n对象：[填写]\n已有证据：[填写]",
+        "en": "Make the supplied material clear, direct and informative. Organize it around\nthe judgment or action the reader needs. Remove repetitive retreat and empty\npreambles. Ground facts, numbers, scope, responsibility and commitments in\nthe material; keep meaningful conditions next to the claims they qualify.\nList missing facts separately.\n\nTask: Explain the affected group, current obstacle and consequences. Describe\nscale and urgency only when supported; remove grand openings and unsupported\nself-justification.\n\nOutput: A problem statement identifying affected users, obstacle, consequence and\nevidence.\n\nInput material:\nBackground: [fill in]\nAffected users: [fill in]\nEvidence: [fill in]"
       },
       "example_id": "EX-05",
       "validation": "editorial-draft",
@@ -490,15 +490,15 @@
         ],
         "en": [
           "Background",
-          "affected users",
-          "evidence"
+          "Affected users",
+          "Evidence"
         ]
       },
       "output": {
         "zh": "问题陈述：谁遇到什么障碍、产生什么后果、依据是什么。",
         "en": "A problem statement identifying affected users, obstacle, consequence and evidence."
       },
-      "mode": "task-specific"
+      "mode": "draft"
     },
     {
       "id": "DW-014",
@@ -508,8 +508,8 @@
         "en": "Research objectives"
       },
       "prompt": {
-        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：把目标拆成研究问题、计划动作和可判定成果。\n保持目标与已取得结果的区别，不因担心失败而把目标写成无法验收的尝试。\n\n输出：目标清单：研究问题、计划动作与可检查的成果。\n\n输入材料：\n研究问题：[填写]\n资源：[填写]\n目标草稿：[填写]",
-        "en": "Make the supplied material clear, direct and informative. Organize it around the\njudgment or action the reader needs. Remove repetitive retreat and empty preambles.\nGround facts, numbers, scope, responsibility and commitments in the material; keep\nmeaningful conditions next to the claims they qualify. List missing facts\nseparately.\n\nTask: Separate research questions, planned actions and assessable outputs. Keep\nobjectives distinct from achieved results; avoid vague attempts that cannot be\nevaluated.\n\nOutput: Objectives with the research question, planned action and assessable output.\n\nInput material:\nResearch questions: [fill in]\nresources: [fill in]\nobjectives draft: [fill in]"
+        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，\n删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：把目标拆成研究问题、计划动作和可判定成果。\n保持目标与已取得结果的区别，\n不因担心失败而把目标写成无法验收的尝试。\n\n输出：目标清单：研究问题、计划动作与可检查的成果。\n\n输入材料：\n研究问题：[填写]\n资源：[填写]\n目标草稿：[填写]",
+        "en": "Make the supplied material clear, direct and informative. Organize it around\nthe judgment or action the reader needs. Remove repetitive retreat and empty\npreambles. Ground facts, numbers, scope, responsibility and commitments in\nthe material; keep meaningful conditions next to the claims they qualify.\nList missing facts separately.\n\nTask: Separate research questions, planned actions and assessable outputs. Keep\nobjectives distinct from achieved results; avoid vague attempts that cannot\nbe evaluated.\n\nOutput: Objectives with the research question, planned action and assessable output.\n\nInput material:\nResearch questions: [fill in]\nResources: [fill in]\nObjectives draft: [fill in]"
       },
       "example_id": "EX-05",
       "validation": "editorial-draft",
@@ -523,15 +523,15 @@
         ],
         "en": [
           "Research questions",
-          "resources",
-          "objectives draft"
+          "Resources",
+          "Objectives draft"
         ]
       },
       "output": {
         "zh": "目标清单：研究问题、计划动作与可检查的成果。",
         "en": "Objectives with the research question, planned action and assessable output."
       },
-      "mode": "task-specific"
+      "mode": "draft"
     },
     {
       "id": "DW-015",
@@ -541,10 +541,10 @@
         "en": "Novelty without inflation"
       },
       "prompt": {
-        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：逐项把新增内容与已有方案对比，写清差异和证据。\n没有完整检索时不用全球首次；\n也不把有根据的贡献写成仅仅做了一点工作。\n\n输出：对照表：已有方案、本项目增加的内容、支持依据；\n再给创新点文字。\n\n输入材料：\n拟新增内容：[填写]\n相关方案：[填写]\n检索范围：[填写]",
-        "en": "Make the supplied material clear, direct and informative. Organize it around the\njudgment or action the reader needs. Remove repetitive retreat and empty preambles.\nGround facts, numbers, scope, responsibility and commitments in the material; keep\nmeaningful conditions next to the claims they qualify. List missing facts\nseparately.\n\nTask: Compare additions against prior approaches with evidence. Avoid first-ever\nclaims without a sufficient search, while retaining supported contributions without\nritual modesty.\n\nOutput: A comparison of prior approaches, the proposed addition and evidence; then\nnovelty copy.\n\nInput material:\nProposed additions: [fill in]\nprior approaches: [fill in]\nsearch scope: [fill in]"
+        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，\n删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：逐项把新增内容与已有方案对比，\n写清差异和证据。\n没有完整检索时不用全球首次；\n也不把有根据的贡献写成仅仅做了一点工作。\n\n输出：对照表：已有方案、本项目增加的内容、支持依据；\n再给创新点文字。\n\n输入材料：\n拟新增内容：[填写]\n相关方案：[填写]\n检索范围：[填写]",
+        "en": "Make the supplied material clear, direct and informative. Organize it around\nthe judgment or action the reader needs. Remove repetitive retreat and empty\npreambles. Ground facts, numbers, scope, responsibility and commitments in\nthe material; keep meaningful conditions next to the claims they qualify.\nList missing facts separately.\n\nTask: Compare additions against prior approaches with evidence. Avoid first-ever\nclaims without a sufficient search, while retaining supported contributions\nwithout ritual modesty.\n\nOutput: A comparison of prior approaches, the proposed addition and evidence; then\nnovelty copy.\n\nInput material:\nProposed additions: [fill in]\nPrior approaches: [fill in]\nSearch scope: [fill in]"
       },
-      "example_id": "EX-05",
+      "example_id": "EX-04",
       "validation": "editorial-draft",
       "author": "Yila",
       "license": "CC-BY-4.0",
@@ -556,15 +556,15 @@
         ],
         "en": [
           "Proposed additions",
-          "prior approaches",
-          "search scope"
+          "Prior approaches",
+          "Search scope"
         ]
       },
       "output": {
         "zh": "对照表：已有方案、本项目增加的内容、支持依据；再给创新点文字。",
         "en": "A comparison of prior approaches, the proposed addition and evidence; then novelty copy."
       },
-      "mode": "task-specific"
+      "mode": "draft"
     },
     {
       "id": "DW-016",
@@ -574,8 +574,8 @@
         "en": "Technical approach"
       },
       "prompt": {
-        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：依据输入写出阶段、输入输出、依赖和判断节点。\n保留关键前提和备选路径，删除不改变实施的泛泛谨慎句，不补造实验参数。\n\n输出：阶段表：输入、动作、输出、依赖与判断节点。\n\n输入材料：\n阶段：[填写]\n依赖：[填写]\n已知参数：[填写]\n可选路线：[填写]",
-        "en": "Make the supplied material clear, direct and informative. Organize it around the\njudgment or action the reader needs. Remove repetitive retreat and empty preambles.\nGround facts, numbers, scope, responsibility and commitments in the material; keep\nmeaningful conditions next to the claims they qualify. List missing facts\nseparately.\n\nTask: Describe stages, inputs, outputs, dependencies and decision points. Keep\nprerequisites and fallback paths; remove nonoperational caution without inventing\nexperimental parameters.\n\nOutput: Stages with inputs, actions, outputs, dependencies and decision points.\n\nInput material:\nStages: [fill in]\ndependencies: [fill in]\nknown parameters: [fill in]\noptions: [fill in]"
+        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，\n删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：依据输入写出阶段、输入输出、依赖和判断节点。\n保留关键前提和备选路径，\n删除不改变实施的泛泛谨慎句，\n不补造实验参数。\n\n输出：阶段表：输入、动作、输出、依赖与判断节点。\n\n输入材料：\n阶段：[填写]\n依赖：[填写]\n已知参数：[填写]\n可选路线：[填写]",
+        "en": "Make the supplied material clear, direct and informative. Organize it around\nthe judgment or action the reader needs. Remove repetitive retreat and empty\npreambles. Ground facts, numbers, scope, responsibility and commitments in\nthe material; keep meaningful conditions next to the claims they qualify.\nList missing facts separately.\n\nTask: Describe stages, inputs, outputs, dependencies and decision points. Keep\nprerequisites and fallback paths; remove nonoperational caution without\ninventing experimental parameters.\n\nOutput: Stages with inputs, actions, outputs, dependencies and decision points.\n\nInput material:\nStages: [fill in]\nDependencies: [fill in]\nKnown parameters: [fill in]\nOptions: [fill in]"
       },
       "example_id": "EX-06",
       "validation": "editorial-draft",
@@ -590,16 +590,16 @@
         ],
         "en": [
           "Stages",
-          "dependencies",
-          "known parameters",
-          "options"
+          "Dependencies",
+          "Known parameters",
+          "Options"
         ]
       },
       "output": {
         "zh": "阶段表：输入、动作、输出、依赖与判断节点。",
         "en": "Stages with inputs, actions, outputs, dependencies and decision points."
       },
-      "mode": "task-specific"
+      "mode": "draft"
     },
     {
       "id": "DW-017",
@@ -609,8 +609,8 @@
         "en": "Feasibility assessment"
       },
       "prompt": {
-        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：将已具备条件、待获得资源和未验证假设分开。\n给出与证据相称的可行性判断，不能把存在风险直接写成不可行，也不能把计划资源当成现\n有资源。\n\n输出：条件表：已具备、待获得、待验证；\n最后给可行性判断及依据。\n\n输入材料：\n资源现状：[填写]\n依赖：[填写]\n前期结果：[填写]",
-        "en": "Make the supplied material clear, direct and informative. Organize it around the\njudgment or action the reader needs. Remove repetitive retreat and empty preambles.\nGround facts, numbers, scope, responsibility and commitments in the material; keep\nmeaningful conditions next to the claims they qualify. List missing facts\nseparately.\n\nTask: Separate available capabilities, pending resources and untested assumptions.\nAssess feasibility proportionately; do not treat all risk as failure or planned\nresources as available.\n\nOutput: Available, pending and unverified conditions; then a feasibility assessment\nwith grounds.\n\nInput material:\nCurrent resources: [fill in]\ndependencies: [fill in]\npreliminary results: [fill in]"
+        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，\n删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：将已具备条件、待获得资源和未验证假设分开。\n给出与证据相称的可行性判断，\n不能把存在风险直接写成不可行，\n也不能把计划资源当成现有资源。\n\n输出：条件表：已具备、待获得、待验证；\n最后给可行性判断及依据。\n\n输入材料：\n资源现状：[填写]\n依赖：[填写]\n前期结果：[填写]",
+        "en": "Make the supplied material clear, direct and informative. Organize it around\nthe judgment or action the reader needs. Remove repetitive retreat and empty\npreambles. Ground facts, numbers, scope, responsibility and commitments in\nthe material; keep meaningful conditions next to the claims they qualify.\nList missing facts separately.\n\nTask: Separate available capabilities, pending resources and untested assumptions.\nAssess feasibility proportionately; do not treat all risk as failure or\nplanned resources as available.\n\nOutput: Available, pending and unverified conditions; then a feasibility assessment\nwith grounds.\n\nInput material:\nCurrent resources: [fill in]\nDependencies: [fill in]\nPreliminary results: [fill in]"
       },
       "example_id": "EX-06",
       "validation": "editorial-draft",
@@ -624,15 +624,15 @@
         ],
         "en": [
           "Current resources",
-          "dependencies",
-          "preliminary results"
+          "Dependencies",
+          "Preliminary results"
         ]
       },
       "output": {
         "zh": "条件表：已具备、待获得、待验证；最后给可行性判断及依据。",
         "en": "Available, pending and unverified conditions; then a feasibility assessment with grounds."
       },
-      "mode": "task-specific"
+      "mode": "draft"
     },
     {
       "id": "DW-018",
@@ -642,8 +642,8 @@
         "en": "Risks and fallbacks"
       },
       "prompt": {
-        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：只列会改变方案选择、成本或时程的风险。\n每项按触发条件、影响、应对整理；\n材料不含概率时不编概率，无法评估时指出缺什么信息。\n\n输出：风险表：触发条件、影响、应对和优先处理项。\n\n输入材料：\n目标：[填写]\n资源：[填写]\n依赖：[填写]\n备选措施：[填写]",
-        "en": "Make the supplied material clear, direct and informative. Organize it around the\njudgment or action the reader needs. Remove repetitive retreat and empty preambles.\nGround facts, numbers, scope, responsibility and commitments in the material; keep\nmeaningful conditions next to the claims they qualify. List missing facts\nseparately.\n\nTask: Include risks that change selection, cost or schedule. Give trigger, impact\nand response; do not invent probabilities. State what information is needed for\nunresolved assessments.\n\nOutput: Risk triggers, impacts, responses and priorities.\n\nInput material:\nGoal: [fill in]\nresources: [fill in]\ndependencies: [fill in]\nfallback actions: [fill in]"
+        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，\n删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：只列会改变方案选择、成本或时程的风险。\n每项按触发条件、影响、应对整理；\n材料不含概率时不编概率，\n无法评估时指出缺什么信息。\n\n输出：风险表：触发条件、影响、应对和优先处理项。\n\n输入材料：\n目标：[填写]\n资源：[填写]\n依赖：[填写]\n备选措施：[填写]",
+        "en": "Make the supplied material clear, direct and informative. Organize it around\nthe judgment or action the reader needs. Remove repetitive retreat and empty\npreambles. Ground facts, numbers, scope, responsibility and commitments in\nthe material; keep meaningful conditions next to the claims they qualify.\nList missing facts separately.\n\nTask: Include only risks that change selection, cost or schedule. Give trigger,\nimpact and response; do not invent probabilities. State what information is\nneeded for unresolved assessments.\n\nOutput: Risk triggers, impacts, responses and priorities.\n\nInput material:\nGoal: [fill in]\nResources: [fill in]\nDependencies: [fill in]\nFallback actions: [fill in]"
       },
       "example_id": "EX-06",
       "validation": "editorial-draft",
@@ -658,16 +658,16 @@
         ],
         "en": [
           "Goal",
-          "resources",
-          "dependencies",
-          "fallback actions"
+          "Resources",
+          "Dependencies",
+          "Fallback actions"
         ]
       },
       "output": {
         "zh": "风险表：触发条件、影响、应对和优先处理项。",
         "en": "Risk triggers, impacts, responses and priorities."
       },
-      "mode": "task-specific"
+      "mode": "draft"
     },
     {
       "id": "DW-019",
@@ -677,8 +677,8 @@
         "en": "Weekly update"
       },
       "prompt": {
-        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：按完成事项、阻塞、下一步和需协助事项组织。\n保留完成状态与交付日期，删空泛努力表态，不以整体顺利掩盖关键阻塞。\n\n输出：四栏：已完成、当前阻塞、下一步、需协助事项。\n\n输入材料：\n进度记录：[填写]\n计划：[填写]\n阻塞：[填写]\n协助请求：[填写]",
-        "en": "Make the supplied material clear, direct and informative. Organize it around the\njudgment or action the reader needs. Remove repetitive retreat and empty preambles.\nGround facts, numbers, scope, responsibility and commitments in the material; keep\nmeaningful conditions next to the claims they qualify. List missing facts\nseparately.\n\nTask: Organize completed work, blockers, next steps and requests. Preserve status\nand dates; remove empty assurances without hiding important blockers.\n\nOutput: Completed work, current blockers, next steps and requests.\n\nInput material:\nProgress notes: [fill in]\nplan: [fill in]\nblockers: [fill in]\nrequests: [fill in]"
+        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，\n删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：按完成事项、阻塞、下一步和需协助事项组织。\n保留完成状态与交付日期，\n删空泛努力表态，\n不以整体顺利掩盖关键阻塞。\n\n输出：四栏：已完成、当前阻塞、下一步、需协助事项。\n\n输入材料：\n进度记录：[填写]\n计划：[填写]\n阻塞：[填写]\n协助请求：[填写]",
+        "en": "Make the supplied material clear, direct and informative. Organize it around\nthe judgment or action the reader needs. Remove repetitive retreat and empty\npreambles. Ground facts, numbers, scope, responsibility and commitments in\nthe material; keep meaningful conditions next to the claims they qualify.\nList missing facts separately.\n\nTask: Organize completed work, blockers, next steps and requests. Preserve status\nand dates; remove empty assurances without hiding important blockers.\n\nOutput: Completed work, current blockers, next steps and requests.\n\nInput material:\nProgress notes: [fill in]\nPlan: [fill in]\nBlockers: [fill in]\nRequests: [fill in]"
       },
       "example_id": "EX-07",
       "validation": "editorial-draft",
@@ -693,16 +693,16 @@
         ],
         "en": [
           "Progress notes",
-          "plan",
-          "blockers",
-          "requests"
+          "Plan",
+          "Blockers",
+          "Requests"
         ]
       },
       "output": {
         "zh": "四栏：已完成、当前阻塞、下一步、需协助事项。",
         "en": "Completed work, current blockers, next steps and requests."
       },
-      "mode": "task-specific"
+      "mode": "draft"
     },
     {
       "id": "DW-020",
@@ -712,8 +712,8 @@
         "en": "Delay notice"
       },
       "prompt": {
-        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：直接写原计划、当前变化、已知原因和恢复安排。\n区分承诺日期与预计日期；\n有责任时明确承担，不用情况复杂代替原因，不虚构补偿。\n\n输出：一段可直接发送的延期说明，包含原计划、变化、原因和新安排。\n\n输入材料：\n原排期：[填写]\n当前状态：[填写]\n原因：[填写]\n新安排：[填写]",
-        "en": "Make the supplied material clear, direct and informative. Organize it around the\njudgment or action the reader needs. Remove repetitive retreat and empty preambles.\nGround facts, numbers, scope, responsibility and commitments in the material; keep\nmeaningful conditions next to the claims they qualify. List missing facts\nseparately.\n\nTask: State the original plan, change, known cause and recovery arrangement.\nDistinguish committed dates from estimates; acknowledge responsibility and avoid\ninvented remedies.\n\nOutput: A sendable delay notice containing the original plan, change, cause and\nrevised arrangement.\n\nInput material:\nOriginal schedule: [fill in]\nstatus: [fill in]\ncause: [fill in]\nrevised arrangement: [fill in]"
+        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，\n删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：直接写原计划、当前变化、已知原因和恢复安排。\n区分承诺日期与预计日期；\n有责任时明确承担，\n不用情况复杂代替原因，\n不虚构补偿。\n\n输出：一段可直接发送的延期说明，\n包含原计划、变化、原因和新安排。\n\n输入材料：\n原排期：[填写]\n当前状态：[填写]\n原因：[填写]\n新安排：[填写]",
+        "en": "Make the supplied material clear, direct and informative. Organize it around\nthe judgment or action the reader needs. Remove repetitive retreat and empty\npreambles. Ground facts, numbers, scope, responsibility and commitments in\nthe material; keep meaningful conditions next to the claims they qualify.\nList missing facts separately.\n\nTask: State the original plan, change, known cause and recovery arrangement.\nDistinguish committed dates from estimates; acknowledge responsibility and\navoid invented remedies.\n\nOutput: A sendable delay notice containing the original plan, change, cause and\nrevised arrangement.\n\nInput material:\nOriginal schedule: [fill in]\nStatus: [fill in]\nCause: [fill in]\nRevised arrangement: [fill in]"
       },
       "example_id": "EX-07",
       "validation": "editorial-draft",
@@ -728,16 +728,16 @@
         ],
         "en": [
           "Original schedule",
-          "status",
-          "cause",
-          "revised arrangement"
+          "Status",
+          "Cause",
+          "Revised arrangement"
         ]
       },
       "output": {
         "zh": "一段可直接发送的延期说明，包含原计划、变化、原因和新安排。",
         "en": "A sendable delay notice containing the original plan, change, cause and revised arrangement."
       },
-      "mode": "task-specific"
+      "mode": "draft"
     },
     {
       "id": "DW-021",
@@ -747,8 +747,8 @@
         "en": "Decision summary"
       },
       "prompt": {
-        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：先给推荐选择与决定性依据，再交代会改变选择的条件和代价。\n若证据不足以推荐，就指出待验证项；\n不用各有优劣代替比较。\n\n输出：先给推荐，再列决定性依据、代价和改变选择的条件。\n\n输入材料：\n候选项：[填写]\n评价标准：[填写]\n证据：[填写]\n约束：[填写]",
-        "en": "Make the supplied material clear, direct and informative. Organize it around the\njudgment or action the reader needs. Remove repetitive retreat and empty preambles.\nGround facts, numbers, scope, responsibility and commitments in the material; keep\nmeaningful conditions next to the claims they qualify. List missing facts\nseparately.\n\nTask: Lead with a recommendation and decisive grounds, then switching conditions and\ncosts. If evidence does not support a choice, specify the missing test rather than\noffering empty balance.\n\nOutput: A recommendation followed by decisive evidence, costs and switching\nconditions.\n\nInput material:\nOptions: [fill in]\ncriteria: [fill in]\nevidence: [fill in]\nconstraints: [fill in]"
+        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，\n删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：先给推荐选择与决定性依据，\n再交代会改变选择的条件和代价。\n若证据不足以推荐，\n就指出待验证项；\n不用各有优劣代替比较。\n\n输出：先给推荐，\n再列决定性依据、代价和改变选择的条件。\n\n输入材料：\n候选项：[填写]\n评价标准：[填写]\n证据：[填写]\n约束：[填写]",
+        "en": "Make the supplied material clear, direct and informative. Organize it around\nthe judgment or action the reader needs. Remove repetitive retreat and empty\npreambles. Ground facts, numbers, scope, responsibility and commitments in\nthe material; keep meaningful conditions next to the claims they qualify.\nList missing facts separately.\n\nTask: Lead with a recommendation and decisive grounds, then switching conditions\nand costs. If evidence does not support a choice, specify the missing test\nrather than offering empty balance.\n\nOutput: A recommendation followed by decisive evidence, costs and switching\nconditions.\n\nInput material:\nOptions: [fill in]\nCriteria: [fill in]\nEvidence: [fill in]\nConstraints: [fill in]"
       },
       "example_id": "EX-22",
       "validation": "editorial-draft",
@@ -763,16 +763,16 @@
         ],
         "en": [
           "Options",
-          "criteria",
-          "evidence",
-          "constraints"
+          "Criteria",
+          "Evidence",
+          "Constraints"
         ]
       },
       "output": {
         "zh": "先给推荐，再列决定性依据、代价和改变选择的条件。",
         "en": "A recommendation followed by decisive evidence, costs and switching conditions."
       },
-      "mode": "task-specific"
+      "mode": "draft"
     },
     {
       "id": "DW-022",
@@ -782,8 +782,8 @@
         "en": "Retrospective"
       },
       "prompt": {
-        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：区分事实、解释与改进行动，写清可控原因和证据。\n删除泛泛反思与替自己辩护的铺垫，但不归咎未被证实的人或机制。\n\n输出：按事实、已核实原因、改进行动组织复盘。\n\n输入材料：\n事件时间线：[填写]\n结果：[填写]\n已核实原因：[填写]\n改进：[填写]",
-        "en": "Make the supplied material clear, direct and informative. Organize it around the\njudgment or action the reader needs. Remove repetitive retreat and empty preambles.\nGround facts, numbers, scope, responsibility and commitments in the material; keep\nmeaningful conditions next to the claims they qualify. List missing facts\nseparately.\n\nTask: Separate facts, explanations and improvements. Identify supported,\ncontrollable causes; remove vague reflection and self-justification without\nassigning unsupported blame.\n\nOutput: A retrospective organized around facts, verified causes and improvements.\n\nInput material:\nTimeline: [fill in]\noutcomes: [fill in]\nverified causes: [fill in]\nimprovements: [fill in]"
+        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，\n删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：区分事实、解释与改进行动，\n写清可控原因和证据。\n删除泛泛反思与替自己辩护的铺垫，\n但不归咎未被证实的人或机制。\n\n输出：按事实、已核实原因、改进行动组织复盘。\n\n输入材料：\n事件时间线：[填写]\n结果：[填写]\n已核实原因：[填写]\n改进：[填写]",
+        "en": "Make the supplied material clear, direct and informative. Organize it around\nthe judgment or action the reader needs. Remove repetitive retreat and empty\npreambles. Ground facts, numbers, scope, responsibility and commitments in\nthe material; keep meaningful conditions next to the claims they qualify.\nList missing facts separately.\n\nTask: Separate facts, explanations and improvements. Identify supported,\ncontrollable causes; remove vague reflection and self-justification without\nassigning unsupported blame.\n\nOutput: A retrospective organized around facts, verified causes and improvements.\n\nInput material:\nTimeline: [fill in]\nOutcomes: [fill in]\nVerified causes: [fill in]\nImprovements: [fill in]"
       },
       "example_id": "EX-08",
       "validation": "editorial-draft",
@@ -798,16 +798,16 @@
         ],
         "en": [
           "Timeline",
-          "outcomes",
-          "verified causes",
-          "improvements"
+          "Outcomes",
+          "Verified causes",
+          "Improvements"
         ]
       },
       "output": {
         "zh": "按事实、已核实原因、改进行动组织复盘。",
         "en": "A retrospective organized around facts, verified causes and improvements."
       },
-      "mode": "task-specific"
+      "mode": "draft"
     },
     {
       "id": "DW-023",
@@ -817,8 +817,8 @@
         "en": "Update for a decision-maker"
       },
       "prompt": {
-        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：先说明需要对方知道或决定的事项，再给影响与证据。\n让待决问题明确，不用冗长铺垫换取认同；\n保留组织要求的信息与礼貌。\n\n输出：先写需要对方知道或决定的事项，再给影响和依据。\n\n输入材料：\n事项：[填写]\n影响：[填写]\n需决策内容：[填写]\n组织要求：[填写]",
-        "en": "Make the supplied material clear, direct and informative. Organize it around the\njudgment or action the reader needs. Remove repetitive retreat and empty preambles.\nGround facts, numbers, scope, responsibility and commitments in the material; keep\nmeaningful conditions next to the claims they qualify. List missing facts\nseparately.\n\nTask: Lead with what the reader needs to know or decide, followed by impact and\nevidence. Make the pending decision explicit while preserving relevant protocol and\ncourtesy.\n\nOutput: The information or decision needed first, followed by impact and evidence.\n\nInput material:\nIssue: [fill in]\nimpact: [fill in]\nrequested decision: [fill in]\nprotocol: [fill in]"
+        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，\n删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：先说明需要对方知道或决定的事项，\n再给影响与证据。\n让待决问题明确，\n不用冗长铺垫换取认同；\n保留组织要求的信息与礼貌。\n\n输出：先写需要对方知道或决定的事项，\n再给影响和依据。\n\n输入材料：\n事项：[填写]\n影响：[填写]\n需决策内容：[填写]\n组织要求：[填写]",
+        "en": "Make the supplied material clear, direct and informative. Organize it around\nthe judgment or action the reader needs. Remove repetitive retreat and empty\npreambles. Ground facts, numbers, scope, responsibility and commitments in\nthe material; keep meaningful conditions next to the claims they qualify.\nList missing facts separately.\n\nTask: Lead with what the reader needs to know or decide, followed by impact and\nevidence. Make the pending decision explicit while preserving relevant\nprotocol and courtesy.\n\nOutput: The information or decision needed first, followed by impact and evidence.\n\nInput material:\nIssue: [fill in]\nImpact: [fill in]\nRequested decision: [fill in]\nProtocol: [fill in]"
       },
       "example_id": "EX-08",
       "validation": "editorial-draft",
@@ -833,16 +833,16 @@
         ],
         "en": [
           "Issue",
-          "impact",
-          "requested decision",
-          "protocol"
+          "Impact",
+          "Requested decision",
+          "Protocol"
         ]
       },
       "output": {
         "zh": "先写需要对方知道或决定的事项，再给影响和依据。",
         "en": "The information or decision needed first, followed by impact and evidence."
       },
-      "mode": "task-specific"
+      "mode": "draft"
     },
     {
       "id": "DW-024",
@@ -852,8 +852,8 @@
         "en": "Resource request"
       },
       "prompt": {
-        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：写清请求的资源、用途、依据和不获批准的具体影响。\n区分已获授权与申请中，不用过度自谦弱化请求，也不用虚构收益增强说服力。\n\n输出：资源请求正文，写清数量或预算、用途、依据与批准事项。\n\n输入材料：\n所需资源：[填写]\n用途：[填写]\n成本：[填写]\n已有依据：[填写]",
-        "en": "Make the supplied material clear, direct and informative. Organize it around the\njudgment or action the reader needs. Remove repetitive retreat and empty preambles.\nGround facts, numbers, scope, responsibility and commitments in the material; keep\nmeaningful conditions next to the claims they qualify. List missing facts\nseparately.\n\nTask: Specify resources, purpose, rationale and the supported consequence of\nnonapproval. Distinguish requests from authorized resources; avoid self-effacement\nand invented returns.\n\nOutput: A resource request stating supplied quantities or budget, purpose, grounds\nand requested approval.\n\nInput material:\nRequested resources: [fill in]\npurpose: [fill in]\ncost: [fill in]\nsupporting facts: [fill in]"
+        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，\n删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：写清请求的资源、用途、依据和不获批准时有材料支持的具体影响。\n区分已获授权与申请中，\n不用过度自谦弱化请求，\n也不用虚构收益增强说服力。\n相关影响材料缺失时，\n单列待确认信息。\n\n输出：资源请求正文，\n写清数量或预算、用途、依据与批准事项。\n\n输入材料：\n所需资源：[填写]\n用途：[填写]\n成本：[填写]\n已有依据：[填写]\n不获批准的已知影响：[填写]",
+        "en": "Make the supplied material clear, direct and informative. Organize it around\nthe judgment or action the reader needs. Remove repetitive retreat and empty\npreambles. Ground facts, numbers, scope, responsibility and commitments in\nthe material; keep meaningful conditions next to the claims they qualify.\nList missing facts separately.\n\nTask: Specify resources, purpose, rationale and the supported consequence of\nnonapproval. Distinguish requests from authorized resources; avoid\nself-effacement and invented returns. If impact information is missing, list\nit for confirmation.\n\nOutput: A resource request stating supplied quantities or budget, purpose, grounds\nand requested approval.\n\nInput material:\nRequested resources: [fill in]\nPurpose: [fill in]\nCost: [fill in]\nSupporting facts: [fill in]\nKnown consequence of nonapproval: [fill in]"
       },
       "example_id": "EX-08",
       "validation": "editorial-draft",
@@ -864,20 +864,22 @@
           "所需资源",
           "用途",
           "成本",
-          "已有依据"
+          "已有依据",
+          "不获批准的已知影响"
         ],
         "en": [
           "Requested resources",
-          "purpose",
-          "cost",
-          "supporting facts"
+          "Purpose",
+          "Cost",
+          "Supporting facts",
+          "Known consequence of nonapproval"
         ]
       },
       "output": {
         "zh": "资源请求正文，写清数量或预算、用途、依据与批准事项。",
         "en": "A resource request stating supplied quantities or budget, purpose, grounds and requested approval."
       },
-      "mode": "task-specific"
+      "mode": "draft"
     },
     {
       "id": "DW-025",
@@ -887,10 +889,10 @@
         "en": "Progress follow-up"
       },
       "prompt": {
-        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：明确询问哪项交付、约定时间和所需回复。\n保留正常礼貌，删重复道歉，不把目标日期改成对方已承诺的日期，不替对方解释延误。\n\n输出：一段简短催办信息，写清交付项、实际约定和希望收到的回复。\n\n输入材料：\n交付项：[填写]\n实际约定：[填写]\n希望收到的信息：[填写]",
-        "en": "Make the supplied material clear, direct and informative. Organize it around the\njudgment or action the reader needs. Remove repetitive retreat and empty preambles.\nGround facts, numbers, scope, responsibility and commitments in the material; keep\nmeaningful conditions next to the claims they qualify. List missing facts\nseparately.\n\nTask: Ask about a specific deliverable, agreed timing and needed reply. Preserve\ncourtesy, remove repeated apologies and do not turn a target date into a prior\ncommitment.\n\nOutput: A short follow-up naming the deliverable, actual agreement and requested\nreply.\n\nInput material:\nDeliverable: [fill in]\nactual agreement: [fill in]\nrequested information: [fill in]"
+        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，\n删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：明确询问哪项交付、约定时间和所需回复。\n保留正常礼貌，\n删重复道歉，\n不把目标日期改成对方已承诺的日期，\n不替对方解释延误。\n\n输出：一段简短催办信息，\n写清交付项、实际约定和希望收到的回复。\n\n输入材料：\n交付项：[填写]\n实际约定：[填写]\n希望收到的信息：[填写]",
+        "en": "Make the supplied material clear, direct and informative. Organize it around\nthe judgment or action the reader needs. Remove repetitive retreat and empty\npreambles. Ground facts, numbers, scope, responsibility and commitments in\nthe material; keep meaningful conditions next to the claims they qualify.\nList missing facts separately.\n\nTask: Ask about a specific deliverable, agreed timing and needed reply. Preserve\ncourtesy, remove repeated apologies and do not turn a target date into a\nprior commitment.\n\nOutput: A short follow-up naming the deliverable, actual agreement and requested\nreply.\n\nInput material:\nDeliverable: [fill in]\nActual agreement: [fill in]\nRequested information: [fill in]"
       },
-      "example_id": "EX-07",
+      "example_id": "EX-25",
       "validation": "editorial-draft",
       "author": "Yila",
       "license": "CC-BY-4.0",
@@ -902,15 +904,15 @@
         ],
         "en": [
           "Deliverable",
-          "actual agreement",
-          "requested information"
+          "Actual agreement",
+          "Requested information"
         ]
       },
       "output": {
         "zh": "一段简短催办信息，写清交付项、实际约定和希望收到的回复。",
         "en": "A short follow-up naming the deliverable, actual agreement and requested reply."
       },
-      "mode": "task-specific"
+      "mode": "draft"
     },
     {
       "id": "DW-026",
@@ -920,8 +922,8 @@
         "en": "Disagree with reasons"
       },
       "prompt": {
-        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：说明分歧点、依据、影响和替代建议。\n对事不对人，保留有益的关系缓冲；\n不假装同意，也不把偏好包装为事实。\n\n输出：一段可发送的异议，包含分歧、理由与替代建议。\n\n输入材料：\n对方建议：[填写]\n分歧：[填写]\n依据：[填写]\n备选方案：[填写]",
-        "en": "Make the supplied material clear, direct and informative. Organize it around the\njudgment or action the reader needs. Remove repetitive retreat and empty preambles.\nGround facts, numbers, scope, responsibility and commitments in the material; keep\nmeaningful conditions next to the claims they qualify. List missing facts\nseparately.\n\nTask: State the disagreement, evidence, impact and alternative. Keep useful\nrelational courtesy without pretending agreement or presenting preferences as facts.\n\nOutput: A sendable disagreement with its reason and alternative.\n\nInput material:\nProposal: [fill in]\ndisagreement: [fill in]\nevidence: [fill in]\nalternative: [fill in]"
+        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，\n删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：说明分歧点、依据、影响和替代建议。\n对事不对人，\n保留有益的关系缓冲；\n不假装同意，\n也不把偏好包装为事实。\n\n输出：一段可发送的异议，\n包含分歧、理由与替代建议。\n\n输入材料：\n对方建议：[填写]\n分歧：[填写]\n依据：[填写]\n备选方案：[填写]",
+        "en": "Make the supplied material clear, direct and informative. Organize it around\nthe judgment or action the reader needs. Remove repetitive retreat and empty\npreambles. Ground facts, numbers, scope, responsibility and commitments in\nthe material; keep meaningful conditions next to the claims they qualify.\nList missing facts separately.\n\nTask: State the disagreement, evidence, impact and alternative. Keep useful\nrelational courtesy without pretending agreement or presenting preferences\nas facts.\n\nOutput: A sendable disagreement with its reason and alternative.\n\nInput material:\nProposal: [fill in]\nDisagreement: [fill in]\nEvidence: [fill in]\nAlternative: [fill in]"
       },
       "example_id": "EX-09",
       "validation": "editorial-draft",
@@ -936,16 +938,16 @@
         ],
         "en": [
           "Proposal",
-          "disagreement",
-          "evidence",
-          "alternative"
+          "Disagreement",
+          "Evidence",
+          "Alternative"
         ]
       },
       "output": {
         "zh": "一段可发送的异议，包含分歧、理由与替代建议。",
         "en": "A sendable disagreement with its reason and alternative."
       },
-      "mode": "task-specific"
+      "mode": "draft"
     },
     {
       "id": "DW-027",
@@ -955,8 +957,8 @@
         "en": "Decline an added request"
       },
       "prompt": {
-        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：明确可接受范围与不能承诺的部分，说明必要原因或可行替代。\n删除反复自责，不推脱已有责任，也不为缓和语气承诺做不到的事。\n\n输出：明确可做范围、无法承诺的新增部分和可行替代。\n\n输入材料：\n需求：[填写]\n职责范围：[填写]\n资源：[填写]\n可提供替代：[填写]",
-        "en": "Make the supplied material clear, direct and informative. Organize it around the\njudgment or action the reader needs. Remove repetitive retreat and empty preambles.\nGround facts, numbers, scope, responsibility and commitments in the material; keep\nmeaningful conditions next to the claims they qualify. List missing facts\nseparately.\n\nTask: State the supported scope and what cannot be committed to, with a relevant\nreason or viable alternative. Do not erase existing obligations or invent\nconcessions.\n\nOutput: Accepted scope, the added work that cannot be committed to and viable\nalternatives.\n\nInput material:\nRequest: [fill in]\nresponsibilities: [fill in]\nresources: [fill in]\nalternatives: [fill in]"
+        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，\n删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：明确可接受范围与不能承诺的部分，\n说明必要原因或可行替代。\n删除反复自责，\n不推脱已有责任，\n也不为缓和语气承诺做不到的事。\n\n输出：明确可做范围、无法承诺的新增部分和可行替代。\n\n输入材料：\n需求：[填写]\n职责范围：[填写]\n资源：[填写]\n可提供替代：[填写]",
+        "en": "Make the supplied material clear, direct and informative. Organize it around\nthe judgment or action the reader needs. Remove repetitive retreat and empty\npreambles. Ground facts, numbers, scope, responsibility and commitments in\nthe material; keep meaningful conditions next to the claims they qualify.\nList missing facts separately.\n\nTask: State the supported scope and what cannot be committed to, with a relevant\nreason or viable alternative. Do not erase existing obligations or invent\nconcessions.\n\nOutput: Accepted scope, the added work that cannot be committed to and viable\nalternatives.\n\nInput material:\nRequest: [fill in]\nResponsibilities: [fill in]\nResources: [fill in]\nAlternatives: [fill in]"
       },
       "example_id": "EX-09",
       "validation": "editorial-draft",
@@ -971,16 +973,16 @@
         ],
         "en": [
           "Request",
-          "responsibilities",
-          "resources",
-          "alternatives"
+          "Responsibilities",
+          "Resources",
+          "Alternatives"
         ]
       },
       "output": {
         "zh": "明确可做范围、无法承诺的新增部分和可行替代。",
         "en": "Accepted scope, the added work that cannot be committed to and viable alternatives."
       },
-      "mode": "task-specific"
+      "mode": "draft"
     },
     {
       "id": "DW-028",
@@ -990,8 +992,8 @@
         "en": "Ask for help"
       },
       "prompt": {
-        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：简要交代目标、已尝试的步骤和具体卡点，提出对方能回答的请求。\n删除自我贬低，不假设对方有义务或时间解决整个问题。\n\n输出：一段求助信息：目标、已尝试步骤、卡点、具体问题。\n\n输入材料：\n问题：[填写]\n已尝试步骤：[填写]\n希望的帮助：[填写]",
-        "en": "Make the supplied material clear, direct and informative. Organize it around the\njudgment or action the reader needs. Remove repetitive retreat and empty preambles.\nGround facts, numbers, scope, responsibility and commitments in the material; keep\nmeaningful conditions next to the claims they qualify. List missing facts\nseparately.\n\nTask: State the goal, attempts and specific blocker, then an answerable request.\nRemove self-deprecation without assuming the recipient owes a complete solution.\n\nOutput: A help request with goal, attempted steps, blocker and a specific question.\n\nInput material:\nProblem: [fill in]\nattempted steps: [fill in]\nrequested help: [fill in]"
+        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，\n删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：简要交代目标、已尝试的步骤和具体卡点，\n提出对方能回答的请求。\n删除自我贬低，\n不假设对方有义务或时间解决整个问题。\n\n输出：一段求助信息：目标、已尝试步骤、卡点、具体问题。\n\n输入材料：\n问题：[填写]\n已尝试步骤：[填写]\n希望的帮助：[填写]",
+        "en": "Make the supplied material clear, direct and informative. Organize it around\nthe judgment or action the reader needs. Remove repetitive retreat and empty\npreambles. Ground facts, numbers, scope, responsibility and commitments in\nthe material; keep meaningful conditions next to the claims they qualify.\nList missing facts separately.\n\nTask: State the goal, attempts and specific blocker, then an answerable request.\nRemove self-deprecation without assuming the recipient owes a complete\nsolution.\n\nOutput: A help request with goal, attempted steps, blocker and a specific question.\n\nInput material:\nProblem: [fill in]\nAttempted steps: [fill in]\nRequested help: [fill in]"
       },
       "example_id": "EX-10",
       "validation": "editorial-draft",
@@ -1005,15 +1007,15 @@
         ],
         "en": [
           "Problem",
-          "attempted steps",
-          "requested help"
+          "Attempted steps",
+          "Requested help"
         ]
       },
       "output": {
         "zh": "一段求助信息：目标、已尝试步骤、卡点、具体问题。",
         "en": "A help request with goal, attempted steps, blocker and a specific question."
       },
-      "mode": "task-specific"
+      "mode": "draft"
     },
     {
       "id": "DW-029",
@@ -1023,8 +1025,8 @@
         "en": "Contact a supervisor"
       },
       "prompt": {
-        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：用真实身份、相关经历、具体研究兴趣和明确请求组织邮件。\n保持自然礼貌，不编研究匹配、论文阅读经历或导师的招生意愿。\n\n输出：邮件主题与正文，包含真实身份、相关经历和具体请求。\n\n输入材料：\n身份：[填写]\n真实经历：[填写]\n兴趣：[填写]\n联系目的：[填写]",
-        "en": "Make the supplied material clear, direct and informative. Organize it around the\njudgment or action the reader needs. Remove repetitive retreat and empty preambles.\nGround facts, numbers, scope, responsibility and commitments in the material; keep\nmeaningful conditions next to the claims they qualify. List missing facts\nseparately.\n\nTask: Organize the email around real identity, relevant experience, research\ninterest and a specific request. Preserve courtesy; do not fabricate fit, reading\nexperience or availability.\n\nOutput: An email subject and body with actual identity, relevant experience and a\nspecific request.\n\nInput material:\nIdentity: [fill in]\nactual experience: [fill in]\ninterests: [fill in]\npurpose: [fill in]"
+        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，\n删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：用真实身份、相关经历、具体研究兴趣和明确请求组织邮件。\n保持自然礼貌，\n不编研究匹配、论文阅读经历或导师的招生意愿。\n\n输出：邮件主题与正文，\n包含真实身份、相关经历和具体请求。\n\n输入材料：\n身份：[填写]\n真实经历：[填写]\n兴趣：[填写]\n联系目的：[填写]",
+        "en": "Make the supplied material clear, direct and informative. Organize it around\nthe judgment or action the reader needs. Remove repetitive retreat and empty\npreambles. Ground facts, numbers, scope, responsibility and commitments in\nthe material; keep meaningful conditions next to the claims they qualify.\nList missing facts separately.\n\nTask: Organize the email around real identity, relevant experience, research\ninterest and a specific request. Preserve courtesy; do not fabricate fit,\nreading experience or availability.\n\nOutput: An email subject and body with actual identity, relevant experience and a\nspecific request.\n\nInput material:\nIdentity: [fill in]\nActual experience: [fill in]\nInterests: [fill in]\nPurpose: [fill in]"
       },
       "example_id": "EX-10",
       "validation": "editorial-draft",
@@ -1039,16 +1041,16 @@
         ],
         "en": [
           "Identity",
-          "actual experience",
-          "interests",
-          "purpose"
+          "Actual experience",
+          "Interests",
+          "Purpose"
         ]
       },
       "output": {
         "zh": "邮件主题与正文，包含真实身份、相关经历和具体请求。",
         "en": "An email subject and body with actual identity, relevant experience and a specific request."
       },
-      "mode": "task-specific"
+      "mode": "draft"
     },
     {
       "id": "DW-030",
@@ -1058,8 +1060,8 @@
         "en": "Apology and repair"
       },
       "prompt": {
-        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：保留对已发生问题的承认、实际影响和可兑现补救。\n删重复自责及转移责任的解释，不用精简把道歉改成无责任的进度说明。\n\n输出：一段道歉与补救说明，写清事实、影响和可兑现措施。\n\n输入材料：\n事实：[填写]\n责任：[填写]\n影响：[填写]\n可兑现措施：[填写]",
-        "en": "Make the supplied material clear, direct and informative. Organize it around the\njudgment or action the reader needs. Remove repetitive retreat and empty preambles.\nGround facts, numbers, scope, responsibility and commitments in the material; keep\nmeaningful conditions next to the claims they qualify. List missing facts\nseparately.\n\nTask: Keep acknowledgment, actual impact and feasible repair. Remove repetitive\nself-blame and excuses without turning an apology into a responsibility-free status\nupdate.\n\nOutput: An apology and repair note stating what happened, impact and feasible\nremedy.\n\nInput material:\nFacts: [fill in]\nresponsibility: [fill in]\nimpact: [fill in]\nfeasible repair: [fill in]"
+        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，\n删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：保留对已发生问题的承认、实际影响和可兑现补救。\n删重复自责及转移责任的解释，\n不用精简把道歉改成无责任的进度说明。\n\n输出：一段道歉与补救说明，\n写清事实、影响和可兑现措施。\n\n输入材料：\n事实：[填写]\n责任：[填写]\n影响：[填写]\n可兑现措施：[填写]",
+        "en": "Make the supplied material clear, direct and informative. Organize it around\nthe judgment or action the reader needs. Remove repetitive retreat and empty\npreambles. Ground facts, numbers, scope, responsibility and commitments in\nthe material; keep meaningful conditions next to the claims they qualify.\nList missing facts separately.\n\nTask: Keep acknowledgment, actual impact and feasible repair. Remove repetitive\nself-blame and excuses without turning an apology into a responsibility-free\nstatus update.\n\nOutput: An apology and repair note stating what happened, impact and feasible\nremedy.\n\nInput material:\nFacts: [fill in]\nResponsibility: [fill in]\nImpact: [fill in]\nFeasible repair: [fill in]"
       },
       "example_id": "EX-10",
       "validation": "editorial-draft",
@@ -1074,16 +1076,16 @@
         ],
         "en": [
           "Facts",
-          "responsibility",
-          "impact",
-          "feasible repair"
+          "Responsibility",
+          "Impact",
+          "Feasible repair"
         ]
       },
       "output": {
         "zh": "一段道歉与补救说明，写清事实、影响和可兑现措施。",
         "en": "An apology and repair note stating what happened, impact and feasible remedy."
       },
-      "mode": "task-specific"
+      "mode": "draft"
     },
     {
       "id": "DW-031",
@@ -1093,8 +1095,8 @@
         "en": "Feature description"
       },
       "prompt": {
-        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：先写特定用户能完成什么，再写步骤与必要条件。\n只用已确认能力，保留权限、费用、支持格式和内测范围，不承诺直接可投稿等未验证结果\n。\n\n输出：先用一句话说明用户能做什么，再给操作与必要条件。\n\n输入材料：\n已确认功能：[填写]\n适用用户：[填写]\n条件：[填写]\n展示位置：[填写]",
-        "en": "Make the supplied material clear, direct and informative. Organize it around the\njudgment or action the reader needs. Remove repetitive retreat and empty preambles.\nGround facts, numbers, scope, responsibility and commitments in the material; keep\nmeaningful conditions next to the claims they qualify. List missing facts\nseparately.\n\nTask: State what eligible users can do, then steps and conditions. Use verified\ncapabilities and retain access, pricing, formats and beta scope without unverified\nquality promises.\n\nOutput: One sentence describing the user capability, followed by actions and\nnecessary conditions.\n\nInput material:\nVerified feature: [fill in]\neligible users: [fill in]\nconditions: [fill in]\nplacement: [fill in]"
+        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，\n删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：先写特定用户能完成什么，\n再写步骤与必要条件。\n只用已确认能力，\n保留权限、费用、支持格式和内测范围，\n不承诺直接可投稿等未验证结果。\n\n输出：先用一句话说明用户能做什么，\n再给操作与必要条件。\n\n输入材料：\n已确认功能：[填写]\n适用用户：[填写]\n条件：[填写]\n展示位置：[填写]",
+        "en": "Make the supplied material clear, direct and informative. Organize it around\nthe judgment or action the reader needs. Remove repetitive retreat and empty\npreambles. Ground facts, numbers, scope, responsibility and commitments in\nthe material; keep meaningful conditions next to the claims they qualify.\nList missing facts separately.\n\nTask: State what eligible users can do, then steps and conditions. Use verified\ncapabilities and retain access, pricing, formats and beta scope without\nunverified quality promises.\n\nOutput: One sentence describing the user capability, followed by actions and\nnecessary conditions.\n\nInput material:\nVerified feature: [fill in]\nEligible users: [fill in]\nConditions: [fill in]\nPlacement: [fill in]"
       },
       "example_id": "EX-11",
       "validation": "editorial-draft",
@@ -1109,16 +1111,16 @@
         ],
         "en": [
           "Verified feature",
-          "eligible users",
-          "conditions",
-          "placement"
+          "Eligible users",
+          "Conditions",
+          "Placement"
         ]
       },
       "output": {
         "zh": "先用一句话说明用户能做什么，再给操作与必要条件。",
         "en": "One sentence describing the user capability, followed by actions and necessary conditions."
       },
-      "mode": "task-specific"
+      "mode": "draft"
     },
     {
       "id": "DW-032",
@@ -1128,8 +1130,8 @@
         "en": "Release notes"
       },
       "prompt": {
-        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：区分已发布、内测和计划功能，围绕用户可见变化写。\n保留破坏性变更和迁移操作，不用体验全面升级掩盖具体变化。\n\n输出：按发布状态组织更新条目，并列出需要用户执行的迁移操作。\n\n输入材料：\n变更列表：[填写]\n发布状态：[填写]\n影响：[填写]\n迁移步骤：[填写]",
-        "en": "Make the supplied material clear, direct and informative. Organize it around the\njudgment or action the reader needs. Remove repetitive retreat and empty preambles.\nGround facts, numbers, scope, responsibility and commitments in the material; keep\nmeaningful conditions next to the claims they qualify. List missing facts\nseparately.\n\nTask: Separate released, beta and planned changes. Describe user-visible behavior,\nretaining breaking changes and migration steps instead of vague upgrade claims.\n\nOutput: Release notes grouped by availability, with required migration actions.\n\nInput material:\nChanges: [fill in]\nrelease status: [fill in]\nimpact: [fill in]\nmigration steps: [fill in]"
+        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，\n删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：区分已发布、内测和计划功能，\n围绕用户可见变化写。\n保留破坏性变更和迁移操作，\n不用体验全面升级掩盖具体变化。\n\n输出：按发布状态组织更新条目，\n并列出需要用户执行的迁移操作。\n\n输入材料：\n变更列表：[填写]\n发布状态：[填写]\n影响：[填写]\n迁移步骤：[填写]",
+        "en": "Make the supplied material clear, direct and informative. Organize it around\nthe judgment or action the reader needs. Remove repetitive retreat and empty\npreambles. Ground facts, numbers, scope, responsibility and commitments in\nthe material; keep meaningful conditions next to the claims they qualify.\nList missing facts separately.\n\nTask: Separate released, beta and planned changes. Describe user-visible behavior,\nretaining breaking changes and migration steps instead of vague upgrade\nclaims.\n\nOutput: Release notes grouped by availability, with required migration actions.\n\nInput material:\nChanges: [fill in]\nRelease status: [fill in]\nImpact: [fill in]\nMigration steps: [fill in]"
       },
       "example_id": "EX-11",
       "validation": "editorial-draft",
@@ -1144,16 +1146,16 @@
         ],
         "en": [
           "Changes",
-          "release status",
-          "impact",
-          "migration steps"
+          "Release status",
+          "Impact",
+          "Migration steps"
         ]
       },
       "output": {
         "zh": "按发布状态组织更新条目，并列出需要用户执行的迁移操作。",
         "en": "Release notes grouped by availability, with required migration actions."
       },
-      "mode": "task-specific"
+      "mode": "revise"
     },
     {
       "id": "DW-033",
@@ -1163,8 +1165,8 @@
         "en": "Product comparison"
       },
       "prompt": {
-        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：按同一任务、条件与时间口径比较，列出可验证差异。\n保留缺失信息，避免虚构竞品能力或不公平条件；\n只在证据足够时给适用建议。\n\n输出：同口径比较表；\n再给适用选择与仍缺少的信息。\n\n输入材料：\n候选产品：[填写]\n任务：[填写]\n同口径资料：[填写]\n日期：[填写]",
-        "en": "Make the supplied material clear, direct and informative. Organize it around the\njudgment or action the reader needs. Remove repetitive retreat and empty preambles.\nGround facts, numbers, scope, responsibility and commitments in the material; keep\nmeaningful conditions next to the claims they qualify. List missing facts\nseparately.\n\nTask: Compare the same task under consistent conditions and dates. Report verifiable\ndifferences and unknowns; avoid fabricated competitor claims or unfair setups.\n\nOutput: A like-for-like comparison, a use-case choice and missing information.\n\nInput material:\nProducts: [fill in]\ntask: [fill in]\ncomparable facts: [fill in]\ndate: [fill in]"
+        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，\n删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：按同一任务、条件与时间口径比较，\n列出可验证差异。\n保留缺失信息，\n避免虚构竞品能力或不公平条件；\n只在证据足够时给适用建议。\n\n输出：同口径比较表；\n再给适用选择与仍缺少的信息。\n\n输入材料：\n候选产品：[填写]\n任务：[填写]\n同口径资料：[填写]\n日期：[填写]",
+        "en": "Make the supplied material clear, direct and informative. Organize it around\nthe judgment or action the reader needs. Remove repetitive retreat and empty\npreambles. Ground facts, numbers, scope, responsibility and commitments in\nthe material; keep meaningful conditions next to the claims they qualify.\nList missing facts separately.\n\nTask: Compare the same task under consistent conditions and dates. Report\nverifiable differences and unknowns; avoid fabricated competitor claims or\nunfair setups.\n\nOutput: A like-for-like comparison, a use-case choice and missing information.\n\nInput material:\nProducts: [fill in]\nTask: [fill in]\nComparable facts: [fill in]\nDate: [fill in]"
       },
       "example_id": "EX-22",
       "validation": "editorial-draft",
@@ -1179,16 +1181,16 @@
         ],
         "en": [
           "Products",
-          "task",
-          "comparable facts",
-          "date"
+          "Task",
+          "Comparable facts",
+          "Date"
         ]
       },
       "output": {
         "zh": "同口径比较表；再给适用选择与仍缺少的信息。",
         "en": "A like-for-like comparison, a use-case choice and missing information."
       },
-      "mode": "task-specific"
+      "mode": "draft"
     },
     {
       "id": "DW-034",
@@ -1198,8 +1200,8 @@
         "en": "Direct FAQ answer"
       },
       "prompt": {
-        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：第一句回答用户具体问题，再给必要条件与操作。\n未知就说明缺少信息，不用通用免责声明回避回答；\n有费用或删除后果时讲清。\n\n输出：第一句直接回答问题，再给条件与下一步。\n\n输入材料：\n用户问题：[填写]\n已确认规则：[填写]\n操作说明：[填写]",
-        "en": "Make the supplied material clear, direct and informative. Organize it around the\njudgment or action the reader needs. Remove repetitive retreat and empty preambles.\nGround facts, numbers, scope, responsibility and commitments in the material; keep\nmeaningful conditions next to the claims they qualify. List missing facts\nseparately.\n\nTask: Answer the specific question first, then conditions and actions. Identify\nunknowns rather than evading with generic disclaimers; retain material costs and\ndeletion consequences.\n\nOutput: The direct answer first, followed by conditions and next steps.\n\nInput material:\nQuestion: [fill in]\nconfirmed rules: [fill in]\ninstructions: [fill in]"
+        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，\n删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：第一句回答用户具体问题，\n再给必要条件与操作。\n未知就说明缺少信息，\n不用通用免责声明回避回答；\n有费用或删除后果时讲清。\n\n输出：第一句直接回答问题，\n再给条件与下一步。\n\n输入材料：\n用户问题：[填写]\n已确认规则：[填写]\n操作说明：[填写]",
+        "en": "Make the supplied material clear, direct and informative. Organize it around\nthe judgment or action the reader needs. Remove repetitive retreat and empty\npreambles. Ground facts, numbers, scope, responsibility and commitments in\nthe material; keep meaningful conditions next to the claims they qualify.\nList missing facts separately.\n\nTask: Answer the specific question first, then conditions and actions. Identify\nunknowns rather than evading with generic disclaimers; retain material costs\nand deletion consequences.\n\nOutput: The direct answer first, followed by conditions and next steps.\n\nInput material:\nQuestion: [fill in]\nConfirmed rules: [fill in]\nInstructions: [fill in]"
       },
       "example_id": "EX-24",
       "validation": "editorial-draft",
@@ -1213,15 +1215,15 @@
         ],
         "en": [
           "Question",
-          "confirmed rules",
-          "instructions"
+          "Confirmed rules",
+          "Instructions"
         ]
       },
       "output": {
         "zh": "第一句直接回答问题，再给条件与下一步。",
         "en": "The direct answer first, followed by conditions and next steps."
       },
-      "mode": "task-specific"
+      "mode": "draft"
     },
     {
       "id": "DW-035",
@@ -1231,8 +1233,8 @@
         "en": "Landing-page value"
       },
       "prompt": {
-        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：将功能、适用人群与具体任务对应，写可验证的价值。\n删除泛泛赋能和空泛自我保护，不生成效率倍数、保证收益或虚构客户背书。\n\n输出：主标题、副标题与三个有依据的价值点。\n\n输入材料：\n目标人群：[填写]\n任务：[填写]\n功能：[填写]\n已有证据：[填写]",
-        "en": "Make the supplied material clear, direct and informative. Organize it around the\njudgment or action the reader needs. Remove repetitive retreat and empty preambles.\nGround facts, numbers, scope, responsibility and commitments in the material; keep\nmeaningful conditions next to the claims they qualify. List missing facts\nseparately.\n\nTask: Connect features to users and concrete tasks with verifiable value. Remove\nempty value language without inventing efficiency gains, guarantees or endorsements.\n\nOutput: A headline, subheadline and three supported value points.\n\nInput material:\nAudience: [fill in]\ntask: [fill in]\nfeature: [fill in]\nevidence: [fill in]"
+        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，\n删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：将功能、适用人群与具体任务对应，\n写可验证的价值。\n删除泛泛赋能和空泛自我保护，\n不生成效率倍数、保证收益或虚构客户背书。\n\n输出：主标题、副标题与三个有依据的价值点。\n\n输入材料：\n目标人群：[填写]\n任务：[填写]\n功能：[填写]\n已有证据：[填写]",
+        "en": "Make the supplied material clear, direct and informative. Organize it around\nthe judgment or action the reader needs. Remove repetitive retreat and empty\npreambles. Ground facts, numbers, scope, responsibility and commitments in\nthe material; keep meaningful conditions next to the claims they qualify.\nList missing facts separately.\n\nTask: Connect features to users and concrete tasks with verifiable value. Remove\nempty value language without inventing efficiency gains, guarantees or\nendorsements.\n\nOutput: A headline, subheadline and three supported value points.\n\nInput material:\nAudience: [fill in]\nTask: [fill in]\nFeature: [fill in]\nEvidence: [fill in]"
       },
       "example_id": "EX-12",
       "validation": "editorial-draft",
@@ -1247,16 +1249,16 @@
         ],
         "en": [
           "Audience",
-          "task",
-          "feature",
-          "evidence"
+          "Task",
+          "Feature",
+          "Evidence"
         ]
       },
       "output": {
         "zh": "主标题、副标题与三个有依据的价值点。",
         "en": "A headline, subheadline and three supported value points."
       },
-      "mode": "task-specific"
+      "mode": "draft"
     },
     {
       "id": "DW-036",
@@ -1266,8 +1268,8 @@
         "en": "Customer case study"
       },
       "prompt": {
-        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：区分用户原话、可核验过程和效果数据。\n未经材料支持不用因果归因或普遍效果；\n没有授权的身份改为经确认的匿名表达。\n\n输出：案例正文：用户原话、实际过程、已记录结果与测量口径。\n\n输入材料：\n用户授权：[填写]\n原话：[填写]\n过程：[填写]\n测量口径：[填写]",
-        "en": "Make the supplied material clear, direct and informative. Organize it around the\njudgment or action the reader needs. Remove repetitive retreat and empty preambles.\nGround facts, numbers, scope, responsibility and commitments in the material; keep\nmeaningful conditions next to the claims they qualify. List missing facts\nseparately.\n\nTask: Distinguish quotes, verified process and outcome data. Avoid unsupported\nattribution and universal results; use approved anonymization for identities without\npermission.\n\nOutput: A case narrative with the authorized quote, actual workflow, recorded result\nand measurement definition.\n\nInput material:\nPermission: [fill in]\nquotes: [fill in]\nprocess: [fill in]\nmeasurement definition: [fill in]"
+        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，\n删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：区分用户原话、可核验过程和效果数据。\n未经材料支持不用因果归因或普遍效果；\n没有授权的身份改为经确认的匿名表达。\n\n输出：案例正文：用户原话、实际过程、已记录结果与测量口径。\n\n输入材料：\n用户授权：[填写]\n原话：[填写]\n过程：[填写]\n测量口径：[填写]",
+        "en": "Make the supplied material clear, direct and informative. Organize it around\nthe judgment or action the reader needs. Remove repetitive retreat and empty\npreambles. Ground facts, numbers, scope, responsibility and commitments in\nthe material; keep meaningful conditions next to the claims they qualify.\nList missing facts separately.\n\nTask: Distinguish quotes, verified process and outcome data. Avoid unsupported\nattribution and universal results; use approved anonymization for identities\nwithout permission.\n\nOutput: A case narrative with the authorized quote, actual workflow, recorded result\nand measurement definition.\n\nInput material:\nPermission: [fill in]\nQuotes: [fill in]\nProcess: [fill in]\nMeasurement definition: [fill in]"
       },
       "example_id": "EX-12",
       "validation": "editorial-draft",
@@ -1282,16 +1284,16 @@
         ],
         "en": [
           "Permission",
-          "quotes",
-          "process",
-          "measurement definition"
+          "Quotes",
+          "Process",
+          "Measurement definition"
         ]
       },
       "output": {
         "zh": "案例正文：用户原话、实际过程、已记录结果与测量口径。",
         "en": "A case narrative with the authorized quote, actual workflow, recorded result and measurement definition."
       },
-      "mode": "task-specific"
+      "mode": "draft"
     },
     {
       "id": "DW-037",
@@ -1301,8 +1303,8 @@
         "en": "Short-video script"
       },
       "prompt": {
-        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：开头直接给出问题和具体收获，按口语节奏组织。\n保留来源、适用范围与商业合作披露，不编个人经历，不把研究现象夸成所有 AI 的通病。\n\n输出：可直接口播的稿件：问题与收获、演示顺序、关键结论及合作披露。\n\n输入材料：\n原稿：[填写]\n观众：[填写]\n时长：[填写]\n来源：[填写]\n合作情况：[填写]",
-        "en": "Make the supplied material clear, direct and informative. Organize it around the\njudgment or action the reader needs. Remove repetitive retreat and empty preambles.\nGround facts, numbers, scope, responsibility and commitments in the material; keep\nmeaningful conditions next to the claims they qualify. List missing facts\nseparately.\n\nTask: Open with the problem and concrete takeaway, then use spoken pacing. Retain\nsources, scope and sponsorship disclosures without invented experience or universal\nmodel claims.\n\nOutput: A spoken script with the problem and takeaway, demonstration sequence,\nconclusion and sponsorship disclosure.\n\nInput material:\nDraft: [fill in]\naudience: [fill in]\nduration: [fill in]\nsources: [fill in]\nsponsorship: [fill in]"
+        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，\n删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：开头直接给出问题和具体收获，\n按口语节奏组织。\n保留来源、适用范围与商业合作披露，\n不编个人经历，\n不把研究现象夸成所有 AI 的通病。\n\n输出：可直接口播的稿件：问题与收获、演示顺序、关键结论及合作披露。\n\n输入材料：\n原稿：[填写]\n观众：[填写]\n时长：[填写]\n来源：[填写]\n合作情况：[填写]",
+        "en": "Make the supplied material clear, direct and informative. Organize it around\nthe judgment or action the reader needs. Remove repetitive retreat and empty\npreambles. Ground facts, numbers, scope, responsibility and commitments in\nthe material; keep meaningful conditions next to the claims they qualify.\nList missing facts separately.\n\nTask: Open with the problem and concrete takeaway, then use spoken pacing. Retain\nsources, scope and sponsorship disclosures without invented experience or\nuniversal model claims.\n\nOutput: A spoken script with the problem and takeaway, demonstration sequence,\nconclusion and sponsorship disclosure.\n\nInput material:\nDraft: [fill in]\nAudience: [fill in]\nDuration: [fill in]\nSources: [fill in]\nSponsorship: [fill in]"
       },
       "example_id": "EX-13",
       "validation": "editorial-draft",
@@ -1318,17 +1320,17 @@
         ],
         "en": [
           "Draft",
-          "audience",
-          "duration",
-          "sources",
-          "sponsorship"
+          "Audience",
+          "Duration",
+          "Sources",
+          "Sponsorship"
         ]
       },
       "output": {
         "zh": "可直接口播的稿件：问题与收获、演示顺序、关键结论及合作披露。",
         "en": "A spoken script with the problem and takeaway, demonstration sequence, conclusion and sponsorship disclosure."
       },
-      "mode": "task-specific"
+      "mode": "draft"
     },
     {
       "id": "DW-038",
@@ -1338,8 +1340,8 @@
         "en": "Article opening"
       },
       "prompt": {
-        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：用正文实际回答的问题或可核实事实切入，删宏大背景和空泛免责声明。\n开头承诺的内容必须正文提供，不用编造故事吸引点击。\n\n输出：与正文内容对应的文章开头，直接进入读者关心的问题。\n\n输入材料：\n正文：[填写]\n目标读者：[填写]\n事实来源：[填写]",
-        "en": "Make the supplied material clear, direct and informative. Organize it around the\njudgment or action the reader needs. Remove repetitive retreat and empty preambles.\nGround facts, numbers, scope, responsibility and commitments in the material; keep\nmeaningful conditions next to the claims they qualify. List missing facts\nseparately.\n\nTask: Open with the question the article answers or a verifiable fact. Remove broad\nfiller; ensure the body delivers the opening's promise without fabricated anecdotes.\n\nOutput: An opening that leads into the reader's question and matches the article\nbody.\n\nInput material:\nArticle: [fill in]\naudience: [fill in]\nfactual sources: [fill in]"
+        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，\n删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：用正文实际回答的问题或可核实事实切入，\n删宏大背景和空泛免责声明。\n开头承诺的内容必须正文提供，\n不用编造故事吸引点击。\n\n输出：与正文内容对应的文章开头，\n直接进入读者关心的问题。\n\n输入材料：\n正文：[填写]\n目标读者：[填写]\n事实来源：[填写]",
+        "en": "Make the supplied material clear, direct and informative. Organize it around\nthe judgment or action the reader needs. Remove repetitive retreat and empty\npreambles. Ground facts, numbers, scope, responsibility and commitments in\nthe material; keep meaningful conditions next to the claims they qualify.\nList missing facts separately.\n\nTask: Open with the question the article answers or a verifiable fact. Remove\nbroad filler; ensure the body delivers the opening's promise without\nfabricated anecdotes.\n\nOutput: An opening that leads into the reader's question and matches the article\nbody.\n\nInput material:\nArticle: [fill in]\nAudience: [fill in]\nFactual sources: [fill in]"
       },
       "example_id": "EX-13",
       "validation": "editorial-draft",
@@ -1353,15 +1355,15 @@
         ],
         "en": [
           "Article",
-          "audience",
-          "factual sources"
+          "Audience",
+          "Factual sources"
         ]
       },
       "output": {
         "zh": "与正文内容对应的文章开头，直接进入读者关心的问题。",
         "en": "An opening that leads into the reader's question and matches the article body."
       },
-      "mode": "task-specific"
+      "mode": "draft"
     },
     {
       "id": "DW-039",
@@ -1371,8 +1373,8 @@
         "en": "Opinion commentary"
       },
       "prompt": {
-        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：明确作者观点，分开事实、解释和价值判断，回应真实且相关的反例。\n无需机械给每方相同篇幅，但不能隐去关键反证。\n\n输出：观点正文，清楚区分事实、解释与价值判断，并回应关键反证。\n\n输入材料：\n观点：[填写]\n事实：[填写]\n反证：[填写]\n读者：[填写]",
-        "en": "Make the supplied material clear, direct and informative. Organize it around the\njudgment or action the reader needs. Remove repetitive retreat and empty preambles.\nGround facts, numbers, scope, responsibility and commitments in the material; keep\nmeaningful conditions next to the claims they qualify. List missing facts\nseparately.\n\nTask: Make the position explicit and separate facts, interpretations and values.\nAddress relevant counterevidence without mechanical equal airtime or suppression of\nmaterial objections.\n\nOutput: An opinion passage distinguishing facts, interpretation and values while\naddressing material counterevidence.\n\nInput material:\nPosition: [fill in]\nfacts: [fill in]\ncounterevidence: [fill in]\naudience: [fill in]"
+        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，\n删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：明确作者观点，\n分开事实、解释和价值判断，\n回应真实且相关的反例。\n无需机械给每方相同篇幅，\n但不能隐去关键反证。\n\n输出：观点正文，\n清楚区分事实、解释与价值判断，\n并回应关键反证。\n\n输入材料：\n观点：[填写]\n事实：[填写]\n反证：[填写]\n读者：[填写]",
+        "en": "Make the supplied material clear, direct and informative. Organize it around\nthe judgment or action the reader needs. Remove repetitive retreat and empty\npreambles. Ground facts, numbers, scope, responsibility and commitments in\nthe material; keep meaningful conditions next to the claims they qualify.\nList missing facts separately.\n\nTask: Make the position explicit and separate facts, interpretations and values.\nAddress relevant counterevidence without mechanical equal airtime or\nsuppression of material objections.\n\nOutput: An opinion passage distinguishing facts, interpretation and values while\naddressing material counterevidence.\n\nInput material:\nPosition: [fill in]\nFacts: [fill in]\nCounterevidence: [fill in]\nAudience: [fill in]"
       },
       "example_id": "EX-13",
       "validation": "editorial-draft",
@@ -1387,16 +1389,16 @@
         ],
         "en": [
           "Position",
-          "facts",
-          "counterevidence",
-          "audience"
+          "Facts",
+          "Counterevidence",
+          "Audience"
         ]
       },
       "output": {
         "zh": "观点正文，清楚区分事实、解释与价值判断，并回应关键反证。",
         "en": "An opinion passage distinguishing facts, interpretation and values while addressing material counterevidence."
       },
-      "mode": "task-specific"
+      "mode": "draft"
     },
     {
       "id": "DW-040",
@@ -1406,8 +1408,8 @@
         "en": "Science explanation"
       },
       "prompt": {
-        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：围绕读者问题解释概念与证据，保留会影响理解的类比边界。\n删重复抽象谨慎句，不把类比写成机制证明，不放大单篇研究结论。\n\n输出：先回答问题，再解释概念与证据；\n类比的关键边界随文说明。\n\n输入材料：\n问题：[填写]\n来源材料：[填写]\n类比：[填写]\n读者基础：[填写]",
-        "en": "Make the supplied material clear, direct and informative. Organize it around the\njudgment or action the reader needs. Remove repetitive retreat and empty preambles.\nGround facts, numbers, scope, responsibility and commitments in the material; keep\nmeaningful conditions next to the claims they qualify. List missing facts\nseparately.\n\nTask: Explain concepts and evidence around the reader's question. Keep material\nanalogy limits without generic caveat loops; do not turn an analogy into proof or\ninflate one study.\n\nOutput: An answer followed by concepts and evidence, with material analogy limits\nwhere needed.\n\nInput material:\nQuestion: [fill in]\nsources: [fill in]\nanalogy: [fill in]\naudience knowledge: [fill in]"
+        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，\n删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：围绕读者问题解释概念与证据，\n保留会影响理解的类比边界。\n删重复抽象谨慎句，\n不把类比写成机制证明，\n不放大单篇研究结论。\n\n输出：先回答问题，\n再解释概念与证据；\n类比的关键边界随文说明。\n\n输入材料：\n问题：[填写]\n来源材料：[填写]\n类比：[填写]\n读者基础：[填写]",
+        "en": "Make the supplied material clear, direct and informative. Organize it around\nthe judgment or action the reader needs. Remove repetitive retreat and empty\npreambles. Ground facts, numbers, scope, responsibility and commitments in\nthe material; keep meaningful conditions next to the claims they qualify.\nList missing facts separately.\n\nTask: Explain concepts and evidence around the reader's question. Keep material\nanalogy limits without generic caveat loops; do not turn an analogy into\nproof or inflate one study.\n\nOutput: An answer followed by concepts and evidence, with material analogy limits\nwhere needed.\n\nInput material:\nQuestion: [fill in]\nSources: [fill in]\nAnalogy: [fill in]\nAudience knowledge: [fill in]"
       },
       "example_id": "EX-14",
       "validation": "editorial-draft",
@@ -1422,16 +1424,16 @@
         ],
         "en": [
           "Question",
-          "sources",
-          "analogy",
-          "audience knowledge"
+          "Sources",
+          "Analogy",
+          "Audience knowledge"
         ]
       },
       "output": {
         "zh": "先回答问题，再解释概念与证据；类比的关键边界随文说明。",
         "en": "An answer followed by concepts and evidence, with material analogy limits where needed."
       },
-      "mode": "task-specific"
+      "mode": "draft"
     },
     {
       "id": "DW-041",
@@ -1441,8 +1443,8 @@
         "en": "Title and summary"
       },
       "prompt": {
-        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：标题表达正文已支持的核心信息，摘要给出结论与范围。\n删除空泛悬念和过度防御，不把建议改成保证，不省略会反转含义的条件。\n\n输出：三个标题备选与一段摘要，保持同一核心信息和适用条件。\n\n输入材料：\n正文：[填写]\n渠道：[填写]\n长度：[填写]\n关键边界：[填写]",
-        "en": "Make the supplied material clear, direct and informative. Organize it around the\njudgment or action the reader needs. Remove repetitive retreat and empty preambles.\nGround facts, numbers, scope, responsibility and commitments in the material; keep\nmeaningful conditions next to the claims they qualify. List missing facts\nseparately.\n\nTask: Use the supported core message in the title and include scope in the summary.\nAvoid empty suspense, unsupported guarantees and omission of meaning-changing\nconditions.\n\nOutput: Three title options and one summary preserving the core message and\napplicability.\n\nInput material:\nText: [fill in]\nchannel: [fill in]\nlength: [fill in]\nmaterial boundaries: [fill in]"
+        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，\n删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：标题表达正文已支持的核心信息，\n摘要给出结论与范围。\n删除空泛悬念和过度防御，\n不把建议改成保证，\n不省略会反转含义的条件。\n\n输出：三个标题备选与一段摘要，\n保持同一核心信息和适用条件。\n\n输入材料：\n正文：[填写]\n渠道：[填写]\n长度：[填写]\n关键边界：[填写]",
+        "en": "Make the supplied material clear, direct and informative. Organize it around\nthe judgment or action the reader needs. Remove repetitive retreat and empty\npreambles. Ground facts, numbers, scope, responsibility and commitments in\nthe material; keep meaningful conditions next to the claims they qualify.\nList missing facts separately.\n\nTask: Use the supported core message in the title and include scope in the\nsummary. Avoid empty suspense, unsupported guarantees and omission of\nmeaning-changing conditions.\n\nOutput: Three title options and one summary preserving the core message and\napplicability.\n\nInput material:\nText: [fill in]\nChannel: [fill in]\nLength: [fill in]\nMaterial boundaries: [fill in]"
       },
       "example_id": "EX-14",
       "validation": "editorial-draft",
@@ -1457,16 +1459,16 @@
         ],
         "en": [
           "Text",
-          "channel",
-          "length",
-          "material boundaries"
+          "Channel",
+          "Length",
+          "Material boundaries"
         ]
       },
       "output": {
         "zh": "三个标题备选与一段摘要，保持同一核心信息和适用条件。",
         "en": "Three title options and one summary preserving the core message and applicability."
       },
-      "mode": "task-specific"
+      "mode": "draft"
     },
     {
       "id": "DW-042",
@@ -1476,8 +1478,8 @@
         "en": "Answer a public comment"
       },
       "prompt": {
-        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：先回答具体疑问，再给能解决问题的条件或操作。\n区分合理质疑与信息缺失；\n不争论动机，不用长篇免责声明或无依据的绝对化保证。\n\n输出：一段直接答疑；\n给出可执行下一步，信息不足时提出具体问题。\n\n输入材料：\n评论：[填写]\n已知事实：[填写]\n公开可说范围：[填写]",
-        "en": "Make the supplied material clear, direct and informative. Organize it around the\njudgment or action the reader needs. Remove repetitive retreat and empty preambles.\nGround facts, numbers, scope, responsibility and commitments in the material; keep\nmeaningful conditions next to the claims they qualify. List missing facts\nseparately.\n\nTask: Answer the question, then relevant conditions or steps. Distinguish a valid\nobjection from missing information without speculating about motives or making\nabsolute guarantees.\n\nOutput: A direct reply with an actionable next step or a specific question for\nmissing information.\n\nInput material:\nComment: [fill in]\nknown facts: [fill in]\npublishable scope: [fill in]"
+        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，\n删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：先回答具体疑问，\n再给能解决问题的条件或操作。\n区分合理质疑与信息缺失；\n不争论动机，\n不用长篇免责声明或无依据的绝对化保证。\n\n输出：一段直接答疑；\n给出可执行下一步，\n信息不足时提出具体问题。\n\n输入材料：\n评论：[填写]\n已知事实：[填写]\n公开可说范围：[填写]",
+        "en": "Make the supplied material clear, direct and informative. Organize it around\nthe judgment or action the reader needs. Remove repetitive retreat and empty\npreambles. Ground facts, numbers, scope, responsibility and commitments in\nthe material; keep meaningful conditions next to the claims they qualify.\nList missing facts separately.\n\nTask: Answer the question, then relevant conditions or steps. Distinguish a valid\nobjection from missing information without speculating about motives or\nmaking absolute guarantees.\n\nOutput: A direct reply with an actionable next step or a specific question for\nmissing information.\n\nInput material:\nComment: [fill in]\nKnown facts: [fill in]\nPublishable scope: [fill in]"
       },
       "example_id": "EX-14",
       "validation": "editorial-draft",
@@ -1491,15 +1493,15 @@
         ],
         "en": [
           "Comment",
-          "known facts",
-          "publishable scope"
+          "Known facts",
+          "Publishable scope"
         ]
       },
       "output": {
         "zh": "一段直接答疑；给出可执行下一步，信息不足时提出具体问题。",
         "en": "A direct reply with an actionable next step or a specific question for missing information."
       },
-      "mode": "task-specific"
+      "mode": "draft"
     },
     {
       "id": "DW-043",
@@ -1509,8 +1511,8 @@
         "en": "Beginner tutorial"
       },
       "prompt": {
-        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：按输入材料写最短可完成路径，保留前置条件、预期现象和失败时下一步。\n删说教铺垫，不把简洁做成省略关键步骤。\n\n输出：教程：前提、步骤、完成检查、失败后的下一步。\n\n输入材料：\n任务：[填写]\n环境：[填写]\n步骤：[填写]\n常见失败：[填写]",
-        "en": "Make the supplied material clear, direct and informative. Organize it around the\njudgment or action the reader needs. Remove repetitive retreat and empty preambles.\nGround facts, numbers, scope, responsibility and commitments in the material; keep\nmeaningful conditions next to the claims they qualify. List missing facts\nseparately.\n\nTask: Give the shortest complete path supported by the material. Keep prerequisites,\nexpected observations and recovery steps; concision must not remove required\nactions.\n\nOutput: A tutorial with prerequisites, steps, completion checks and recovery\nactions.\n\nInput material:\nTask: [fill in]\nenvironment: [fill in]\nsteps: [fill in]\nfailure cases: [fill in]"
+        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，\n删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：按输入材料写最短可完成路径，\n保留前置条件、预期现象和失败时下一步。\n删说教铺垫，\n不把简洁做成省略关键步骤。\n\n输出：教程：前提、步骤、完成检查、失败后的下一步。\n\n输入材料：\n任务：[填写]\n环境：[填写]\n步骤：[填写]\n常见失败：[填写]",
+        "en": "Make the supplied material clear, direct and informative. Organize it around\nthe judgment or action the reader needs. Remove repetitive retreat and empty\npreambles. Ground facts, numbers, scope, responsibility and commitments in\nthe material; keep meaningful conditions next to the claims they qualify.\nList missing facts separately.\n\nTask: Give the shortest complete path supported by the material. Keep\nprerequisites, expected observations and recovery steps; concision must not\nremove required actions.\n\nOutput: A tutorial with prerequisites, steps, completion checks and recovery\nactions.\n\nInput material:\nTask: [fill in]\nEnvironment: [fill in]\nSteps: [fill in]\nFailure cases: [fill in]"
       },
       "example_id": "EX-15",
       "validation": "editorial-draft",
@@ -1525,16 +1527,16 @@
         ],
         "en": [
           "Task",
-          "environment",
-          "steps",
-          "failure cases"
+          "Environment",
+          "Steps",
+          "Failure cases"
         ]
       },
       "output": {
         "zh": "教程：前提、步骤、完成检查、失败后的下一步。",
         "en": "A tutorial with prerequisites, steps, completion checks and recovery actions."
       },
-      "mode": "task-specific"
+      "mode": "draft"
     },
     {
       "id": "DW-044",
@@ -1544,8 +1546,8 @@
         "en": "Installation instructions"
       },
       "prompt": {
-        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：保持已验证的命令、版本、作用范围和顺序，解释用户需要的动作。\n删除泛泛风险堆叠，不修改命令来显得简单；\n未验证环境标清。\n\n输出：安装步骤：环境与范围、原命令、完成检查。\n\n输入材料：\n已验证步骤：[填写]\n版本：[填写]\n环境：[填写]\n安装范围：[填写]",
-        "en": "Make the supplied material clear, direct and informative. Organize it around the\njudgment or action the reader needs. Remove repetitive retreat and empty preambles.\nGround facts, numbers, scope, responsibility and commitments in the material; keep\nmeaningful conditions next to the claims they qualify. List missing facts\nseparately.\n\nTask: Preserve verified commands, versions, scope and order. Explain required\nactions without generic warning piles; do not simplify commands by changing their\neffects, and label untested environments.\n\nOutput: Installation instructions with environment and scope, supplied commands and\ncompletion checks.\n\nInput material:\nVerified steps: [fill in]\nversions: [fill in]\nenvironment: [fill in]\nscope: [fill in]"
+        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，\n删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：保持已验证的命令、版本、作用范围和顺序，\n解释用户需要的动作。\n删除泛泛风险堆叠，\n不修改命令来显得简单；\n未验证环境标清。\n\n输出：安装步骤：环境与范围、原命令、完成检查。\n\n输入材料：\n已验证步骤：[填写]\n版本：[填写]\n环境：[填写]\n安装范围：[填写]",
+        "en": "Make the supplied material clear, direct and informative. Organize it around\nthe judgment or action the reader needs. Remove repetitive retreat and empty\npreambles. Ground facts, numbers, scope, responsibility and commitments in\nthe material; keep meaningful conditions next to the claims they qualify.\nList missing facts separately.\n\nTask: Preserve verified commands, versions, scope and order. Explain required\nactions without generic warning piles; do not simplify commands by changing\ntheir effects, and label untested environments.\n\nOutput: Installation instructions with environment and scope, supplied commands and\ncompletion checks.\n\nInput material:\nVerified steps: [fill in]\nVersions: [fill in]\nEnvironment: [fill in]\nScope: [fill in]"
       },
       "example_id": "EX-15",
       "validation": "editorial-draft",
@@ -1560,16 +1562,16 @@
         ],
         "en": [
           "Verified steps",
-          "versions",
-          "environment",
-          "scope"
+          "Versions",
+          "Environment",
+          "Scope"
         ]
       },
       "output": {
         "zh": "安装步骤：环境与范围、原命令、完成检查。",
         "en": "Installation instructions with environment and scope, supplied commands and completion checks."
       },
-      "mode": "task-specific"
+      "mode": "revise"
     },
     {
       "id": "DW-045",
@@ -1579,8 +1581,8 @@
         "en": "Troubleshooting"
       },
       "prompt": {
-        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：用症状、可观察证据、判断和下一步组织。\n将确定原因与假设分开；\n避免一上来归因用户操作或要求重装，不省略数据保护条件。\n\n输出：排查表：症状、已观察证据、当前假设与下一步检查。\n\n输入材料：\n症状：[填写]\n日志：[填写]\n环境：[填写]\n已尝试步骤：[填写]",
-        "en": "Make the supplied material clear, direct and informative. Organize it around the\njudgment or action the reader needs. Remove repetitive retreat and empty preambles.\nGround facts, numbers, scope, responsibility and commitments in the material; keep\nmeaningful conditions next to the claims they qualify. List missing facts\nseparately.\n\nTask: Organize symptoms, observations, diagnosis and next action. Separate causes\nfrom hypotheses; avoid blaming the user or defaulting to reinstalling, and retain\ndata-protection conditions.\n\nOutput: A troubleshooting table of symptoms, observations, current hypotheses and\nnext checks.\n\nInput material:\nSymptoms: [fill in]\nlogs: [fill in]\nenvironment: [fill in]\nattempts: [fill in]"
+        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，\n删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：用症状、可观察证据、判断和下一步组织。\n将确定原因与假设分开；\n避免一上来归因用户操作或要求重装，\n不省略数据保护条件。\n\n输出：排查表：症状、已观察证据、当前假设与下一步检查。\n\n输入材料：\n症状：[填写]\n日志：[填写]\n环境：[填写]\n已尝试步骤：[填写]",
+        "en": "Make the supplied material clear, direct and informative. Organize it around\nthe judgment or action the reader needs. Remove repetitive retreat and empty\npreambles. Ground facts, numbers, scope, responsibility and commitments in\nthe material; keep meaningful conditions next to the claims they qualify.\nList missing facts separately.\n\nTask: Organize symptoms, observations, diagnosis and next action. Separate causes\nfrom hypotheses; avoid blaming the user or defaulting to reinstalling, and\nretain data-protection conditions.\n\nOutput: A troubleshooting table of symptoms, observations, current hypotheses and\nnext checks.\n\nInput material:\nSymptoms: [fill in]\nLogs: [fill in]\nEnvironment: [fill in]\nAttempts: [fill in]"
       },
       "example_id": "EX-15",
       "validation": "editorial-draft",
@@ -1595,16 +1597,16 @@
         ],
         "en": [
           "Symptoms",
-          "logs",
-          "environment",
-          "attempts"
+          "Logs",
+          "Environment",
+          "Attempts"
         ]
       },
       "output": {
         "zh": "排查表：症状、已观察证据、当前假设与下一步检查。",
         "en": "A troubleshooting table of symptoms, observations, current hypotheses and next checks."
       },
-      "mode": "task-specific"
+      "mode": "draft"
     },
     {
       "id": "DW-046",
@@ -1614,8 +1616,8 @@
         "en": "SOP prerequisites"
       },
       "prompt": {
-        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：保留顺序、单位、参数、禁止操作和适用条件，只删不改变操作含义的重复说教。\n否定限制不能仅改成不等价的正向建议；\n未知条件标待确认。\n\n输出：编号 SOP，完整保留参数、前提、顺序和禁止事项。\n\n输入材料：\n原 SOP：[填写]\n适用范围：[填写]\n已确认参数：[填写]",
-        "en": "Make the supplied material clear, direct and informative. Organize it around the\njudgment or action the reader needs. Remove repetitive retreat and empty preambles.\nGround facts, numbers, scope, responsibility and commitments in the material; keep\nmeaningful conditions next to the claims they qualify. List missing facts\nseparately.\n\nTask: Preserve order, units, parameters, prohibitions and applicability. Remove only\nnonoperational repetition; do not replace a prohibition with a nonequivalent\npositive suggestion.\n\nOutput: A numbered SOP retaining parameters, prerequisites, sequence and\nprohibitions.\n\nInput material:\nOriginal SOP: [fill in]\nscope: [fill in]\nconfirmed parameters: [fill in]"
+        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，\n删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：保留顺序、单位、参数、禁止操作和适用条件，\n只删不改变操作含义的重复说教。\n否定限制不能仅改成不等价的正向建议；\n未知条件标待确认。\n\n输出：编号 SOP，\n完整保留参数、前提、顺序和禁止事项。\n\n输入材料：\n原 SOP：[填写]\n适用范围：[填写]\n已确认参数：[填写]",
+        "en": "Make the supplied material clear, direct and informative. Organize it around\nthe judgment or action the reader needs. Remove repetitive retreat and empty\npreambles. Ground facts, numbers, scope, responsibility and commitments in\nthe material; keep meaningful conditions next to the claims they qualify.\nList missing facts separately.\n\nTask: Preserve order, units, parameters, prohibitions and applicability. Remove\nonly nonoperational repetition; do not replace a prohibition with a\nnonequivalent positive suggestion.\n\nOutput: A numbered SOP retaining parameters, prerequisites, sequence and\nprohibitions.\n\nInput material:\nOriginal SOP: [fill in]\nScope: [fill in]\nConfirmed parameters: [fill in]"
       },
       "example_id": "EX-16",
       "validation": "editorial-draft",
@@ -1629,15 +1631,15 @@
         ],
         "en": [
           "Original SOP",
-          "scope",
-          "confirmed parameters"
+          "Scope",
+          "Confirmed parameters"
         ]
       },
       "output": {
         "zh": "编号 SOP，完整保留参数、前提、顺序和禁止事项。",
         "en": "A numbered SOP retaining parameters, prerequisites, sequence and prohibitions."
       },
-      "mode": "task-specific"
+      "mode": "revise"
     },
     {
       "id": "DW-047",
@@ -1647,8 +1649,8 @@
         "en": "Code-review feedback"
       },
       "prompt": {
-        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：指出具体触发条件、可观察后果和最小修正建议，区分功能问题与偏好。\n删除模糊否定，不编运行结果；\n不为显得友好回避实际缺陷。\n\n输出：评审意见：触发条件、后果、修正建议与实际验证状态。\n\n输入材料：\n差异：[填写]\n相关上下文：[填写]\n实际测试结果：[填写]",
-        "en": "Make the supplied material clear, direct and informative. Organize it around the\njudgment or action the reader needs. Remove repetitive retreat and empty preambles.\nGround facts, numbers, scope, responsibility and commitments in the material; keep\nmeaningful conditions next to the claims they qualify. List missing facts\nseparately.\n\nTask: State the trigger, observable consequence and minimal fix, separating defects\nfrom preferences. Do not invent execution results or obscure a real issue with vague\npoliteness.\n\nOutput: Review feedback with trigger, consequence, suggested fix and actual\nverification status.\n\nInput material:\nDiff: [fill in]\nrelevant context: [fill in]\nactual test results: [fill in]"
+        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，\n删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：指出具体触发条件、可观察后果和最小修正建议，\n区分功能问题与偏好。\n删除模糊否定，\n不编运行结果；\n不为显得友好回避实际缺陷。\n\n输出：评审意见：触发条件、后果、修正建议与实际验证状态。\n\n输入材料：\n差异：[填写]\n相关上下文：[填写]\n实际测试结果：[填写]",
+        "en": "Make the supplied material clear, direct and informative. Organize it around\nthe judgment or action the reader needs. Remove repetitive retreat and empty\npreambles. Ground facts, numbers, scope, responsibility and commitments in\nthe material; keep meaningful conditions next to the claims they qualify.\nList missing facts separately.\n\nTask: State the trigger, observable consequence and minimal fix, separating\ndefects from preferences. Do not invent execution results or obscure a real\nissue with vague politeness.\n\nOutput: Review feedback with trigger, consequence, suggested fix and actual\nverification status.\n\nInput material:\nDiff: [fill in]\nRelevant context: [fill in]\nActual test results: [fill in]"
       },
       "example_id": "EX-21",
       "validation": "editorial-draft",
@@ -1662,15 +1664,15 @@
         ],
         "en": [
           "Diff",
-          "relevant context",
-          "actual test results"
+          "Relevant context",
+          "Actual test results"
         ]
       },
       "output": {
         "zh": "评审意见：触发条件、后果、修正建议与实际验证状态。",
         "en": "Review feedback with trigger, consequence, suggested fix and actual verification status."
       },
-      "mode": "task-specific"
+      "mode": "draft"
     },
     {
       "id": "DW-048",
@@ -1680,8 +1682,8 @@
         "en": "Technical choice"
       },
       "prompt": {
-        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：按项目约束与同条件证据比较候选项，给推荐和会改变结论的条件。\n材料不足时给验证步骤；\n不写所有技术都各有优劣就结束。\n\n输出：候选项比较、推荐选择及会改变结论的条件。\n\n输入材料：\n约束：[填写]\n候选项：[填写]\n测量或文档：[填写]\n维护条件：[填写]",
-        "en": "Make the supplied material clear, direct and informative. Organize it around the\njudgment or action the reader needs. Remove repetitive retreat and empty preambles.\nGround facts, numbers, scope, responsibility and commitments in the material; keep\nmeaningful conditions next to the claims they qualify. List missing facts\nseparately.\n\nTask: Compare options against constraints and comparable evidence. Recommend when\njustified and state switching conditions; otherwise identify a useful verification\nstep.\n\nOutput: An option comparison, recommended choice and conditions that would change\nit.\n\nInput material:\nConstraints: [fill in]\noptions: [fill in]\nmeasurements or docs: [fill in]\nmaintenance: [fill in]"
+        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，\n删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：按项目约束与同条件证据比较候选项，\n给推荐和会改变结论的条件。\n材料不足时给验证步骤；\n不写所有技术都各有优劣就结束。\n\n输出：候选项比较、推荐选择及会改变结论的条件。\n\n输入材料：\n约束：[填写]\n候选项：[填写]\n测量或文档：[填写]\n维护条件：[填写]",
+        "en": "Make the supplied material clear, direct and informative. Organize it around\nthe judgment or action the reader needs. Remove repetitive retreat and empty\npreambles. Ground facts, numbers, scope, responsibility and commitments in\nthe material; keep meaningful conditions next to the claims they qualify.\nList missing facts separately.\n\nTask: Compare options against constraints and comparable evidence. Recommend when\njustified and state switching conditions; otherwise identify a useful\nverification step.\n\nOutput: An option comparison, recommended choice and conditions that would change\nit.\n\nInput material:\nConstraints: [fill in]\nOptions: [fill in]\nMeasurements or docs: [fill in]\nMaintenance: [fill in]"
       },
       "example_id": "EX-22",
       "validation": "editorial-draft",
@@ -1696,16 +1698,16 @@
         ],
         "en": [
           "Constraints",
-          "options",
-          "measurements or docs",
-          "maintenance"
+          "Options",
+          "Measurements or docs",
+          "Maintenance"
         ]
       },
       "output": {
         "zh": "候选项比较、推荐选择及会改变结论的条件。",
         "en": "An option comparison, recommended choice and conditions that would change it."
       },
-      "mode": "task-specific"
+      "mode": "draft"
     },
     {
       "id": "DW-049",
@@ -1715,8 +1717,8 @@
         "en": "Chart takeaway"
       },
       "prompt": {
-        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：先核对坐标、单位、分母、时间和比较口径，再用一句话报告最重要的观察。\n区分读图事实与原因解释，保留会改变判断的误差或缺失。\n\n输出：一句核心读图结论，再列数据口径与必要解释。\n\n输入材料：\n图表数据：[填写]\n坐标与单位：[填写]\n比较口径：[填写]",
-        "en": "Make the supplied material clear, direct and informative. Organize it around the\njudgment or action the reader needs. Remove repetitive retreat and empty preambles.\nGround facts, numbers, scope, responsibility and commitments in the material; keep\nmeaningful conditions next to the claims they qualify. List missing facts\nseparately.\n\nTask: Check axes, units, denominators, periods and comparability before giving the\nmain observation. Separate chart facts from causal interpretation and retain\nmaterial uncertainty.\n\nOutput: A main chart takeaway followed by measurement definitions and necessary\ninterpretation.\n\nInput material:\nChart data: [fill in]\naxes and units: [fill in]\ncomparison definition: [fill in]"
+        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，\n删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：先核对坐标、单位、分母、时间和比较口径，\n再用一句话报告最重要的观察。\n区分读图事实与原因解释，\n保留会改变判断的误差或缺失。\n\n输出：一句核心读图结论，\n再列数据口径与必要解释。\n\n输入材料：\n图表数据：[填写]\n坐标与单位：[填写]\n比较口径：[填写]",
+        "en": "Make the supplied material clear, direct and informative. Organize it around\nthe judgment or action the reader needs. Remove repetitive retreat and empty\npreambles. Ground facts, numbers, scope, responsibility and commitments in\nthe material; keep meaningful conditions next to the claims they qualify.\nList missing facts separately.\n\nTask: Check axes, units, denominators, periods and comparability before giving the\nmain observation. Separate chart facts from causal interpretation and retain\nmaterial uncertainty.\n\nOutput: A main chart takeaway followed by measurement definitions and necessary\ninterpretation.\n\nInput material:\nChart data: [fill in]\nAxes and units: [fill in]\nComparison definition: [fill in]"
       },
       "example_id": "EX-17",
       "validation": "editorial-draft",
@@ -1730,15 +1732,15 @@
         ],
         "en": [
           "Chart data",
-          "axes and units",
-          "comparison definition"
+          "Axes and units",
+          "Comparison definition"
         ]
       },
       "output": {
         "zh": "一句核心读图结论，再列数据口径与必要解释。",
         "en": "A main chart takeaway followed by measurement definitions and necessary interpretation."
       },
-      "mode": "task-specific"
+      "mode": "draft"
     },
     {
       "id": "DW-050",
@@ -1748,8 +1750,8 @@
         "en": "Association versus causation"
       },
       "prompt": {
-        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：按设计和材料判断可以说到哪一级。\n删除重复的可能性词，但不把相关、预测或组间差异升级为作用机制或因果；\n必要时纠正原文过度主张。\n\n输出：与设计匹配的结论，并说明哪些词因证据强度而调整。\n\n输入材料：\n原结论：[填写]\n设计：[填写]\n分析方法：[填写]\n结果：[填写]",
-        "en": "Make the supplied material clear, direct and informative. Organize it around the\njudgment or action the reader needs. Remove repetitive retreat and empty preambles.\nGround facts, numbers, scope, responsibility and commitments in the material; keep\nmeaningful conditions next to the claims they qualify. List missing facts\nseparately.\n\nTask: Calibrate claims to design and evidence. Remove hedge stacking without\nupgrading associations, predictions or group differences to causality; correct\noverclaims when warranted.\n\nOutput: A design-calibrated conclusion and an explanation of claim-strength wording\nchanges.\n\nInput material:\nClaim: [fill in]\ndesign: [fill in]\nanalysis: [fill in]\nresults: [fill in]"
+        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，\n删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：按设计和材料判断可以说到哪一级。\n删除重复的可能性词，\n但不把相关、预测或组间差异升级为作用机制或因果；\n必要时纠正原文过度主张。\n\n输出：与设计匹配的结论，\n并说明哪些词因证据强度而调整。\n\n输入材料：\n原结论：[填写]\n设计：[填写]\n分析方法：[填写]\n结果：[填写]",
+        "en": "Make the supplied material clear, direct and informative. Organize it around\nthe judgment or action the reader needs. Remove repetitive retreat and empty\npreambles. Ground facts, numbers, scope, responsibility and commitments in\nthe material; keep meaningful conditions next to the claims they qualify.\nList missing facts separately.\n\nTask: Calibrate claims to design and evidence. Remove hedge stacking without\nupgrading associations, predictions or group differences to causality;\ncorrect overclaims when warranted.\n\nOutput: A design-calibrated conclusion and an explanation of claim-strength wording\nchanges.\n\nInput material:\nClaim: [fill in]\nDesign: [fill in]\nAnalysis: [fill in]\nResults: [fill in]"
       },
       "example_id": "EX-17",
       "validation": "editorial-draft",
@@ -1764,16 +1766,16 @@
         ],
         "en": [
           "Claim",
-          "design",
-          "analysis",
-          "results"
+          "Design",
+          "Analysis",
+          "Results"
         ]
       },
       "output": {
         "zh": "与设计匹配的结论，并说明哪些词因证据强度而调整。",
         "en": "A design-calibrated conclusion and an explanation of claim-strength wording changes."
       },
-      "mode": "task-specific"
+      "mode": "draft"
     },
     {
       "id": "DW-051",
@@ -1783,8 +1785,8 @@
         "en": "Sample and generalization"
       },
       "prompt": {
-        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：具体写明样本、时间与测量范围，避免用普遍性措辞掩盖外推限制。\n正向说明范围后，若读者仍可能误用，保留明确的不可外推说明。\n\n输出：范围清楚的结论，标明样本、时间、测量和外推条件。\n\n输入材料：\n样本来源：[填写]\n时间：[填写]\n测量：[填写]\n目标人群：[填写]",
-        "en": "Make the supplied material clear, direct and informative. Organize it around the\njudgment or action the reader needs. Remove repetitive retreat and empty preambles.\nGround facts, numbers, scope, responsibility and commitments in the material; keep\nmeaningful conditions next to the claims they qualify. List missing facts\nseparately.\n\nTask: State sample, period and measurement scope. Do not hide generalization limits\nbehind broad wording. Keep an explicit exclusion when positive scope alone would\ninvite misuse.\n\nOutput: A scoped conclusion identifying sample, period, measurement and\ngeneralization conditions.\n\nInput material:\nSample source: [fill in]\nperiod: [fill in]\nmeasures: [fill in]\ntarget population: [fill in]"
+        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，\n删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：具体写明样本、时间与测量范围，\n避免用普遍性措辞掩盖外推限制。\n正向说明范围后，\n若读者仍可能误用，\n保留明确的不可外推说明。\n\n输出：范围清楚的结论，\n标明样本、时间、测量和外推条件。\n\n输入材料：\n样本来源：[填写]\n时间：[填写]\n测量：[填写]\n目标人群：[填写]",
+        "en": "Make the supplied material clear, direct and informative. Organize it around\nthe judgment or action the reader needs. Remove repetitive retreat and empty\npreambles. Ground facts, numbers, scope, responsibility and commitments in\nthe material; keep meaningful conditions next to the claims they qualify.\nList missing facts separately.\n\nTask: State sample, period and measurement scope. Do not hide generalization\nlimits behind broad wording. Keep an explicit exclusion when positive scope\nalone would invite misuse.\n\nOutput: A scoped conclusion identifying sample, period, measurement and\ngeneralization conditions.\n\nInput material:\nSample source: [fill in]\nPeriod: [fill in]\nMeasures: [fill in]\nTarget population: [fill in]"
       },
       "example_id": "EX-17",
       "validation": "editorial-draft",
@@ -1799,16 +1801,16 @@
         ],
         "en": [
           "Sample source",
-          "period",
-          "measures",
-          "target population"
+          "Period",
+          "Measures",
+          "Target population"
         ]
       },
       "output": {
         "zh": "范围清楚的结论，标明样本、时间、测量和外推条件。",
         "en": "A scoped conclusion identifying sample, period, measurement and generalization conditions."
       },
-      "mode": "task-specific"
+      "mode": "draft"
     },
     {
       "id": "DW-052",
@@ -1818,8 +1820,8 @@
         "en": "Forecast and scenario"
       },
       "prompt": {
-        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：区分预测、目标、承诺和假设情景。\n清楚写条件、区间或情景差异；\n删空泛谨慎话，但不把有条件预测写成确定结果。\n\n输出：预测正文，明确假设、情景、区间或触发条件。\n\n输入材料：\n预测：[填写]\n假设：[填写]\n区间：[填写]\n用途：[填写]",
-        "en": "Make the supplied material clear, direct and informative. Organize it around the\njudgment or action the reader needs. Remove repetitive retreat and empty preambles.\nGround facts, numbers, scope, responsibility and commitments in the material; keep\nmeaningful conditions next to the claims they qualify. List missing facts\nseparately.\n\nTask: Distinguish forecasts, targets, commitments and hypothetical scenarios. State\nassumptions, ranges or scenario differences without turning conditional estimates\ninto certainties.\n\nOutput: A forecast stating assumptions, scenarios, ranges or triggering conditions.\n\nInput material:\nForecast: [fill in]\nassumptions: [fill in]\nranges: [fill in]\nuse: [fill in]"
+        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，\n删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：区分预测、目标、承诺和假设情景。\n清楚写条件、区间或情景差异；\n删空泛谨慎话，\n但不把有条件预测写成确定结果。\n\n输出：预测正文，\n明确假设、情景、区间或触发条件。\n\n输入材料：\n预测：[填写]\n假设：[填写]\n区间：[填写]\n用途：[填写]",
+        "en": "Make the supplied material clear, direct and informative. Organize it around\nthe judgment or action the reader needs. Remove repetitive retreat and empty\npreambles. Ground facts, numbers, scope, responsibility and commitments in\nthe material; keep meaningful conditions next to the claims they qualify.\nList missing facts separately.\n\nTask: Distinguish forecasts, targets, commitments and hypothetical scenarios.\nState assumptions, ranges or scenario differences without turning\nconditional estimates into certainties.\n\nOutput: A forecast stating assumptions, scenarios, ranges or triggering conditions.\n\nInput material:\nForecast: [fill in]\nAssumptions: [fill in]\nRanges: [fill in]\nUse: [fill in]"
       },
       "example_id": "EX-02",
       "validation": "editorial-draft",
@@ -1834,16 +1836,16 @@
         ],
         "en": [
           "Forecast",
-          "assumptions",
-          "ranges",
-          "use"
+          "Assumptions",
+          "Ranges",
+          "Use"
         ]
       },
       "output": {
         "zh": "预测正文，明确假设、情景、区间或触发条件。",
         "en": "A forecast stating assumptions, scenarios, ranges or triggering conditions."
       },
-      "mode": "task-specific"
+      "mode": "draft"
     },
     {
       "id": "DW-053",
@@ -1853,8 +1855,8 @@
         "en": "Negative or inconclusive findings"
       },
       "prompt": {
-        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：报告未检测到的效应及分析精度，区分没有显著证据与证明没有效应。\n删除无关自我否定，不隐藏负结果，也不编补救发现。\n\n输出：负结果段落，报告估计、区间及可以据此作出的判断。\n\n输入材料：\n设计：[填写]\n估计值：[填写]\n区间：[填写]\n检验结果：[填写]",
-        "en": "Make the supplied material clear, direct and informative. Organize it around the\njudgment or action the reader needs. Remove repetitive retreat and empty preambles.\nGround facts, numbers, scope, responsibility and commitments in the material; keep\nmeaningful conditions next to the claims they qualify. List missing facts\nseparately.\n\nTask: Report what was not detected and the precision available. Distinguish lack of\nsignificant evidence from evidence of absence; do not hide the result or invent a\npositive finding.\n\nOutput: A negative-results paragraph reporting estimates, intervals and the\ninterpretation they support.\n\nInput material:\nDesign: [fill in]\nestimates: [fill in]\nintervals: [fill in]\ntest results: [fill in]"
+        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，\n删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：报告未检测到的效应及分析精度，\n区分没有显著证据与证明没有效应。\n删除无关自我否定，\n不隐藏负结果，\n也不编补救发现。\n\n输出：负结果段落，\n报告估计、区间及可以据此作出的判断。\n\n输入材料：\n设计：[填写]\n估计值：[填写]\n区间：[填写]\n检验结果：[填写]",
+        "en": "Make the supplied material clear, direct and informative. Organize it around\nthe judgment or action the reader needs. Remove repetitive retreat and empty\npreambles. Ground facts, numbers, scope, responsibility and commitments in\nthe material; keep meaningful conditions next to the claims they qualify.\nList missing facts separately.\n\nTask: Report what was not detected and the precision available. Distinguish lack\nof significant evidence from evidence of absence; do not hide the result or\ninvent a positive finding.\n\nOutput: A negative-results paragraph reporting estimates, intervals and the\ninterpretation they support.\n\nInput material:\nDesign: [fill in]\nEstimates: [fill in]\nIntervals: [fill in]\nTest results: [fill in]"
       },
       "example_id": "EX-18",
       "validation": "editorial-draft",
@@ -1869,16 +1871,16 @@
         ],
         "en": [
           "Design",
-          "estimates",
-          "intervals",
-          "test results"
+          "Estimates",
+          "Intervals",
+          "Test results"
         ]
       },
       "output": {
         "zh": "负结果段落，报告估计、区间及可以据此作出的判断。",
         "en": "A negative-results paragraph reporting estimates, intervals and the interpretation they support."
       },
-      "mode": "task-specific"
+      "mode": "draft"
     },
     {
       "id": "DW-054",
@@ -1888,8 +1890,8 @@
         "en": "Multiple-metric trade-offs"
       },
       "prompt": {
-        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：同时报告获益和代价，使用一致条件和单位。\n依目标说明选择理由，不把某项下降写成全面失败，也不为营销省略不利指标。\n\n输出：完整指标对照与取舍说明，再按任务目标给出选择依据。\n\n输入材料：\n各指标：[填写]\n测试条件：[填写]\n目标优先级：[填写]",
-        "en": "Make the supplied material clear, direct and informative. Organize it around the\njudgment or action the reader needs. Remove repetitive retreat and empty preambles.\nGround facts, numbers, scope, responsibility and commitments in the material; keep\nmeaningful conditions next to the claims they qualify. List missing facts\nseparately.\n\nTask: Report gains and costs under consistent conditions and units. Relate the\nchoice to the objective without treating one decline as total failure or hiding\nunfavorable metrics.\n\nOutput: All relevant metrics and trade-offs, then a choice justified by the task\nobjective.\n\nInput material:\nMetrics: [fill in]\ntest conditions: [fill in]\nobjective priorities: [fill in]"
+        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，\n删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：同时报告获益和代价，\n使用一致条件和单位。\n依目标说明选择理由，\n不把某项下降写成全面失败，\n也不为营销省略不利指标。\n\n输出：完整指标对照与取舍说明，\n再按任务目标给出选择依据。\n\n输入材料：\n各指标：[填写]\n测试条件：[填写]\n目标优先级：[填写]",
+        "en": "Make the supplied material clear, direct and informative. Organize it around\nthe judgment or action the reader needs. Remove repetitive retreat and empty\npreambles. Ground facts, numbers, scope, responsibility and commitments in\nthe material; keep meaningful conditions next to the claims they qualify.\nList missing facts separately.\n\nTask: Report gains and costs under consistent conditions and units. Relate the\nchoice to the objective without treating one decline as total failure or\nhiding unfavorable metrics.\n\nOutput: All relevant metrics and trade-offs, then a choice justified by the task\nobjective.\n\nInput material:\nMetrics: [fill in]\nTest conditions: [fill in]\nObjective priorities: [fill in]"
       },
       "example_id": "EX-22",
       "validation": "editorial-draft",
@@ -1903,15 +1905,15 @@
         ],
         "en": [
           "Metrics",
-          "test conditions",
-          "objective priorities"
+          "Test conditions",
+          "Objective priorities"
         ]
       },
       "output": {
         "zh": "完整指标对照与取舍说明，再按任务目标给出选择依据。",
         "en": "All relevant metrics and trade-offs, then a choice justified by the task objective."
       },
-      "mode": "task-specific"
+      "mode": "draft"
     },
     {
       "id": "DW-055",
@@ -1921,8 +1923,8 @@
         "en": "Learning advice"
       },
       "prompt": {
-        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：根据已有基础、目标和可用时间给出可执行建议。\n只保留影响路径的前提，不用因人而异结束；\n不承诺固定天数必定掌握。\n\n输出：学习路径：当前起点、下一步练习与完成检查。\n\n输入材料：\n基础：[填写]\n目标：[填写]\n可用时间：[填写]\n资源：[填写]",
-        "en": "Make the supplied material clear, direct and informative. Organize it around the\njudgment or action the reader needs. Remove repetitive retreat and empty preambles.\nGround facts, numbers, scope, responsibility and commitments in the material; keep\nmeaningful conditions next to the claims they qualify. List missing facts\nseparately.\n\nTask: Base actionable advice on starting level, goal and available time. Retain\npath-changing prerequisites without stopping at 'it depends' or guaranteeing mastery\nby a deadline.\n\nOutput: A learning path with starting level, next exercise and completion checks.\n\nInput material:\nStarting level: [fill in]\ngoal: [fill in]\navailable time: [fill in]\nresources: [fill in]"
+        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，\n删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：根据已有基础、目标和可用时间给出可执行建议。\n只保留影响路径的前提，\n不用因人而异结束；\n不承诺固定天数必定掌握。\n\n输出：学习路径：当前起点、下一步练习与完成检查。\n\n输入材料：\n基础：[填写]\n目标：[填写]\n可用时间：[填写]\n资源：[填写]",
+        "en": "Make the supplied material clear, direct and informative. Organize it around\nthe judgment or action the reader needs. Remove repetitive retreat and empty\npreambles. Ground facts, numbers, scope, responsibility and commitments in\nthe material; keep meaningful conditions next to the claims they qualify.\nList missing facts separately.\n\nTask: Base actionable advice on starting level, goal and available time. Retain\npath-changing prerequisites without stopping at 'it depends' or guaranteeing\nmastery by a deadline.\n\nOutput: A learning path with starting level, next exercise and completion checks.\n\nInput material:\nStarting level: [fill in]\nGoal: [fill in]\nAvailable time: [fill in]\nResources: [fill in]"
       },
       "example_id": "EX-19",
       "validation": "editorial-draft",
@@ -1937,16 +1939,16 @@
         ],
         "en": [
           "Starting level",
-          "goal",
-          "available time",
-          "resources"
+          "Goal",
+          "Available time",
+          "Resources"
         ]
       },
       "output": {
         "zh": "学习路径：当前起点、下一步练习与完成检查。",
         "en": "A learning path with starting level, next exercise and completion checks."
       },
-      "mode": "task-specific"
+      "mode": "draft"
     },
     {
       "id": "DW-056",
@@ -1956,8 +1958,8 @@
         "en": "Learning reflection"
       },
       "prompt": {
-        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：区分投入、产出、尚未掌握内容与下一步练习。\n删自我否定和空泛鸡汤，不把看完课程当成掌握能力。\n\n输出：学习复盘：实际产出、能力缺口与下次练习。\n\n输入材料：\n学习记录：[填写]\n作品或练习：[填写]\n问题：[填写]",
-        "en": "Make the supplied material clear, direct and informative. Organize it around the\njudgment or action the reader needs. Remove repetitive retreat and empty preambles.\nGround facts, numbers, scope, responsibility and commitments in the material; keep\nmeaningful conditions next to the claims they qualify. List missing facts\nseparately.\n\nTask: Distinguish effort, output, remaining gaps and next practice. Remove\nself-denigration and empty motivation without equating course completion with\ncompetence.\n\nOutput: A reflection covering actual output, capability gaps and the next practice.\n\nInput material:\nLearning log: [fill in]\noutputs or exercises: [fill in]\ndifficulties: [fill in]"
+        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，\n删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：区分投入、产出、尚未掌握内容与下一步练习。\n删自我否定和空泛鸡汤，\n不把看完课程当成掌握能力。\n\n输出：学习复盘：实际产出、能力缺口与下次练习。\n\n输入材料：\n学习记录：[填写]\n作品或练习：[填写]\n问题：[填写]",
+        "en": "Make the supplied material clear, direct and informative. Organize it around\nthe judgment or action the reader needs. Remove repetitive retreat and empty\npreambles. Ground facts, numbers, scope, responsibility and commitments in\nthe material; keep meaningful conditions next to the claims they qualify.\nList missing facts separately.\n\nTask: Distinguish effort, output, remaining gaps and next practice. Remove\nself-denigration and empty motivation without equating course completion\nwith competence.\n\nOutput: A reflection covering actual output, capability gaps and the next practice.\n\nInput material:\nLearning log: [fill in]\nOutputs or exercises: [fill in]\nDifficulties: [fill in]"
       },
       "example_id": "EX-19",
       "validation": "editorial-draft",
@@ -1971,15 +1973,15 @@
         ],
         "en": [
           "Learning log",
-          "outputs or exercises",
-          "difficulties"
+          "Outputs or exercises",
+          "Difficulties"
         ]
       },
       "output": {
         "zh": "学习复盘：实际产出、能力缺口与下次练习。",
         "en": "A reflection covering actual output, capability gaps and the next practice."
       },
-      "mode": "task-specific"
+      "mode": "draft"
     },
     {
       "id": "DW-057",
@@ -1989,8 +1991,8 @@
         "en": "Self-introduction"
       },
       "prompt": {
-        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：围绕真实经历、兴趣和联系目的表达，保留适合场合的礼貌。\n删除重复自谦，不虚构职位、专业身份、成果或熟练程度。\n\n输出：适合当前场合的简短自我介绍，使用真实经历与联系目的。\n\n输入材料：\n真实身份：[填写]\n经历：[填写]\n场合：[填写]\n目标：[填写]",
-        "en": "Make the supplied material clear, direct and informative. Organize it around the\njudgment or action the reader needs. Remove repetitive retreat and empty preambles.\nGround facts, numbers, scope, responsibility and commitments in the material; keep\nmeaningful conditions next to the claims they qualify. List missing facts\nseparately.\n\nTask: Use real experience, interests and purpose with situational courtesy. Remove\nrepeated modesty without inventing credentials, identity, achievements or\nproficiency.\n\nOutput: A short introduction suited to the setting, using real experience and\npurpose.\n\nInput material:\nActual identity: [fill in]\nexperience: [fill in]\nsetting: [fill in]\ngoal: [fill in]"
+        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，\n删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：围绕真实经历、兴趣和联系目的表达，\n保留适合场合的礼貌。\n删除重复自谦，\n不虚构职位、专业身份、成果或熟练程度。\n\n输出：适合当前场合的简短自我介绍，\n使用真实经历与联系目的。\n\n输入材料：\n真实身份：[填写]\n经历：[填写]\n场合：[填写]\n目标：[填写]",
+        "en": "Make the supplied material clear, direct and informative. Organize it around\nthe judgment or action the reader needs. Remove repetitive retreat and empty\npreambles. Ground facts, numbers, scope, responsibility and commitments in\nthe material; keep meaningful conditions next to the claims they qualify.\nList missing facts separately.\n\nTask: Use real experience, interests and purpose with situational courtesy. Remove\nrepeated modesty without inventing credentials, identity, achievements or\nproficiency.\n\nOutput: A short introduction suited to the setting, using real experience and\npurpose.\n\nInput material:\nActual identity: [fill in]\nExperience: [fill in]\nSetting: [fill in]\nGoal: [fill in]"
       },
       "example_id": "EX-19",
       "validation": "editorial-draft",
@@ -2005,16 +2007,16 @@
         ],
         "en": [
           "Actual identity",
-          "experience",
-          "setting",
-          "goal"
+          "Experience",
+          "Setting",
+          "Goal"
         ]
       },
       "output": {
         "zh": "适合当前场合的简短自我介绍，使用真实经历与联系目的。",
         "en": "A short introduction suited to the setting, using real experience and purpose."
       },
-      "mode": "task-specific"
+      "mode": "draft"
     },
     {
       "id": "DW-058",
@@ -2024,8 +2026,8 @@
         "en": "Share experience responsibly"
       },
       "prompt": {
-        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：明确亲历事实与个人判断，给出可迁移的方法及关键适用条件。\n删无信息量的别骂我，不把个人样本写成普遍规律。\n\n输出：经验分享正文，区分亲历事实、个人判断与可迁移步骤。\n\n输入材料：\n真实经历：[填写]\n观察：[填写]\n适用条件：[填写]\n受众：[填写]",
-        "en": "Make the supplied material clear, direct and informative. Organize it around the\njudgment or action the reader needs. Remove repetitive retreat and empty preambles.\nGround facts, numbers, scope, responsibility and commitments in the material; keep\nmeaningful conditions next to the claims they qualify. List missing facts\nseparately.\n\nTask: Separate firsthand facts from personal interpretation. Offer transferable\nsteps with key conditions, removing empty self-protection without generalizing one\nexperience.\n\nOutput: An experience account distinguishing firsthand facts, personal\ninterpretation and transferable steps.\n\nInput material:\nActual experience: [fill in]\nobservations: [fill in]\nconditions: [fill in]\naudience: [fill in]"
+        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，\n删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：明确亲历事实与个人判断，\n给出可迁移的方法及关键适用条件。\n删无信息量的别骂我，\n不把个人样本写成普遍规律。\n\n输出：经验分享正文，\n区分亲历事实、个人判断与可迁移步骤。\n\n输入材料：\n真实经历：[填写]\n观察：[填写]\n适用条件：[填写]\n受众：[填写]",
+        "en": "Make the supplied material clear, direct and informative. Organize it around\nthe judgment or action the reader needs. Remove repetitive retreat and empty\npreambles. Ground facts, numbers, scope, responsibility and commitments in\nthe material; keep meaningful conditions next to the claims they qualify.\nList missing facts separately.\n\nTask: Separate firsthand facts from personal interpretation. Offer transferable\nsteps with key conditions, removing empty self-protection without\ngeneralizing one experience.\n\nOutput: An experience account distinguishing firsthand facts, personal\ninterpretation and transferable steps.\n\nInput material:\nActual experience: [fill in]\nObservations: [fill in]\nConditions: [fill in]\nAudience: [fill in]"
       },
       "example_id": "EX-20",
       "validation": "editorial-draft",
@@ -2040,16 +2042,16 @@
         ],
         "en": [
           "Actual experience",
-          "observations",
-          "conditions",
-          "audience"
+          "Observations",
+          "Conditions",
+          "Audience"
         ]
       },
       "output": {
         "zh": "经验分享正文，区分亲历事实、个人判断与可迁移步骤。",
         "en": "An experience account distinguishing firsthand facts, personal interpretation and transferable steps."
       },
-      "mode": "task-specific"
+      "mode": "draft"
     },
     {
       "id": "DW-059",
@@ -2059,8 +2061,8 @@
         "en": "Choose a course or resource"
       },
       "prompt": {
-        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：按输入中的目标、基础和资源特征比较适配性。\n给出有理由的优先顺序及待核实信息，不编价格、更新状态或课程效果。\n\n输出：按适配性给出资源顺序、理由与待核实项。\n\n输入材料：\n候选资源资料：[填写]\n基础：[填写]\n目标：[填写]\n限制：[填写]",
-        "en": "Make the supplied material clear, direct and informative. Organize it around the\njudgment or action the reader needs. Remove repetitive retreat and empty preambles.\nGround facts, numbers, scope, responsibility and commitments in the material; keep\nmeaningful conditions next to the claims they qualify. List missing facts\nseparately.\n\nTask: Compare fit to the supplied goal, background and resource features. Give a\njustified priority and unknowns without inventing prices, freshness or outcomes.\n\nOutput: Resources prioritized by fit, with reasons and items to verify.\n\nInput material:\nResource descriptions: [fill in]\nbackground: [fill in]\ngoal: [fill in]\nconstraints: [fill in]"
+        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，\n删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：按输入中的目标、基础和资源特征比较适配性。\n给出有理由的优先顺序及待核实信息，\n不编价格、更新状态或课程效果。\n\n输出：按适配性给出资源顺序、理由与待核实项。\n\n输入材料：\n候选资源资料：[填写]\n基础：[填写]\n目标：[填写]\n限制：[填写]",
+        "en": "Make the supplied material clear, direct and informative. Organize it around\nthe judgment or action the reader needs. Remove repetitive retreat and empty\npreambles. Ground facts, numbers, scope, responsibility and commitments in\nthe material; keep meaningful conditions next to the claims they qualify.\nList missing facts separately.\n\nTask: Compare fit to the supplied goal, background and resource features. Give a\njustified priority and unknowns without inventing prices, freshness or\noutcomes.\n\nOutput: Resources prioritized by fit, with reasons and items to verify.\n\nInput material:\nResource descriptions: [fill in]\nBackground: [fill in]\nGoal: [fill in]\nConstraints: [fill in]"
       },
       "example_id": "EX-20",
       "validation": "editorial-draft",
@@ -2075,16 +2077,16 @@
         ],
         "en": [
           "Resource descriptions",
-          "background",
-          "goal",
-          "constraints"
+          "Background",
+          "Goal",
+          "Constraints"
         ]
       },
       "output": {
         "zh": "按适配性给出资源顺序、理由与待核实项。",
         "en": "Resources prioritized by fit, with reasons and items to verify."
       },
-      "mode": "task-specific"
+      "mode": "draft"
     },
     {
       "id": "DW-060",
@@ -2094,8 +2096,8 @@
         "en": "Action plan"
       },
       "prompt": {
-        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：把现有目标转为具体动作、顺序和检查点，保留依赖与已给出的时间。\n没有期限就留待确认，不用漂亮但无法检查的努力措辞替代行动。\n\n输出：按顺序给出行动、检查点、已知时间和依赖。\n\n输入材料：\n目标：[填写]\n约束：[填写]\n现有安排：[填写]\n检查标准：[填写]",
-        "en": "Make the supplied material clear, direct and informative. Organize it around the\njudgment or action the reader needs. Remove repetitive retreat and empty preambles.\nGround facts, numbers, scope, responsibility and commitments in the material; keep\nmeaningful conditions next to the claims they qualify. List missing facts\nseparately.\n\nTask: Turn the goal into actions, sequence and checkpoints with supplied timing and\ndependencies. Leave missing deadlines unresolved rather than replacing actions with\nvague effort.\n\nOutput: Ordered actions with checkpoints, supplied timing and dependencies.\n\nInput material:\nGoal: [fill in]\nconstraints: [fill in]\nexisting arrangements: [fill in]\ncheckpoints: [fill in]"
+        "zh": "将给定材料写得清楚、直接、有信息量。\n以读者需要知道的判断或行动为主线，\n删除重复退让与空泛铺垫。\n事实、数字、范围、责任与承诺性质以材料为准；\n真实条件放在对应结论旁。\n缺失的关键事实单列待确认。\n\n任务：把现有目标转为具体动作、顺序和检查点，\n保留依赖与已给出的时间。\n没有期限就留待确认，\n不用漂亮但无法检查的努力措辞替代行动。\n\n输出：按顺序给出行动、检查点、已知时间和依赖。\n\n输入材料：\n目标：[填写]\n约束：[填写]\n现有安排：[填写]\n检查标准：[填写]",
+        "en": "Make the supplied material clear, direct and informative. Organize it around\nthe judgment or action the reader needs. Remove repetitive retreat and empty\npreambles. Ground facts, numbers, scope, responsibility and commitments in\nthe material; keep meaningful conditions next to the claims they qualify.\nList missing facts separately.\n\nTask: Turn the goal into actions, sequence and checkpoints with supplied timing\nand dependencies. Leave missing deadlines unresolved rather than replacing\nactions with vague effort.\n\nOutput: Ordered actions with checkpoints, supplied timing and dependencies.\n\nInput material:\nGoal: [fill in]\nConstraints: [fill in]\nExisting arrangements: [fill in]\nCheckpoints: [fill in]"
       },
       "example_id": "EX-20",
       "validation": "editorial-draft",
@@ -2110,16 +2112,16 @@
         ],
         "en": [
           "Goal",
-          "constraints",
-          "existing arrangements",
-          "checkpoints"
+          "Constraints",
+          "Existing arrangements",
+          "Checkpoints"
         ]
       },
       "output": {
         "zh": "按顺序给出行动、检查点、已知时间和依赖。",
         "en": "Ordered actions with checkpoints, supplied timing and dependencies."
       },
-      "mode": "task-specific"
+      "mode": "draft"
     }
   ]
 }

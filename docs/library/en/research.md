@@ -17,12 +17,14 @@ Choose a task, copy a prompt and add your material. Follow the case link for sup
 
 ## DW-007 · Abstract claim strength
 
+**Mode**: Draft
+
 ```text
-Make the supplied material clear, direct and informative. Organize it around the
-judgment or action the reader needs. Remove repetitive retreat and empty preambles.
-Ground facts, numbers, scope, responsibility and commitments in the material; keep
-meaningful conditions next to the claims they qualify. List missing facts
-separately.
+Make the supplied material clear, direct and informative. Organize it around
+the judgment or action the reader needs. Remove repetitive retreat and empty
+preambles. Ground facts, numbers, scope, responsibility and commitments in
+the material; keep meaningful conditions next to the claims they qualify.
+List missing facts separately.
 
 Task: Organize the abstract around purpose, design, findings and contribution. Tie
 each claim to a result; preserve association language without a causal
@@ -32,8 +34,8 @@ Output: Abstract copy, with any claim-strength questions listed separately.
 
 Input material:
 Abstract: [fill in]
-design: [fill in]
-main results: [fill in]
+Design: [fill in]
+Main results: [fill in]
 ```
 
 <details>
@@ -41,7 +43,7 @@ main results: [fill in]
 
 **Facts**
 
-Fictional teaching data: a single-center observational study of 120 adults found Pearson r=0.32 between A and B, 95% CI 0.15–0.47. There was no random assignment or causal identification. This is not health advice.
+Fictional teaching data: a single-center observational study of 120 adults found Pearson r=0.32 between A and B, 95% CI 0.15–0.47. There was no random assignment or causal identification.
 
 **Before**
 
@@ -63,12 +65,14 @@ Report the association directly; design, sample and interval state its evidentia
 
 ## DW-008 · Results paragraph
 
+**Mode**: Draft
+
 ```text
-Make the supplied material clear, direct and informative. Organize it around the
-judgment or action the reader needs. Remove repetitive retreat and empty preambles.
-Ground facts, numbers, scope, responsibility and commitments in the material; keep
-meaningful conditions next to the claims they qualify. List missing facts
-separately.
+Make the supplied material clear, direct and informative. Organize it around
+the judgment or action the reader needs. Remove repetitive retreat and empty
+preambles. Ground facts, numbers, scope, responsibility and commitments in
+the material; keep meaningful conditions next to the claims they qualify.
+List missing facts separately.
 
 Task: Report observed results, units and comparators before supported
 interpretation. Preserve intervals, denominators, direction and analysis
@@ -79,8 +83,8 @@ separated.
 
 Input material:
 Results table: [fill in]
-comparison definitions: [fill in]
-draft: [fill in]
+Comparison definitions: [fill in]
+Draft: [fill in]
 ```
 
 <details>
@@ -88,7 +92,7 @@ draft: [fill in]
 
 **Facts**
 
-Fictional teaching data: a single-center observational study of 120 adults found Pearson r=0.32 between A and B, 95% CI 0.15–0.47. There was no random assignment or causal identification. This is not health advice.
+Fictional teaching data: a single-center observational study of 120 adults found Pearson r=0.32 between A and B, 95% CI 0.15–0.47. There was no random assignment or causal identification.
 
 **Before**
 
@@ -110,12 +114,14 @@ Report the association directly; design, sample and interval state its evidentia
 
 ## DW-009 · Discussion and limitations
 
+**Mode**: Revise
+
 ```text
-Make the supplied material clear, direct and informative. Organize it around the
-judgment or action the reader needs. Remove repetitive retreat and empty preambles.
-Ground facts, numbers, scope, responsibility and commitments in the material; keep
-meaningful conditions next to the claims they qualify. List missing facts
-separately.
+Make the supplied material clear, direct and informative. Organize it around
+the judgment or action the reader needs. Remove repetitive retreat and empty
+preambles. Ground facts, numbers, scope, responsibility and commitments in
+the material; keep meaningful conditions next to the claims they qualify.
+List missing facts separately.
 
 Task: Distinguish findings, explanations, alternatives and material limitations.
 State which claim each limitation constrains. Remove redundant denials while
@@ -126,9 +132,9 @@ limitations.
 
 Input material:
 Discussion draft: [fill in]
-methods: [fill in]
-results: [fill in]
-alternatives: [fill in]
+Methods: [fill in]
+Results: [fill in]
+Alternatives: [fill in]
 ```
 
 <details>
@@ -136,7 +142,7 @@ alternatives: [fill in]
 
 **Facts**
 
-Fictional teaching data: a single-center observational study of 120 adults found Pearson r=0.32 between A and B, 95% CI 0.15–0.47. There was no random assignment or causal identification. This is not health advice.
+Fictional teaching data: a single-center observational study of 120 adults found Pearson r=0.32 between A and B, 95% CI 0.15–0.47. There was no random assignment or causal identification.
 
 **Before**
 
@@ -158,24 +164,26 @@ Report the association directly; design, sample and interval state its evidentia
 
 ## DW-010 · Contribution statement
 
-```text
-Make the supplied material clear, direct and informative. Organize it around the
-judgment or action the reader needs. Remove repetitive retreat and empty preambles.
-Ground facts, numbers, scope, responsibility and commitments in the material; keep
-meaningful conditions next to the claims they qualify. List missing facts
-separately.
+**Mode**: Draft
 
-Task: Describe the problem addressed and the addition relative to prior work. Remove
-ritual self-deprecation without introducing unsupported novelty or superiority
-claims.
+```text
+Make the supplied material clear, direct and informative. Organize it around
+the judgment or action the reader needs. Remove repetitive retreat and empty
+preambles. Ground facts, numbers, scope, responsibility and commitments in
+the material; keep meaningful conditions next to the claims they qualify.
+List missing facts separately.
+
+Task: Describe the problem addressed and the addition relative to prior work.
+Remove ritual self-deprecation without introducing unsupported novelty or
+superiority claims.
 
 Output: A contribution paragraph and the supplied result supporting each
 contribution.
 
 Input material:
 Findings: [fill in]
-prior work: [fill in]
-contribution draft: [fill in]
+Prior work: [fill in]
+Contribution draft: [fill in]
 ```
 
 <details>
@@ -205,24 +213,27 @@ Retain the actual contribution and completed scope revision while removing self-
 
 ## DW-011 · A position in a review
 
+**Mode**: Draft
+
 ```text
-Make the supplied material clear, direct and informative. Organize it around the
-judgment or action the reader needs. Remove repetitive retreat and empty preambles.
-Ground facts, numbers, scope, responsibility and commitments in the material; keep
-meaningful conditions next to the claims they qualify. List missing facts
-separately.
+Make the supplied material clear, direct and informative. Organize it around
+the judgment or action the reader needs. Remove repetitive retreat and empty
+preambles. Ground facts, numbers, scope, responsibility and commitments in
+the material; keep meaningful conditions next to the claims they qualify.
+List missing facts separately.
 
 Task: Distinguish agreement, disagreement and gaps in the supplied literature.
-Replace empty balance with concrete comparisons; absence from the search is not
-proof of nonexistence.
+Replace empty balance with concrete comparisons; absence from the search is
+not proof of nonexistence. Preserve supplied citations; do not invent
+citations.
 
 Output: A synthesis paragraph followed by agreement, differences and gaps in the
 supplied notes.
 
 Input material:
 Source notes and citations: [fill in]
-search scope: [fill in]
-draft: [fill in]
+Search scope: [fill in]
+Draft: [fill in]
 ```
 
 <details>
@@ -252,24 +263,26 @@ Synthesize the supplied studies through their subjects, findings and methods ins
 
 ## DW-012 · Reviewer response
 
+**Mode**: Draft
+
 ```text
-Make the supplied material clear, direct and informative. Organize it around the
-judgment or action the reader needs. Remove repetitive retreat and empty preambles.
-Ground facts, numbers, scope, responsibility and commitments in the material; keep
-meaningful conditions next to the claims they qualify. List missing facts
-separately.
+Make the supplied material clear, direct and informative. Organize it around
+the judgment or action the reader needs. Remove repetitive retreat and empty
+preambles. Ground facts, numbers, scope, responsibility and commitments in
+the material; keep meaningful conditions next to the claims they qualify.
+List missing facts separately.
 
 Task: Assess each objection and answer its substance before reporting completed
-edits and locations. Label unperformed analyses as plans; do not invent agreement,
-page numbers or experiments.
+edits and locations. Label unperformed analyses as plans; do not invent
+agreement, page numbers or experiments.
 
 Output: A point-by-point response: assessment, answer, completed changes and
 remaining work.
 
 Input material:
 Reviewer comments: [fill in]
-evidence: [fill in]
-completed changes: [fill in]
+Evidence: [fill in]
+Completed changes: [fill in]
 ```
 
 <details>

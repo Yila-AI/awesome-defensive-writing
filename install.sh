@@ -31,6 +31,23 @@ if [ -e "$target" ] && [ "$force" -ne 1 ]; then
     exit 1
 fi
 stage=$(mktemp -d "$(dirname -- "$dest")/.yila-clear-writing-stage.XXXXXX")
+backup=
+cleanup() {
+    result=$?
+    trap - EXIT HUP INT TERM
+    if [ "$result" -ne 0 ] && [ -n "$backup" ] && [ -d "$backup" ] && [ ! -e "$target" ]; then
+        mv -- "$backup" "$target" || true
+    fi
+    case "$stage" in
+        "$(dirname -- "$dest")"/.yila-clear-writing-stage.*)
+            if [ -d "$stage" ] && [ ! -L "$stage" ]; then rm -rf -- "$stage"; fi ;;
+    esac
+    exit "$result"
+}
+trap cleanup EXIT
+trap 'exit 130' INT
+trap 'exit 129' HUP
+trap 'exit 143' TERM
 cp -R "$source_dir/." "$stage/"
 [ -f "$stage/references/manifest.json" ] || { echo "Incomplete package at $stage" >&2; exit 1; }
 if [ -e "$target" ]; then
@@ -38,11 +55,13 @@ if [ -e "$target" ]; then
     [ ! -L "$backup_root" ] || { echo 'Choose a backup directory without a link' >&2; exit 1; }
     mkdir -p -- "$backup_root"
     backup_root=$(CDPATH= cd -- "$backup_root" && pwd -P)
+    if [ ! -f "$backup_root/.gitignore" ]; then printf '*\n' > "$backup_root/.gitignore"; fi
     backup=$backup_root/backup-$(date +%Y%m%d%H%M%S)-$$
     [ ! -e "$backup" ] || { echo 'Backup path already exists' >&2; exit 1; }
     mv -- "$target" "$backup"
     echo "Previous version: $backup"
 fi
+chmod 755 "$stage"
 mv -- "$stage" "$target"
 echo "Installed: $target"
 if [ "$agent" = claude ]; then echo 'Use: /yila-clear-writing'; else echo 'Use: $yila-clear-writing'; fi
