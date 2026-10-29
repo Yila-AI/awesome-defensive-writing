@@ -25,14 +25,17 @@ if (Test-Path -LiteralPath $target) {
     if (-not $Force) { throw "Already installed: $target. Use -Force to update and keep a backup." }
 }
 $suffix = [Guid]::NewGuid().ToString('N')
-$stage = [IO.Path]::GetFullPath((Join-Path $installRoot ".yila-clear-writing-stage-$suffix"))
-$backup = [IO.Path]::GetFullPath((Join-Path $installRoot "yila-clear-writing.backup-$suffix"))
-foreach ($candidate in @($stage, $backup)) {
-    if ([IO.Path]::GetDirectoryName($candidate) -ne $installRoot) { throw 'Invalid staging or backup path.' }
-}
+$installParent = [IO.Path]::GetDirectoryName($installRoot)
+$stage = [IO.Path]::GetFullPath((Join-Path $installParent ".yila-clear-writing-stage-$suffix"))
+if ([IO.Path]::GetDirectoryName($stage) -ne $installParent) { throw 'Invalid staging path.' }
+$backupRoot = [IO.Path]::GetFullPath((Join-Path $installParent 'yila-clear-writing-backups'))
+$backup = [IO.Path]::GetFullPath((Join-Path $backupRoot "backup-$suffix"))
+if ([IO.Path]::GetDirectoryName($backup) -ne $backupRoot) { throw 'Invalid backup path.' }
 Copy-Item -LiteralPath $source -Destination $stage -Recurse
 if (-not (Test-Path -LiteralPath (Join-Path $stage 'references/manifest.json'))) { throw "Incomplete package at $stage" }
 if (Test-Path -LiteralPath $target) {
+    New-Item -ItemType Directory -Path $backupRoot -Force | Out-Null
+    if ((Get-Item -LiteralPath $backupRoot).Attributes -band [IO.FileAttributes]::ReparsePoint) { throw 'Choose a backup directory without a link.' }
     Move-Item -LiteralPath $target -Destination $backup
     Write-Output "Previous version: $backup"
 }

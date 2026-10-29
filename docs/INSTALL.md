@@ -129,7 +129,11 @@ For a custom client configuration, pass its actual skills directory.
 
 在新版解压目录中运行原安装命令，并添加 `-Force` 或 `--force`。脚本保留旧版备份，并显示备份路径。
 
+旧版保存在 skills 目录旁的 `yila-clear-writing-backups` 文件夹，客户端读取 skills 内的当前安装。
+
 Run the installer from the new package with `-Force` or `--force`. It preserves the previous version and prints the backup location.
+
+Previous versions are stored in `yila-clear-writing-backups` beside the skills directory. The client reads the current installation inside skills.
 
 ```powershell
 powershell -NoProfile -ExecutionPolicy Bypass -File .\install.ps1 -Agent codex -Force

@@ -31,10 +31,14 @@ def check(name, command, flag, force_flag, cwd, destination, source):
     run(command + [flag, str(destination)], cwd, success=False)
     assert marker.exists()
     assert hashlib.sha256((target / 'SKILL.md').read_bytes()).digest() == before
+    backup_root = resolved_destination.parent / 'yila-clear-writing-backups'
+    previous_backups = set(backup_root.glob('backup-*'))
     run(command + [flag, str(destination), force_flag], cwd)
     assert not (target / marker.name).exists()
-    backups = list(resolved_destination.glob('yila-clear-writing.backup-*'))
+    backups = list(set(backup_root.glob('backup-*')) - previous_backups)
     assert len(backups) == 1 and (backups[0] / marker.name).read_text(encoding='utf-8') == 'previous version customization'
+    discovered = list(resolved_destination.glob('*/SKILL.md'))
+    assert discovered == [target / 'SKILL.md'], discovered
     assert (target / 'SKILL.md').read_bytes() == (source / 'SKILL.md').read_bytes()
     print(f'PASS {name}: initial install, intact references, duplicate refusal, backup update')
 

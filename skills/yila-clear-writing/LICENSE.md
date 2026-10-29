@@ -6,7 +6,7 @@ Created and maintained as an open-source project by [Yila](https://yila.ai/resea
 
 本项目由 [Yila](https://yila.ai/research) 发起并开源维护。
 
-SKILL.md and agents/: Apache License 2.0. Full text: [LICENSES/Apache-2.0.txt](LICENSES/Apache-2.0.txt).
+SKILL.md, agents/, and the bundled install.ps1 and install.sh: Apache License 2.0. Full text: [LICENSES/Apache-2.0.txt](LICENSES/Apache-2.0.txt).
 
 Original reference prose, templates, cases and manifest content: Creative Commons Attribution 4.0 International. Full text: [LICENSES/CC-BY-4.0.txt](LICENSES/CC-BY-4.0.txt).
 

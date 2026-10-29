@@ -30,11 +30,15 @@ if [ -e "$target" ] && [ "$force" -ne 1 ]; then
     echo "Already installed: $target. Use --force to update and keep a backup." >&2
     exit 1
 fi
-stage=$(mktemp -d "$dest/.yila-clear-writing-stage.XXXXXX")
+stage=$(mktemp -d "$(dirname -- "$dest")/.yila-clear-writing-stage.XXXXXX")
 cp -R "$source_dir/." "$stage/"
 [ -f "$stage/references/manifest.json" ] || { echo "Incomplete package at $stage" >&2; exit 1; }
 if [ -e "$target" ]; then
-    backup=$dest/yila-clear-writing.backup-$(date +%Y%m%d%H%M%S)-$$
+    backup_root=$(dirname -- "$dest")/yila-clear-writing-backups
+    [ ! -L "$backup_root" ] || { echo 'Choose a backup directory without a link' >&2; exit 1; }
+    mkdir -p -- "$backup_root"
+    backup_root=$(CDPATH= cd -- "$backup_root" && pwd -P)
+    backup=$backup_root/backup-$(date +%Y%m%d%H%M%S)-$$
     [ ! -e "$backup" ] || { echo 'Backup path already exists' >&2; exit 1; }
     mv -- "$target" "$backup"
     echo "Previous version: $backup"

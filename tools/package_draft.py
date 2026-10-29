@@ -69,6 +69,7 @@ Choose the command for your client. The installer prints its destination.
 Defaults: Codex `~/.agents/skills`, Claude Code `~/.claude/skills`.
 Use `-Dest` / `--dest` for a custom parent skills directory.
 Add `-Force` / `--force` when updating; the installer retains the previous version.
+Backups are stored in yila-clear-writing-backups beside the skills directory.
 
 重新打开客户端。Codex 中用 `$yila-clear-writing`，Claude Code 中用 `/yila-clear-writing`。
 
