@@ -18,7 +18,7 @@ Copy a template for an occasional edit, or install the skill for repeat work.
 
 [Quickstart](#quickstart) · [Catalog](#catalog) · [Install](#installation) · [Agent interface](#agent-interface) · [FAQ](docs/FAQ.md)
 
-[Download the full library](downloads/awesome-defensive-writing.zip) · [Download the skill](downloads/yila-clear-writing.zip)
+[Download the full library](https://github.com/Yila-AI/awesome-defensive-writing/releases/download/v0.1.0/awesome-defensive-writing.zip) · [Download the skill](https://github.com/Yila-AI/awesome-defensive-writing/releases/download/v0.1.0/yila-clear-writing.zip)
 
 ## What it helps you do
 

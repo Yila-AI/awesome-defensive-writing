@@ -6,8 +6,8 @@
 
 | 你要做什么 / Goal | 下载 / Download |
 |---|---|
-| 浏览全部提示词、案例和论文图片 / Browse everything | [完整资料包 / Full library ZIP](../downloads/awesome-defensive-writing.zip) |
-| 在自己的 Agent 中使用 / Install in your agent | [Skill ZIP](../downloads/yila-clear-writing.zip) |
+| 浏览全部提示词、案例和论文图片 / Browse everything | [完整资料包 / Full library ZIP](https://github.com/Yila-AI/awesome-defensive-writing/releases/download/v0.1.0/awesome-defensive-writing.zip) |
+| 在自己的 Agent 中使用 / Install in your agent | [Skill ZIP](https://github.com/Yila-AI/awesome-defensive-writing/releases/download/v0.1.0/yila-clear-writing.zip) |
 | 直接复制 / Copy a prompt | [中文目录](library/zh/index.md) · [English catalog](library/en/index.md) |
 
 下载后解压，进入包含 `install.ps1` 和 `install.sh` 的文件夹。完整资料包和 Skill 单独包都提供这两个安装文件。

@@ -18,7 +18,7 @@
 
 [快速使用](#quickstart) · [分类目录](#catalog) · [安装](#installation) · [调用指南](#agent-interface) · [常见问题](docs/FAQ.zh-CN.md)
 
-[下载完整资料包](downloads/awesome-defensive-writing.zip) · [下载 Skill](downloads/yila-clear-writing.zip)
+[下载完整资料包](https://github.com/Yila-AI/awesome-defensive-writing/releases/download/v0.1.0/awesome-defensive-writing.zip) · [下载 Skill](https://github.com/Yila-AI/awesome-defensive-writing/releases/download/v0.1.0/yila-clear-writing.zip)
 
 ## 它解决什么问题
 
