@@ -1,0 +1,23 @@
+name: "Translation · 翻译修订"
+description: "Improve a translation or contribute another language."
+title: "[Translation] "
+body:
+  - type: input
+    id: location
+    attributes:
+      label: "Language and page or ID · 语言与页面或编号"
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: "Original wording and proposed translation · 原文与建议译文"
+    validations:
+      required: true
+  - type: textarea
+    id: reason
+    attributes:
+      label: "Reason · 修改理由"
+      description: "Review meaning, claim strength, responsibility and natural usage."
+    validations:
+      required: true

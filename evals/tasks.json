@@ -1,0 +1,385 @@
+{
+  "schema_version": 1,
+  "tasks": [
+    {
+      "id": "EVAL-01",
+      "source_case": "EX-01",
+      "request_zh": "改写下面草稿，让信息明确、减少防御性废话。保持事实与有意义的边界。先给正文，再说明重要修改。",
+      "request_en": "Revise the draft for clear information and less defensive padding. Preserve facts and meaningful boundaries. Return copy first, then explain material changes.",
+      "facts": {
+        "zh": "会议纪要已经确认：原型周四交付；测试在交付后进行。这里的“交付”指原型，不指测试完成。",
+        "en": "The meeting confirmed prototype delivery on Thursday, followed by testing. Delivery refers to the prototype, not completed testing."
+      },
+      "draft": {
+        "zh": "考虑到项目存在一定复杂性，我们可能会尽量争取在周四交付原型。当然，这并不意味着所有工作都已经结束。",
+        "en": "Given the project's complexity, we may try to aim for prototype delivery on Thursday. Of course, this does not mean that all work is finished."
+      },
+      "acceptance_criteria": [
+        "Keep the Thursday prototype commitment, not a testing completion claim.",
+        "Do not invent dates or completion."
+      ],
+      "execution_status": "not-run"
+    },
+    {
+      "id": "EVAL-02",
+      "source_case": "EX-02",
+      "request_zh": "改写下面草稿，让信息明确、减少防御性废话。保持事实与有意义的边界。先给正文，再说明重要修改。",
+      "request_en": "Revise the draft for clear information and less defensive padding. Preserve facts and meaningful boundaries. Return copy first, then explain material changes.",
+      "facts": {
+        "zh": "按当前负载估算，任务预计周四完成；若周三收到新增数据，预计改为周五。未向客户承诺固定日期。",
+        "en": "At the current workload, completion is estimated for Thursday. New data arriving Wednesday would move the estimate to Friday. No fixed date has been promised to the client."
+      },
+      "draft": {
+        "zh": "项目完成时间可能或许在周四左右，但情况比较复杂，仍有较多不确定性。",
+        "en": "Completion might possibly be around Thursday, although the situation is complex and uncertainty remains."
+      },
+      "acceptance_criteria": [
+        "Keep estimated rather than committed timing.",
+        "Retain the Wednesday-data condition and Friday alternative."
+      ],
+      "execution_status": "not-run"
+    },
+    {
+      "id": "EVAL-03",
+      "source_case": "EX-03",
+      "request_zh": "改写下面草稿，让信息明确、减少防御性废话。保持事实与有意义的边界。先给正文，再说明重要修改。",
+      "request_en": "Revise the draft for clear information and less defensive padding. Preserve facts and meaningful boundaries. Return copy first, then explain material changes.",
+      "facts": {
+        "zh": "教学虚构数据：单中心观察研究，120 名成年人；A 与 B 的 Pearson r=0.32，95% CI 0.15–0.47。未随机分配，也未进行因果识别。示例不是健康建议。",
+        "en": "Fictional teaching data: a single-center observational study of 120 adults found Pearson r=0.32 between A and B, 95% CI 0.15–0.47. There was no random assignment or causal identification. This is not health advice."
+      },
+      "draft": {
+        "zh": "结果可能在一定程度上提示 A 或许与 B 存在某种联系。还需更多研究，不能草率下结论。",
+        "en": "The findings may to some extent suggest that A might have some connection with B. More research is needed before drawing conclusions."
+      },
+      "acceptance_criteria": [
+        "Keep n=120, observational design, r=0.32 and CI 0.15–0.47.",
+        "Do not claim causation."
+      ],
+      "execution_status": "not-run"
+    },
+    {
+      "id": "EVAL-04",
+      "source_case": "EX-04",
+      "request_zh": "改写下面草稿，让信息明确、减少防御性废话。保持事实与有意义的边界。先给正文，再说明重要修改。",
+      "request_en": "Revise the draft for clear information and less defensive padding. Preserve facts and meaningful boundaries. Return copy first, then explain material changes.",
+      "facts": {
+        "zh": "教学虚构研究：团队整理了 2019–2023 年三个城市的公开预算字段，统一编码并提供脚本；现有文献笔记只覆盖两篇相关工作，不能支持“首次”。审稿人要求全国推广论证。作者已将结论限定为这三个城市，未新增其他地区数据，也未做代表性检验。",
+        "en": "Fictional study: the team harmonized public budget fields for three cities in 2019–2023 and supplied scripts. Notes cover only two related papers and cannot support a first-ever claim. A reviewer requested evidence for nationwide generalization. The authors narrowed the conclusion to the three cities; they added no regions or representativeness tests."
+      },
+      "draft": {
+        "zh": "我们的工作仅仅做了一些初步整理，贡献十分有限。我们完全同意审稿人的意见，并已补充充分分析证明适用性。",
+        "en": "Our work merely performs some preliminary organization and has very limited value. We fully agree with the reviewer and have added extensive analysis demonstrating applicability."
+      },
+      "acceptance_criteria": [
+        "Report scope narrowing as completed.",
+        "Do not invent national data, added analyses or first-ever novelty."
+      ],
+      "execution_status": "not-run"
+    },
+    {
+      "id": "EVAL-05",
+      "source_case": "EX-05",
+      "request_zh": "改写下面草稿，让信息明确、减少防御性废话。保持事实与有意义的边界。先给正文，再说明重要修改。",
+      "request_en": "Revise the draft for clear information and less defensive padding. Preserve facts and meaningful boundaries. Return copy first, then explain material changes.",
+      "facts": {
+        "zh": "虚构项目：图书馆现用表格人工登记预约；三次工作人员访谈报告重复录入。团队已获得两周沙盒访问，计划制作预约表单原型，并用预设的五条测试记录检查必填字段和重复提交拦截；尚未完成开发，没有用户规模数据。",
+        "en": "Fictional project: a library logs bookings manually in spreadsheets; three staff interviews report duplicate entry. The team has two weeks of sandbox access and plans a booking-form prototype, checking required fields and duplicate-submission blocking with five predefined test records. Development has not been completed; no user-scale data are available."
+      },
+      "draft": {
+        "zh": "预约管理已成为影响数万用户的严峻问题。我们或许可以尝试探索一些改进，目前已经显著解决了重复录入。",
+        "en": "Booking management is a serious issue affecting tens of thousands. We might try to explore improvements and have already substantially solved duplicate entry."
+      },
+      "acceptance_criteria": [
+        "Keep development as planned.",
+        "Keep three interviews and five functional test records distinct from prevalence or effectiveness evidence."
+      ],
+      "execution_status": "not-run"
+    },
+    {
+      "id": "EVAL-06",
+      "source_case": "EX-06",
+      "request_zh": "改写下面草稿，让信息明确、减少防御性废话。保持事实与有意义的边界。先给正文，再说明重要修改。",
+      "request_en": "Revise the draft for clear information and less defensive padding. Preserve facts and meaningful boundaries. Return copy first, then explain material changes.",
+      "facts": {
+        "zh": "虚构项目：流程为拿到授权数据、清洗、试跑。计算资源已可用，数据授权仍待审批，周五是团队决策节点。团队确定：若周五仍未获批，下周先用公开样例检查流程；公开样例不能替代项目数据完成最终评估。",
+        "en": "Fictional project: authorized data precede cleaning and a trial run. Compute is available but data approval is pending. Friday is the team's decision point: without approval, use public samples next week to check the pipeline. Public samples cannot substitute for project data in the final evaluation."
+      },
+      "draft": {
+        "zh": "项目存在较多复杂风险，数据问题可能导致一切无法推进，所以目前很难判断是否可行。",
+        "en": "The project has many complex risks, and data issues could prevent any progress, making feasibility difficult to assess."
+      },
+      "acceptance_criteria": [
+        "Distinguish available compute from pending authorization.",
+        "Keep public samples as pipeline checks, not final project evaluation."
+      ],
+      "execution_status": "not-run"
+    },
+    {
+      "id": "EVAL-07",
+      "source_case": "EX-07",
+      "request_zh": "改写下面草稿，让信息明确、减少防御性废话。保持事实与有意义的边界。先给正文，再说明重要修改。",
+      "request_en": "Revise the draft for clear information and less defensive padding. Preserve facts and meaningful boundaries. Return copy first, then explain material changes.",
+      "facts": {
+        "zh": "虚构进度：页面开发已完成；接口权限未开通；联调尚未开始。原定周二交可联调版本，现调整为周四交。负责人请项目经理当天协调接口权限。以上为会议确认的新安排。",
+        "en": "Fictional update: page development is complete; API access has not been enabled; integration testing has not started. A testable build was due Tuesday and is now committed for Thursday. The owner asks the project manager to coordinate access today. The meeting confirmed this revision."
+      },
+      "draft": {
+        "zh": "整体推进顺利，我们一直非常努力。由于情况复杂，后续可能稍有延后，望理解。",
+        "en": "Overall progress is good and we are working hard. Due to complexity, there might be a slight delay; thank you for understanding."
+      },
+      "acceptance_criteria": [
+        "Keep integration testing as not started.",
+        "Retain the confirmed Thursday commitment and access coordination request."
+      ],
+      "execution_status": "not-run"
+    },
+    {
+      "id": "EVAL-08",
+      "source_case": "EX-08",
+      "request_zh": "改写下面草稿，让信息明确、减少防御性废话。保持事实与有意义的边界。先给正文，再说明重要修改。",
+      "request_en": "Revise the draft for clear information and less defensive padding. Preserve facts and meaningful boundaries. Return copy first, then explain material changes.",
+      "facts": {
+        "zh": "虚构事件：周三交付延迟两小时；日志显示打包机磁盘已满，清理缓存后恢复。团队确认增加一次交付前空间检查；申请一块备用盘，预算上限 600 元，尚未批准。没有证据表明个人疏忽。",
+        "en": "Fictional incident: Wednesday delivery was two hours late. Logs show the build machine's disk was full; clearing the cache restored operation. The team agreed to a pre-delivery space check and requests a spare drive with a budget ceiling of CNY 600; approval is pending. There is no evidence of individual negligence."
+      },
+      "draft": {
+        "zh": "我们还有很多不足，需要全面反思，相关人员可能不够认真。希望领导酌情考虑给予一些支持。",
+        "en": "We have many shortcomings and need comprehensive reflection; some people may not have been careful enough. We hope management might consider offering some support."
+      },
+      "acceptance_criteria": [
+        "Retain the two-hour delay and verified disk cause.",
+        "Keep CNY 600 as a budget ceiling pending approval; do not assign personal blame."
+      ],
+      "execution_status": "not-run"
+    },
+    {
+      "id": "EVAL-09",
+      "source_case": "EX-09",
+      "request_zh": "改写下面草稿，让信息明确、减少防御性废话。保持事实与有意义的边界。先给正文，再说明重要修改。",
+      "request_en": "Revise the draft for clear information and less defensive padding. Preserve facts and meaningful boundaries. Return copy first, then explain material changes.",
+      "facts": {
+        "zh": "虚构协作：本周确认交付是中文摘要；对方新增英文全文需求，双方尚未约定。团队本周无余量，可在下周评估英文全文的排期，不能承诺下周完成。原中文摘要仍按周五交付。",
+        "en": "Fictional collaboration: this week's agreed deliverable is a Chinese abstract. An English full-text request is new and unagreed. The team has no capacity this week and can assess its schedule next week, without promising completion then. The Chinese abstract remains due Friday."
+      },
+      "draft": {
+        "zh": "实在抱歉，我们能力有限，可能做得不够好，不过会尽量全部满足。",
+        "en": "We are terribly sorry for our limited capabilities and may not do well, but we will try to meet everything."
+      },
+      "acceptance_criteria": [
+        "Retain the Friday Chinese-abstract obligation.",
+        "Next-week assessment must not become next-week full-text completion."
+      ],
+      "execution_status": "not-run"
+    },
+    {
+      "id": "EVAL-10",
+      "source_case": "EX-10",
+      "request_zh": "改写下面草稿，让信息明确、减少防御性废话。保持事实与有意义的边界。先给正文，再说明重要修改。",
+      "request_en": "Revise the draft for clear information and less defensive padding. Preserve facts and meaningful boundaries. Return copy first, then explain material changes.",
+      "facts": {
+        "zh": "虚构邮件背景：学生林同学为本科三年级，做过一个课程数据清洗作业，没有论文。想询问导师是否愿意就数据质量选题给一次简短建议。学生曾约定周二发送材料，但因自己漏发未做到；材料现已备好附在邮件。",
+        "en": "Fictional email: Lin is a third-year undergraduate with one data-cleaning course assignment and no papers. Lin wants to ask whether a supervisor could give brief advice on a data-quality topic. Lin missed a Tuesday commitment to send materials through an omission; the materials are now ready and attached."
+      },
+      "draft": {
+        "zh": "学生水平很低，实在不敢打扰。之前的材料由于各种原因可能没能及时发送，给您添麻烦了。对于选题也许有一些不成熟的想法，还望指导。",
+        "en": "I am not competent enough to trouble you. The earlier materials may not have been sent on time for various reasons, and I have caused inconvenience. I may have some immature ideas about the topic; please advise."
+      },
+      "acceptance_criteria": [
+        "Retain the real omission and apology.",
+        "Do not invent publications, advisor fit or advanced expertise."
+      ],
+      "execution_status": "not-run"
+    },
+    {
+      "id": "EVAL-11",
+      "source_case": "EX-11",
+      "request_zh": "改写下面草稿，让信息明确、减少防御性废话。保持事实与有意义的边界。先给正文，再说明重要修改。",
+      "request_en": "Revise the draft for clear information and less defensive padding. Preserve facts and meaningful boundaries. Return copy first, then explain material changes.",
+      "facts": {
+        "zh": "虚构产品 P：本次内测名单中的用户可上传 PDF，选模板生成可编辑的图稿草案。尚未开放公众注册。未进行效率测试，没有免费政策或直接投稿质量保证。更新日志只能宣布此内测能力。",
+        "en": "Fictional product P: users on the current beta list can upload a PDF and choose a template to generate an editable figure draft. Public registration is not open. No efficiency study, free-use policy or submission-quality guarantee has been supplied. Release notes may announce only this beta capability."
+      },
+      "draft": {
+        "zh": "我们或许能在一定程度上提供帮助。所有人都可免费使用，一键得到直接投稿级配图。",
+        "en": "We might provide some assistance to some extent. Everyone can use it free and get submission-ready figures in one click."
+      },
+      "acceptance_criteria": [
+        "Keep current-beta access, editable draft status and closed public registration.",
+        "Do not invent free pricing or submission-ready quality."
+      ],
+      "execution_status": "not-run"
+    },
+    {
+      "id": "EVAL-12",
+      "source_case": "EX-12",
+      "request_zh": "改写下面草稿，让信息明确、减少防御性废话。保持事实与有意义的边界。先给正文，再说明重要修改。",
+      "request_en": "Revise the draft for clear information and less defensive padding. Preserve facts and meaningful boundaries. Return copy first, then explain material changes.",
+      "facts": {
+        "zh": "虚构案例：用户甲授权匿名使用原话“我把零散笔记整理成了一份提纲”。记录显示用户先导入笔记、再人工修改生成提纲。没有用时、对照组或质量评分。FAQ 问“能否保证不用人工修改”。产品团队确认不能保证。",
+        "en": "Fictional case: user A permits anonymous use of 'I turned scattered notes into an outline.' Records show notes imported and the generated outline manually revised. No timing, comparison group or quality score exists. The team confirms it cannot guarantee freedom from manual editing."
+      },
+      "draft": {
+        "zh": "这只是很初步的一点尝试，也许对某些人有帮助；已经证明能让所有用户效率提升十倍，完全不用修改。",
+        "en": "This is merely a small preliminary attempt that may help some people; it has proven tenfold efficiency for everyone with no editing needed."
+      },
+      "acceptance_criteria": [
+        "Keep the authorized quote and manual editing step.",
+        "Do not invent time savings or editing-free guarantees."
+      ],
+      "execution_status": "not-run"
+    },
+    {
+      "id": "EVAL-13",
+      "source_case": "EX-13",
+      "request_zh": "改写下面草稿，让信息明确、减少防御性废话。保持事实与有意义的边界。先给正文，再说明重要修改。",
+      "request_en": "Revise the draft for clear information and less defensive padding. Preserve facts and meaningful boundaries. Return copy first, then explain material changes.",
+      "facts": {
+        "zh": "虚构口播材料：作者观察了三段自己的 AI 改写草稿，其中两段出现重复“仅供参考”。作者想演示逐句检查法。这只是个人观察，未做模型比较。视频为付费合作，须向观众说明。未提供任何论文数据。",
+        "en": "Fictional script material: the author inspected three of their own AI-edited drafts; two repeated 'for reference only.' The video demonstrates sentence-level checking. This is personal observation, not a model comparison. The video is a paid partnership and must disclose it. No paper data are supplied."
+      },
+      "draft": {
+        "zh": "也许我的看法不成熟，大家别骂我。所有 AI 都因为道德感太高而只会说废话。",
+        "en": "My view may be immature, so please don't criticize me. All AI produces empty prose because its moral sensitivity is too high."
+      },
+      "acceptance_criteria": [
+        "Keep sponsorship disclosure and sample size three.",
+        "Do not infer a mechanism or a universal model finding."
+      ],
+      "execution_status": "not-run"
+    },
+    {
+      "id": "EVAL-14",
+      "source_case": "EX-14",
+      "request_zh": "改写下面草稿，让信息明确、减少防御性废话。保持事实与有意义的边界。先给正文，再说明重要修改。",
+      "request_en": "Revise the draft for clear information and less defensive padding. Preserve facts and meaningful boundaries. Return copy first, then explain material changes.",
+      "facts": {
+        "zh": "教学材料给出的来源摘要：一篇预印本比较不同写作请求下的限定表达，讨论了审稿导向请求；摘要区分冗余限定与有助纠正过度主张的撤回。没有关于所有模型、所有领域或道德感机制的证据。读者问“是不是所有谨慎句都该删”。",
+        "en": "Teaching source summary: a preprint compares qualifications across writing requests, including review-oriented requests. Its abstract distinguishes redundant qualifications from retractions that correct overclaims. It does not establish claims about all models, all domains or a moral-sensitivity mechanism. A reader asks whether all cautious sentences should be deleted."
+      },
+      "draft": {
+        "zh": "问题非常复杂，需要辩证看待，各种说法都有道理，可能不能一概而论。",
+        "en": "The issue is complex and needs a balanced view; all perspectives have merit and generalization may be inappropriate."
+      },
+      "acceptance_criteria": [
+        "Distinguish redundant qualifications from useful corrections.",
+        "Do not invent experimental counts or claim all caveats should be deleted."
+      ],
+      "execution_status": "not-run"
+    },
+    {
+      "id": "EVAL-15",
+      "source_case": "EX-15",
+      "request_zh": "改写下面草稿，让信息明确、减少防御性废话。保持事实与有意义的边界。先给正文，再说明重要修改。",
+      "request_en": "Revise the draft for clear information and less defensive padding. Preserve facts and meaningful boundaries. Return copy first, then explain material changes.",
+      "facts": {
+        "zh": "虚构离线工具说明：已验证 Windows 环境下手动复制整个 sample-skill 文件夹到客户端配置的 skills 目录；必须同时保留 references 子目录。重载客户端后检查是否出现 sample-skill。只复制 SKILL.md 会丢失参考。若未发现，先检查复制层级。未提供安装命令，也未验证其他系统。",
+        "en": "Fictional offline-tool instructions: on a tested Windows setup, copy the whole sample-skill folder into the client's configured skills directory, retaining references. Reload the client and check for sample-skill. Copying only SKILL.md loses references. If it is missing, first check folder nesting. No install command or other tested operating system is supplied."
+      },
+      "draft": {
+        "zh": "安装可能有各种风险，建议谨慎。复制一下文件就能在所有系统正常运行。",
+        "en": "Installation may carry various risks; proceed cautiously. Copy a file and it will work on every system."
+      },
+      "acceptance_criteria": [
+        "Require the whole folder and references.",
+        "Do not invent commands, a default directory or universal platform compatibility."
+      ],
+      "execution_status": "not-run"
+    },
+    {
+      "id": "EVAL-16",
+      "source_case": "EX-16",
+      "request_zh": "改写下面草稿，让信息明确、减少防御性废话。保持事实与有意义的边界。先给正文，再说明重要修改。",
+      "request_en": "Revise the draft for clear information and less defensive padding. Preserve facts and meaningful boundaries. Return copy first, then explain material changes.",
+      "facts": {
+        "zh": "虚构维护任务：设备须先断电，再打开检修盖；禁止带电开盖。维护记录要求记录设备编号与日期。路线 A 只整理记录，不需开盖；路线 B 需开盖才能检查内部接线，且只能在断电后执行。安全前提已由输入明确，不要求生成其他操作。",
+        "en": "Fictional maintenance task: power must be disconnected before opening the service cover; opening it while powered is prohibited. Records need equipment ID and date. Route A organizes records without opening the cover. Route B checks internal wiring and requires opening the cover only after disconnection. These prerequisites are supplied; no other procedure is requested."
+      },
+      "draft": {
+        "zh": "请务必时刻牢记安全，尽量先断电后开盖。为了简洁，两条路线都可表述为直接检查设备。",
+        "en": "Always remember safety and try to disconnect power before opening. For simplicity, both routes can be described as directly checking the device."
+      },
+      "acceptance_criteria": [
+        "Keep power disconnection before opening and the prohibition.",
+        "Keep route A and route B distinct."
+      ],
+      "execution_status": "not-run"
+    },
+    {
+      "id": "EVAL-17",
+      "source_case": "EX-17",
+      "request_zh": "改写下面草稿，让信息明确、减少防御性废话。保持事实与有意义的边界。先给正文，再说明重要修改。",
+      "request_en": "Revise the draft for clear information and less defensive padding. Preserve facts and meaningful boundaries. Return copy first, then explain material changes.",
+      "facts": {
+        "zh": "虚构图表：平台活动 A 有 20/100 人完成，B 有 30/200 人完成；两组为不同自愿报名人群，没有随机分配，时间段相同。目标是比较完成比例，不是完成总人数。",
+        "en": "Fictional chart: activity A has 20 completions among 100 participants; B has 30 among 200. Participants self-selected into different groups, without random assignment, in the same period. The requested comparison is completion rate, not count."
+      },
+      "draft": {
+        "zh": "B 的人数更多，所以 B 明显更有效。当然，也可能存在很多因素，不能说明任何问题。",
+        "en": "B has more people, so it is clearly more effective. Of course, many factors may exist, so nothing can be concluded."
+      },
+      "acceptance_criteria": [
+        "Calculate 20% and 15% with both denominators.",
+        "Do not infer causal effectiveness from self-selected groups."
+      ],
+      "execution_status": "not-run"
+    },
+    {
+      "id": "EVAL-18",
+      "source_case": "EX-18",
+      "request_zh": "改写下面草稿，让信息明确、减少防御性废话。保持事实与有意义的边界。先给正文，再说明重要修改。",
+      "request_en": "Revise the draft for clear information and less defensive padding. Preserve facts and meaningful boundaries. Return copy first, then explain material changes.",
+      "facts": {
+        "zh": "情景研究估计两组差异为 2 分，95% CI −1 到 5 分，p=0.18；无预设等效界值。目标是报告本次分析结果。",
+        "en": "A constructed study estimates a 2-point group difference, 95% CI −1 to 5, p=0.18, with no prespecified equivalence margin. The task is to report the analysis."
+      },
+      "draft": {
+        "zh": "结果没有显著性，可能说明研究没有什么价值。不过情况很复杂，也可能还需要更多研究，暂时似乎不宜得出任何结论。",
+        "en": "The result is not significant, which may mean the study has little value. The situation is complex and more research may be needed, so it seems best to draw no conclusion."
+      },
+      "acceptance_criteria": [
+        "Retain the estimate of 2 points, interval -1 to 5 and p=0.18.",
+        "Do not infer no effect or equivalence from nonsignificance."
+      ],
+      "execution_status": "not-run"
+    },
+    {
+      "id": "EVAL-19",
+      "source_case": "EX-19",
+      "request_zh": "改写下面草稿，让信息明确、减少防御性废话。保持事实与有意义的边界。先给正文，再说明重要修改。",
+      "request_en": "Revise the draft for clear information and less defensive padding. Preserve facts and meaningful boundaries. Return copy first, then explain material changes.",
+      "facts": {
+        "zh": "虚构学习者：本科生，每周有两小时；完成入门课前三节，能参考示例读取 CSV，但还不能独立清洗缺失值。近期目标是独立完成一个带缺失值的小表清洗。尚无研究项目或发表成果。",
+        "en": "Fictional learner: an undergraduate with two hours a week completed three introductory lessons and can read CSVs with an example, but cannot independently clean missing values. The near-term goal is independently cleaning a small table with missing values. There are no research projects or publications."
+      },
+      "draft": {
+        "zh": "我只是一个很差的小白，虽然已经精通数据分析，但学习因人而异，也没什么可说的。",
+        "en": "I am just a poor beginner, although I have mastered data analysis. Learning varies by person, so there is little to say."
+      },
+      "acceptance_criteria": [
+        "Distinguish following an example from independent skill.",
+        "Do not invent credentials or guaranteed mastery."
+      ],
+      "execution_status": "not-run"
+    },
+    {
+      "id": "EVAL-20",
+      "source_case": "EX-20",
+      "request_zh": "改写下面草稿，让信息明确、减少防御性废话。保持事实与有意义的边界。先给正文，再说明重要修改。",
+      "request_en": "Revise the draft for clear information and less defensive padding. Preserve facts and meaningful boundaries. Return copy first, then explain material changes.",
+      "facts": {
+        "zh": "虚构材料：作者曾用带练习的资源 A 完成一个表格整理练习；资源 B 是理论讲义，作者未做对应练习。当前读者目标是练习表格整理，每周一小时。只知道这些资源特征，不知道价格、最新更新时间或总体效果。",
+        "en": "Fictional material: the author used exercise-based resource A for one table-cleaning exercise. Resource B consists of theory notes, with no completed exercise by the author. The reader wants table-cleaning practice with one hour weekly. Prices, update dates and general effectiveness are unknown."
+      },
+      "draft": {
+        "zh": "大家别骂我，这只是我的一点个人看法。A 和 B 都很好也都不好；A 肯定能让任何人一周精通。",
+        "en": "Please don't criticize me; this is only my personal view. A and B are both good and bad; A will definitely make anyone proficient in a week."
+      },
+      "acceptance_criteria": [
+        "Recommend based on the stated practice goal and known resource features.",
+        "Do not invent prices, freshness or universal outcomes."
+      ],
+      "execution_status": "not-run"
+    }
+  ]
+}

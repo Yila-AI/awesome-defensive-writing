@@ -1,0 +1,24 @@
+name: "Bug or incorrect edit · 问题反馈"
+description: "Report an installation problem, broken link or meaning-changing edit."
+title: "[Bug] "
+body:
+  - type: input
+    id: location
+    attributes:
+      label: "Page or prompt ID · 页面或提示词编号"
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: "Steps and material · 重现步骤与材料"
+      description: "For installation: OS, client and command. For an edit: prompt, input and output."
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: "Expected behavior · 预期结果"
+      description: "Explain which fact, condition, commitment or action should be preserved."
+    validations:
+      required: true

@@ -1,0 +1,725 @@
+{
+  "schema_version": 1,
+  "examples": [
+    {
+      "id": "EX-01",
+      "kind": "fictional-editorial-example",
+      "title": {
+        "zh": "同一事实，清楚表达",
+        "en": "Say the same thing clearly"
+      },
+      "facts": {
+        "zh": "会议纪要已经确认：原型周四交付；测试在交付后进行。这里的“交付”指原型，不指测试完成。",
+        "en": "The meeting confirmed prototype delivery on Thursday, followed by testing. Delivery refers to the prototype, not completed testing."
+      },
+      "verbose_or_flawed": {
+        "zh": "考虑到项目存在一定复杂性，我们可能会尽量争取在周四交付原型。当然，这并不意味着所有工作都已经结束。",
+        "en": "Given the project's complexity, we may try to aim for prototype delivery on Thursday. Of course, this does not mean that all work is finished."
+      },
+      "revision": {
+        "zh": "原型周四交付，随后进入测试。",
+        "en": "The prototype will be delivered on Thursday, followed by testing."
+      },
+      "why": {
+        "zh": "材料已有明确交付约定，删掉重复弱化承诺的词；用后续测试说明工作范围。",
+        "en": "The source contains a firm delivery agreement. Remove wording that weakens it and use the testing step to state scope."
+      },
+      "preserve": {
+        "zh": "若周四只是内部目标而非确认承诺，应写“目标是周四交付”，不能照搬本例的确定语气。",
+        "en": "If Thursday is only an internal target, write 'targeting Thursday' rather than copying this commitment."
+      },
+      "author": "Yila",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "id": "EX-02",
+      "kind": "fictional-editorial-example",
+      "title": {
+        "zh": "预测不能变承诺",
+        "en": "A forecast is not a promise"
+      },
+      "facts": {
+        "zh": "按当前负载估算，任务预计周四完成；若周三收到新增数据，预计改为周五。未向客户承诺固定日期。",
+        "en": "At the current workload, completion is estimated for Thursday. New data arriving Wednesday would move the estimate to Friday. No fixed date has been promised to the client."
+      },
+      "verbose_or_flawed": {
+        "zh": "项目完成时间可能或许在周四左右，但情况比较复杂，仍有较多不确定性。",
+        "en": "Completion might possibly be around Thursday, although the situation is complex and uncertainty remains."
+      },
+      "revision": {
+        "zh": "按当前负载，预计周四完成；若周三收到新增数据，预计周五完成。",
+        "en": "At the current workload, completion is estimated for Thursday, or Friday if new data arrives Wednesday."
+      },
+      "why": {
+        "zh": "把叠加的可能性改成明确预测，补回材料中会改变日期的条件。",
+        "en": "Replace stacked hedges with an explicit estimate and the supplied condition that changes timing."
+      },
+      "preserve": {
+        "zh": "必须保留“预计”与新增数据条件；不能改成“周四完成”。",
+        "en": "Keep the estimate and data-arrival condition; do not write 'will finish Thursday'."
+      },
+      "author": "Yila",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "id": "EX-03",
+      "kind": "fictional-editorial-example",
+      "title": {
+        "zh": "观察研究的结果",
+        "en": "An observational finding"
+      },
+      "facts": {
+        "zh": "教学虚构数据：单中心观察研究，120 名成年人；A 与 B 的 Pearson r=0.32，95% CI 0.15–0.47。未随机分配，也未进行因果识别。示例不是健康建议。",
+        "en": "Fictional teaching data: a single-center observational study of 120 adults found Pearson r=0.32 between A and B, 95% CI 0.15–0.47. There was no random assignment or causal identification. This is not health advice."
+      },
+      "verbose_or_flawed": {
+        "zh": "结果可能在一定程度上提示 A 或许与 B 存在某种联系。还需更多研究，不能草率下结论。",
+        "en": "The findings may to some extent suggest that A might have some connection with B. More research is needed before drawing conclusions."
+      },
+      "revision": {
+        "zh": "在这项纳入 120 名成年人的单中心观察研究中，A 与 B 呈正相关（r=0.32，95% CI 0.15–0.47）。",
+        "en": "In this single-center observational study of 120 adults, A and B were positively correlated (r=0.32, 95% CI 0.15–0.47)."
+      },
+      "why": {
+        "zh": "直接报告观察结果，设计、样本和区间共同说明证据范围；不需要再用空泛句弱化相关这一发现。",
+        "en": "Report the association directly; design, sample and interval state its evidential scope without generic retreat."
+      },
+      "preserve": {
+        "zh": "不能改成“A 导致 B”；如果上下文已有因果误读，需要明确纠正，不能把因果提醒一律删掉。",
+        "en": "Do not change the finding to causation. If surrounding text invites a causal reading, explicitly correct it."
+      },
+      "author": "Yila",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "id": "EX-04",
+      "kind": "fictional-editorial-example",
+      "title": {
+        "zh": "贡献与审稿回复的完成状态",
+        "en": "Contribution and revision status"
+      },
+      "facts": {
+        "zh": "教学虚构研究：团队整理了 2019–2023 年三个城市的公开预算字段，统一编码并提供脚本；现有文献笔记只覆盖两篇相关工作，不能支持“首次”。审稿人要求全国推广论证。作者已将结论限定为这三个城市，未新增其他地区数据，也未做代表性检验。",
+        "en": "Fictional study: the team harmonized public budget fields for three cities in 2019–2023 and supplied scripts. Notes cover only two related papers and cannot support a first-ever claim. A reviewer requested evidence for nationwide generalization. The authors narrowed the conclusion to the three cities; they added no regions or representativeness tests."
+      },
+      "verbose_or_flawed": {
+        "zh": "我们的工作仅仅做了一些初步整理，贡献十分有限。我们完全同意审稿人的意见，并已补充充分分析证明适用性。",
+        "en": "Our work merely performs some preliminary organization and has very limited value. We fully agree with the reviewer and have added extensive analysis demonstrating applicability."
+      },
+      "revision": {
+        "zh": "本研究统一了三个城市 2019–2023 年公开预算字段的编码，并提供处理脚本。针对全国适用性的意见，我们已将结论范围限定为这三个城市；现有数据不能支持全国推广。",
+        "en": "The study harmonizes public budget-field coding for three cities in 2019–2023 and provides processing scripts. In response to the generalization concern, we narrowed the conclusion to these cities; the current data do not support nationwide generalization."
+      },
+      "why": {
+        "zh": "保留实际贡献，删除自贬与虚构分析；明确作者实际完成的范围修改。",
+        "en": "Retain the actual contribution and completed scope revision while removing self-deprecation and a fabricated analysis."
+      },
+      "preserve": {
+        "zh": "本例的不可全国推广说明有实质作用。不能只写“关注三个城市”后在别处继续声称普遍适用。",
+        "en": "The generalization exclusion matters here. Stating a three-city focus does not justify broad claims elsewhere."
+      },
+      "author": "Yila",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "id": "EX-05",
+      "kind": "fictional-editorial-example",
+      "title": {
+        "zh": "目标与成果要分开",
+        "en": "Distinguish an objective from an achievement"
+      },
+      "facts": {
+        "zh": "虚构项目：图书馆现用表格人工登记预约；三次工作人员访谈报告重复录入。团队已获得两周沙盒访问，计划制作预约表单原型，并用预设的五条测试记录检查必填字段和重复提交拦截；尚未完成开发，没有用户规模数据。",
+        "en": "Fictional project: a library logs bookings manually in spreadsheets; three staff interviews report duplicate entry. The team has two weeks of sandbox access and plans a booking-form prototype, checking required fields and duplicate-submission blocking with five predefined test records. Development has not been completed; no user-scale data are available."
+      },
+      "verbose_or_flawed": {
+        "zh": "预约管理已成为影响数万用户的严峻问题。我们或许可以尝试探索一些改进，目前已经显著解决了重复录入。",
+        "en": "Booking management is a serious issue affecting tens of thousands. We might try to explore improvements and have already substantially solved duplicate entry."
+      },
+      "revision": {
+        "zh": "三次工作人员访谈反映预约登记存在重复录入。项目计划在两周沙盒期内开发预约表单原型，并用五条预设记录检查必填字段和重复提交拦截。",
+        "en": "Three staff interviews identified duplicate entry in booking records. During the two-week sandbox period, the project plans to develop a booking-form prototype and test required fields and duplicate-submission blocking with five predefined records."
+      },
+      "why": {
+        "zh": "用材料支持的问题和可检查目标替代虚构规模、笼统尝试及伪造完成状态。",
+        "en": "Replace fabricated scale, vague attempts and false completion with the supported problem and assessable objective."
+      },
+      "preserve": {
+        "zh": "访谈不能证明问题的总体发生率；五条记录是功能检查，不是有效性研究。",
+        "en": "The interviews do not establish population prevalence; five records constitute a functional check, not an effectiveness study."
+      },
+      "author": "Yila",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "id": "EX-06",
+      "kind": "fictional-editorial-example",
+      "title": {
+        "zh": "真实依赖与备选路线",
+        "en": "A real dependency and fallback"
+      },
+      "facts": {
+        "zh": "虚构项目：流程为拿到授权数据、清洗、试跑。计算资源已可用，数据授权仍待审批，周五是团队决策节点。团队确定：若周五仍未获批，下周先用公开样例检查流程；公开样例不能替代项目数据完成最终评估。",
+        "en": "Fictional project: authorized data precede cleaning and a trial run. Compute is available but data approval is pending. Friday is the team's decision point: without approval, use public samples next week to check the pipeline. Public samples cannot substitute for project data in the final evaluation."
+      },
+      "verbose_or_flawed": {
+        "zh": "项目存在较多复杂风险，数据问题可能导致一切无法推进，所以目前很难判断是否可行。",
+        "en": "The project has many complex risks, and data issues could prevent any progress, making feasibility difficult to assess."
+      },
+      "revision": {
+        "zh": "计算资源已就绪，数据授权待审批。若周五仍未获批，下周先用公开样例检查流程；最终评估仍需获授权的项目数据。",
+        "en": "Compute is ready; data approval is pending. If approval has not arrived by Friday, use public samples next week to check the pipeline. Final evaluation still requires authorized project data."
+      },
+      "why": {
+        "zh": "用已知资源、触发条件和可行备选替代整体否定。",
+        "en": "Replace blanket pessimism with available resources, a decision trigger and a feasible fallback."
+      },
+      "preserve": {
+        "zh": "不能把公开样例试跑描述为项目评估已经完成，也不能把待审批资源当成已获批。",
+        "en": "Do not describe the public-sample run as completed project evaluation or approval as already obtained."
+      },
+      "author": "Yila",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "id": "EX-07",
+      "kind": "fictional-editorial-example",
+      "title": {
+        "zh": "接口阻塞与排期",
+        "en": "A blocker and revised schedule"
+      },
+      "facts": {
+        "zh": "虚构进度：页面开发已完成；接口权限未开通；联调尚未开始。原定周二交可联调版本，现调整为周四交。负责人请项目经理当天协调接口权限。以上为会议确认的新安排。",
+        "en": "Fictional update: page development is complete; API access has not been enabled; integration testing has not started. A testable build was due Tuesday and is now committed for Thursday. The owner asks the project manager to coordinate access today. The meeting confirmed this revision."
+      },
+      "verbose_or_flawed": {
+        "zh": "整体推进顺利，我们一直非常努力。由于情况复杂，后续可能稍有延后，望理解。",
+        "en": "Overall progress is good and we are working hard. Due to complexity, there might be a slight delay; thank you for understanding."
+      },
+      "revision": {
+        "zh": "页面开发已完成，接口权限尚未开通，联调未开始。可联调版本由周二调整为周四交付，请项目经理今天协调接口权限。",
+        "en": "Page development is complete, but API access is still unavailable and integration testing has not started. Delivery of a testable build moves from Tuesday to Thursday. Please coordinate API access today."
+      },
+      "why": {
+        "zh": "写出完成状态、实际阻塞、新排期和需要的动作，删空泛努力表态。",
+        "en": "State completion, blocker, revised commitment and requested action rather than empty assurances."
+      },
+      "preserve": {
+        "zh": "不能写成“联调完成”；若新日期没有确认，须改用预计并说明依赖。",
+        "en": "Do not say integration testing is complete. An unconfirmed date must remain an estimate with its dependency."
+      },
+      "author": "Yila",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "id": "EX-08",
+      "kind": "fictional-editorial-example",
+      "title": {
+        "zh": "复盘与资源请求",
+        "en": "Retrospective and resource request"
+      },
+      "facts": {
+        "zh": "虚构事件：周三交付延迟两小时；日志显示打包机磁盘已满，清理缓存后恢复。团队确认增加一次交付前空间检查；申请一块备用盘，预算上限 600 元，尚未批准。没有证据表明个人疏忽。",
+        "en": "Fictional incident: Wednesday delivery was two hours late. Logs show the build machine's disk was full; clearing the cache restored operation. The team agreed to a pre-delivery space check and requests a spare drive with a budget ceiling of CNY 600; approval is pending. There is no evidence of individual negligence."
+      },
+      "verbose_or_flawed": {
+        "zh": "我们还有很多不足，需要全面反思，相关人员可能不够认真。希望领导酌情考虑给予一些支持。",
+        "en": "We have many shortcomings and need comprehensive reflection; some people may not have been careful enough. We hope management might consider offering some support."
+      },
+      "revision": {
+        "zh": "周三交付因打包机磁盘已满延迟两小时，清理缓存后恢复。团队增加交付前空间检查，并申请预算不超过 600 元的备用盘，待批准。",
+        "en": "Wednesday delivery was delayed by two hours because the build machine's disk was full; clearing the cache restored operation. The team adds a pre-delivery space check and requests a spare drive costing no more than CNY 600, pending approval."
+      },
+      "why": {
+        "zh": "用已核实原因与具体改进替代空泛反思，清楚提出尚未获批的资源请求。",
+        "en": "Use a verified cause and concrete improvement, with an explicit pending resource request."
+      },
+      "preserve": {
+        "zh": "不要把推测写成人员责任；不能把待批准预算写成已采购。",
+        "en": "Do not assign unsupported personal blame or turn a pending budget into a completed purchase."
+      },
+      "author": "Yila",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "id": "EX-09",
+      "kind": "fictional-editorial-example",
+      "title": {
+        "zh": "有礼貌地拒绝扩展范围",
+        "en": "Decline scope expansion courteously"
+      },
+      "facts": {
+        "zh": "虚构协作：本周确认交付是中文摘要；对方新增英文全文需求，双方尚未约定。团队本周无余量，可在下周评估英文全文的排期，不能承诺下周完成。原中文摘要仍按周五交付。",
+        "en": "Fictional collaboration: this week's agreed deliverable is a Chinese abstract. An English full-text request is new and unagreed. The team has no capacity this week and can assess its schedule next week, without promising completion then. The Chinese abstract remains due Friday."
+      },
+      "verbose_or_flawed": {
+        "zh": "实在抱歉，我们能力有限，可能做得不够好，不过会尽量全部满足。",
+        "en": "We are terribly sorry for our limited capabilities and may not do well, but we will try to meet everything."
+      },
+      "revision": {
+        "zh": "中文摘要仍按约定周五交付。本周无法增加英文全文；我们可以下周评估该需求的排期。请确认是否需要安排评估。",
+        "en": "The Chinese abstract remains due Friday as agreed. We cannot add the English full text this week, but can assess its schedule next week. Please confirm whether you would like that assessment arranged."
+      },
+      "why": {
+        "zh": "明确保留原责任，并对新增需求设定真实边界；礼貌不需要靠虚假承诺实现。",
+        "en": "Retain the existing obligation and set a truthful boundary for the added request without using false promises as courtesy."
+      },
+      "preserve": {
+        "zh": "下周评估不等于下周完成；已有中文交付不能一起拒绝。",
+        "en": "Assessment next week is not completion next week; the existing Chinese deliverable remains owed."
+      },
+      "author": "Yila",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "id": "EX-10",
+      "kind": "fictional-editorial-example",
+      "title": {
+        "zh": "求助、真实身份与承担责任",
+        "en": "Ask honestly and retain responsibility"
+      },
+      "facts": {
+        "zh": "虚构邮件背景：学生林同学为本科三年级，做过一个课程数据清洗作业，没有论文。想询问导师是否愿意就数据质量选题给一次简短建议。学生曾约定周二发送材料，但因自己漏发未做到；材料现已备好附在邮件。",
+        "en": "Fictional email: Lin is a third-year undergraduate with one data-cleaning course assignment and no papers. Lin wants to ask whether a supervisor could give brief advice on a data-quality topic. Lin missed a Tuesday commitment to send materials through an omission; the materials are now ready and attached."
+      },
+      "verbose_or_flawed": {
+        "zh": "学生水平很低，实在不敢打扰。之前的材料由于各种原因可能没能及时发送，给您添麻烦了。对于选题也许有一些不成熟的想法，还望指导。",
+        "en": "I am not competent enough to trouble you. The earlier materials may not have been sent on time for various reasons, and I have caused inconvenience. I may have some immature ideas about the topic; please advise."
+      },
+      "revision": {
+        "zh": "老师您好，我是本科三年级的林同学，做过一个数据清洗课程作业，想请教数据质量选题。抱歉，我漏发了约定周二发送的材料，现已附上。若您方便，能否就选题给我一次简短建议？",
+        "en": "Hello Professor, I am Lin, a third-year undergraduate who completed a data-cleaning course assignment. I would appreciate brief advice on a data-quality topic, if you are available. I apologize for omitting the materials I had agreed to send Tuesday; they are now attached."
+      },
+      "why": {
+        "zh": "用真实身份和具体请求替代自我贬低，明确承认漏发材料并给出补救。",
+        "en": "Replace self-deprecation with actual identity and a specific request; acknowledge the omission and provide the remedy."
+      },
+      "preserve": {
+        "zh": "不能因去掉道歉式文风就删掉这次有实际责任的道歉；不能捏造导师研究方向。",
+        "en": "An apology for a real omission must remain; do not invent the professor's research interests."
+      },
+      "author": "Yila",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "id": "EX-11",
+      "kind": "fictional-editorial-example",
+      "title": {
+        "zh": "产品能力与内测范围",
+        "en": "A feature and its beta scope"
+      },
+      "facts": {
+        "zh": "虚构产品 P：本次内测名单中的用户可上传 PDF，选模板生成可编辑的图稿草案。尚未开放公众注册。未进行效率测试，没有免费政策或直接投稿质量保证。更新日志只能宣布此内测能力。",
+        "en": "Fictional product P: users on the current beta list can upload a PDF and choose a template to generate an editable figure draft. Public registration is not open. No efficiency study, free-use policy or submission-quality guarantee has been supplied. Release notes may announce only this beta capability."
+      },
+      "verbose_or_flawed": {
+        "zh": "我们或许能在一定程度上提供帮助。所有人都可免费使用，一键得到直接投稿级配图。",
+        "en": "We might provide some assistance to some extent. Everyone can use it free and get submission-ready figures in one click."
+      },
+      "revision": {
+        "zh": "本次内测用户可上传 PDF、选择模板，生成可编辑的图稿草案。公众注册尚未开放。",
+        "en": "Users in the current beta can upload a PDF and choose a template to generate an editable figure draft. Public registration is not yet open."
+      },
+      "why": {
+        "zh": "先说明可做的任务，同时保留资格与结果性质；删掉冗余退让和未证实宣传。",
+        "en": "State the task clearly while retaining eligibility and draft status; remove redundant retreat and unsupported promotion."
+      },
+      "preserve": {
+        "zh": "迁移到真实产品时，填入已确认的功能、用户资格、定价与开放状态。",
+        "en": "For a real product, supply its confirmed features, eligibility, pricing and availability."
+      },
+      "author": "Yila",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "id": "EX-12",
+      "kind": "fictional-editorial-example",
+      "title": {
+        "zh": "用户案例不等于效果保证",
+        "en": "A case is not a performance guarantee"
+      },
+      "facts": {
+        "zh": "虚构案例：用户甲授权匿名使用原话“我把零散笔记整理成了一份提纲”。记录显示用户先导入笔记、再人工修改生成提纲。没有用时、对照组或质量评分。FAQ 问“能否保证不用人工修改”。产品团队确认不能保证。",
+        "en": "Fictional case: user A permits anonymous use of 'I turned scattered notes into an outline.' Records show notes imported and the generated outline manually revised. No timing, comparison group or quality score exists. The team confirms it cannot guarantee freedom from manual editing."
+      },
+      "verbose_or_flawed": {
+        "zh": "这只是很初步的一点尝试，也许对某些人有帮助；已经证明能让所有用户效率提升十倍，完全不用修改。",
+        "en": "This is merely a small preliminary attempt that may help some people; it has proven tenfold efficiency for everyone with no editing needed."
+      },
+      "revision": {
+        "zh": "用户甲分享：“我把零散笔记整理成了一份提纲。”这次使用包含导入笔记和人工修改。这个案例展示了一种整理方式，不保证所有任务都无需人工修改。",
+        "en": "User A shared: 'I turned scattered notes into an outline.' The workflow included importing notes and manually revising the result. The case illustrates one way to organize notes; it does not guarantee editing-free results for every task."
+      },
+      "why": {
+        "zh": "使用已授权原话和真实过程，明确回答读者正在追问的保证问题。",
+        "en": "Use the authorized quote and observed workflow while directly answering the guarantee question."
+      },
+      "preserve": {
+        "zh": "这里的明确否定有用，不能为了正向表达删掉；无数据就不能写效率倍数。",
+        "en": "The explicit exclusion answers a real question and must remain; do not invent an efficiency multiplier."
+      },
+      "author": "Yila",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "id": "EX-13",
+      "kind": "fictional-editorial-example",
+      "title": {
+        "zh": "有观点，也有来源边界",
+        "en": "A clear point with source boundaries"
+      },
+      "facts": {
+        "zh": "虚构口播材料：作者观察了三段自己的 AI 改写草稿，其中两段出现重复“仅供参考”。作者想演示逐句检查法。这只是个人观察，未做模型比较。视频为付费合作，须向观众说明。未提供任何论文数据。",
+        "en": "Fictional script material: the author inspected three of their own AI-edited drafts; two repeated 'for reference only.' The video demonstrates sentence-level checking. This is personal observation, not a model comparison. The video is a paid partnership and must disclose it. No paper data are supplied."
+      },
+      "verbose_or_flawed": {
+        "zh": "也许我的看法不成熟，大家别骂我。所有 AI 都因为道德感太高而只会说废话。",
+        "en": "My view may be immature, so please don't criticize me. All AI produces empty prose because its moral sensitivity is too high."
+      },
+      "revision": {
+        "zh": "这期是付费合作。我检查了自己的三段 AI 改写稿，其中两段重复出现“仅供参考”。下面用逐句检查法，判断这些话有没有增加信息。",
+        "en": "This video is a paid partnership. In three of my AI-edited drafts, two repeated 'for reference only.' I will use sentence-level checking to see whether those phrases add information."
+      },
+      "why": {
+        "zh": "个人观察足以引出教学，不足以支持所有模型的机制判断；保留商业披露。",
+        "en": "A personal observation can introduce a tutorial but cannot establish a universal model mechanism. Keep sponsorship disclosure."
+      },
+      "preserve": {
+        "zh": "不能伪称论文证明、扩大样本，或删掉合作披露。",
+        "en": "Do not invent research support, enlarge the sample or remove sponsorship disclosure."
+      },
+      "author": "Yila",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "id": "EX-14",
+      "kind": "fictional-editorial-example",
+      "title": {
+        "zh": "解释预印本，不替研究扩张结论",
+        "en": "Explain a preprint within its scope"
+      },
+      "facts": {
+        "zh": "教学材料给出的来源摘要：一篇预印本比较不同写作请求下的限定表达，讨论了审稿导向请求；摘要区分冗余限定与有助纠正过度主张的撤回。没有关于所有模型、所有领域或道德感机制的证据。读者问“是不是所有谨慎句都该删”。",
+        "en": "Teaching source summary: a preprint compares qualifications across writing requests, including review-oriented requests. Its abstract distinguishes redundant qualifications from retractions that correct overclaims. It does not establish claims about all models, all domains or a moral-sensitivity mechanism. A reader asks whether all cautious sentences should be deleted."
+      },
+      "verbose_or_flawed": {
+        "zh": "问题非常复杂，需要辩证看待，各种说法都有道理，可能不能一概而论。",
+        "en": "The issue is complex and needs a balanced view; all perspectives have merit and generalization may be inappropriate."
+      },
+      "revision": {
+        "zh": "不能只按措辞删句。这篇预印本区分了冗余限定与纠正过度主张的撤回：前者可能增加阅读负担，后者可能有必要。检查时要看这句话是否改变了结论的有效范围。",
+        "en": "Do not delete a sentence based on wording alone. The preprint distinguishes redundant qualifications from retractions that correct overclaims: the former may burden readers, while the latter may be necessary. Check whether the sentence changes the valid scope of the claim."
+      },
+      "why": {
+        "zh": "直接回应读者问题，给可操作区分，避免用空泛平衡替代解释。",
+        "en": "Answer the question with an operational distinction rather than empty balance."
+      },
+      "preserve": {
+        "zh": "本例只使用给定摘要；不能补上未经提供或核验的实验数字。",
+        "en": "Use the supplied summary only; do not add experimental numbers that were not supplied or verified."
+      },
+      "author": "Yila",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "id": "EX-15",
+      "kind": "fictional-editorial-example",
+      "title": {
+        "zh": "教程必须保留路径",
+        "en": "A complete tutorial path"
+      },
+      "facts": {
+        "zh": "虚构离线工具说明：已验证 Windows 环境下手动复制整个 sample-skill 文件夹到客户端配置的 skills 目录；必须同时保留 references 子目录。重载客户端后检查是否出现 sample-skill。只复制 SKILL.md 会丢失参考。若未发现，先检查复制层级。未提供安装命令，也未验证其他系统。",
+        "en": "Fictional offline-tool instructions: on a tested Windows setup, copy the whole sample-skill folder into the client's configured skills directory, retaining references. Reload the client and check for sample-skill. Copying only SKILL.md loses references. If it is missing, first check folder nesting. No install command or other tested operating system is supplied."
+      },
+      "verbose_or_flawed": {
+        "zh": "安装可能有各种风险，建议谨慎。复制一下文件就能在所有系统正常运行。",
+        "en": "Installation may carry various risks; proceed cautiously. Copy a file and it will work on every system."
+      },
+      "revision": {
+        "zh": "在已验证的 Windows 环境中，把整个 sample-skill 文件夹复制到客户端配置的 skills 目录，保留 references 子目录。重载客户端后检查是否出现 sample-skill；若没有，先检查文件夹是否多套了一层。",
+        "en": "On the tested Windows setup, copy the whole sample-skill folder into the client's configured skills directory, retaining references. Reload the client and check for sample-skill; if missing, check whether the folder is nested one level too deep."
+      },
+      "why": {
+        "zh": "保留环境、完整文件夹和可观察检查；删除抽象风险堆叠与全系统保证。",
+        "en": "Keep the environment, full-folder requirement and observable check; remove generic caution and universal compatibility claims."
+      },
+      "preserve": {
+        "zh": "不能删 references，也不能凭空新增一键命令或默认目录。",
+        "en": "Do not omit references or invent a one-command installer or default path."
+      },
+      "author": "Yila",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "id": "EX-16",
+      "kind": "fictional-editorial-example",
+      "title": {
+        "zh": "操作禁令和真实权衡",
+        "en": "A prohibition and a real trade-off"
+      },
+      "facts": {
+        "zh": "虚构维护任务：设备须先断电，再打开检修盖；禁止带电开盖。维护记录要求记录设备编号与日期。路线 A 只整理记录，不需开盖；路线 B 需开盖才能检查内部接线，且只能在断电后执行。安全前提已由输入明确，不要求生成其他操作。",
+        "en": "Fictional maintenance task: power must be disconnected before opening the service cover; opening it while powered is prohibited. Records need equipment ID and date. Route A organizes records without opening the cover. Route B checks internal wiring and requires opening the cover only after disconnection. These prerequisites are supplied; no other procedure is requested."
+      },
+      "verbose_or_flawed": {
+        "zh": "请务必时刻牢记安全，尽量先断电后开盖。为了简洁，两条路线都可表述为直接检查设备。",
+        "en": "Always remember safety and try to disconnect power before opening. For simplicity, both routes can be described as directly checking the device."
+      },
+      "revision": {
+        "zh": "路线 A：整理维护记录，保留设备编号与日期，无须开盖。路线 B：先断电，再开检修盖检查内部接线；禁止带电开盖。",
+        "en": "Route A: organize maintenance records with equipment ID and date; no cover opening is needed. Route B: disconnect power before opening the service cover to check internal wiring. Opening while powered is prohibited."
+      },
+      "why": {
+        "zh": "把说教转成明确操作要求，但保留禁止条件与路线差异。",
+        "en": "Replace admonition with operational language while retaining the prohibition and route distinction."
+      },
+      "preserve": {
+        "zh": "禁止条件有实际意义，不能变成可选建议，也不能为简短把两条路线写成相同操作。",
+        "en": "The prohibition is not optional; do not collapse distinct routes into the same operation."
+      },
+      "author": "Yila",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "id": "EX-17",
+      "kind": "fictional-editorial-example",
+      "title": {
+        "zh": "图表里的分母与样本",
+        "en": "Chart denominators and samples"
+      },
+      "facts": {
+        "zh": "虚构图表：平台活动 A 有 20/100 人完成，B 有 30/200 人完成；两组为不同自愿报名人群，没有随机分配，时间段相同。目标是比较完成比例，不是完成总人数。",
+        "en": "Fictional chart: activity A has 20 completions among 100 participants; B has 30 among 200. Participants self-selected into different groups, without random assignment, in the same period. The requested comparison is completion rate, not count."
+      },
+      "verbose_or_flawed": {
+        "zh": "B 的人数更多，所以 B 明显更有效。当然，也可能存在很多因素，不能说明任何问题。",
+        "en": "B has more people, so it is clearly more effective. Of course, many factors may exist, so nothing can be concluded."
+      },
+      "revision": {
+        "zh": "A 的完成比例为 20%（20/100），B 为 15%（30/200）。两组为不同自愿报名人群，这个比较描述完成比例，不识别活动的因果效果。",
+        "en": "A's completion rate is 20% (20/100), versus 15% (30/200) for B. The groups self-selected, so the comparison describes completion rates rather than identifying causal effects."
+      },
+      "why": {
+        "zh": "计算输入已足够支持的比例，保留分母，并纠正错误因果比较。",
+        "en": "Compute the supported rates, retain denominators and correct the causal overclaim."
+      },
+      "preserve": {
+        "zh": "既不能因人数更多说 B 更好，也不能因没有因果识别说比例差异无法描述。",
+        "en": "More completions do not establish better effectiveness; lack of causal identification does not prevent a descriptive comparison."
+      },
+      "author": "Yila",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "id": "EX-18",
+      "kind": "fictional-editorial-example",
+      "title": {
+        "zh": "负结果：没有显著差异，不等于等效",
+        "en": "An inconclusive result is not equivalence"
+      },
+      "facts": {
+        "zh": "情景研究估计两组差异为 2 分，95% CI −1 到 5 分，p=0.18；无预设等效界值。目标是报告本次分析结果。",
+        "en": "A constructed study estimates a 2-point group difference, 95% CI −1 to 5, p=0.18, with no prespecified equivalence margin. The task is to report the analysis."
+      },
+      "verbose_or_flawed": {
+        "zh": "结果没有显著性，可能说明研究没有什么价值。不过情况很复杂，也可能还需要更多研究，暂时似乎不宜得出任何结论。",
+        "en": "The result is not significant, which may mean the study has little value. The situation is complex and more research may be needed, so it seems best to draw no conclusion."
+      },
+      "revision": {
+        "zh": "本次分析未检出显著差异：估计差异为 2 分，95% CI −1 至 5 分，p=0.18。区间仍包含正负两个方向的差异，现有结果不能判定两组等效。",
+        "en": "The analysis did not detect a significant difference: the estimate was 2 points, 95% CI −1 to 5, p=0.18. The interval includes differences in both directions, so the results do not establish equivalence."
+      },
+      "why": {
+        "zh": "用估计值、区间和可作出的判断替代空泛自我否定。",
+        "en": "Replace blanket self-dismissal with the estimate, interval and supported interpretation."
+      },
+      "preserve": {
+        "zh": "保留区间和不显著的含义；不显著不能改成证明无效应或等效。",
+        "en": "Retain the interval and interpretation of nonsignificance; it does not establish no effect or equivalence."
+      },
+      "author": "Yila",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "id": "EX-19",
+      "kind": "fictional-editorial-example",
+      "title": {
+        "zh": "学习记录不等于熟练",
+        "en": "A learning record is not proficiency"
+      },
+      "facts": {
+        "zh": "虚构学习者：本科生，每周有两小时；完成入门课前三节，能参考示例读取 CSV，但还不能独立清洗缺失值。近期目标是独立完成一个带缺失值的小表清洗。尚无研究项目或发表成果。",
+        "en": "Fictional learner: an undergraduate with two hours a week completed three introductory lessons and can read CSVs with an example, but cannot independently clean missing values. The near-term goal is independently cleaning a small table with missing values. There are no research projects or publications."
+      },
+      "verbose_or_flawed": {
+        "zh": "我只是一个很差的小白，虽然已经精通数据分析，但学习因人而异，也没什么可说的。",
+        "en": "I am just a poor beginner, although I have mastered data analysis. Learning varies by person, so there is little to say."
+      },
+      "revision": {
+        "zh": "我已完成三节入门课，能参考示例读取 CSV，下一步练习独立处理缺失值。每周两小时先用于完成一个小表清洗，再检查能否不看示例复现。",
+        "en": "I have completed three introductory lessons and can read CSVs using an example. Next I will practice handling missing values independently, using my two hours a week to clean a small table and check whether I can repeat it without the example."
+      },
+      "why": {
+        "zh": "用可观察能力、具体缺口与检查任务替代自贬和虚构熟练程度。",
+        "en": "Use observable capability, a specific gap and a checkable task instead of self-denigration or fabricated mastery."
+      },
+      "preserve": {
+        "zh": "计划中的检查不是已经完成的成果；不能添加研究身份。",
+        "en": "The proposed check is not an achieved result; do not invent a research identity."
+      },
+      "author": "Yila",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "id": "EX-20",
+      "kind": "fictional-editorial-example",
+      "title": {
+        "zh": "经验、资源与下一步",
+        "en": "Experience, resources and next steps"
+      },
+      "facts": {
+        "zh": "虚构材料：作者曾用带练习的资源 A 完成一个表格整理练习；资源 B 是理论讲义，作者未做对应练习。当前读者目标是练习表格整理，每周一小时。只知道这些资源特征，不知道价格、最新更新时间或总体效果。",
+        "en": "Fictional material: the author used exercise-based resource A for one table-cleaning exercise. Resource B consists of theory notes, with no completed exercise by the author. The reader wants table-cleaning practice with one hour weekly. Prices, update dates and general effectiveness are unknown."
+      },
+      "verbose_or_flawed": {
+        "zh": "大家别骂我，这只是我的一点个人看法。A 和 B 都很好也都不好；A 肯定能让任何人一周精通。",
+        "en": "Please don't criticize me; this is only my personal view. A and B are both good and bad; A will definitely make anyone proficient in a week."
+      },
+      "revision": {
+        "zh": "如果目标是练习表格整理，可以先用带练习的 A。我曾用它完成一个整理练习；B 侧重理论讲义。下次一小时先做 A 的一个练习，再检查能否独立复现。价格和更新情况还需核实。",
+        "en": "If the goal is table-cleaning practice, start with exercise-based A. I used it for one cleaning exercise; B focuses on theory notes. Use the next hour for one A exercise, then check whether you can reproduce it independently. Prices and update status still need verification."
+      },
+      "why": {
+        "zh": "按目标给具体建议，用真实个人经历限定依据，保留待核实信息。",
+        "en": "Make a goal-based recommendation grounded in actual experience and retain unknowns."
+      },
+      "preserve": {
+        "zh": "一例经历不能推出所有人的学习效果，也不能凭空补价格或时效。",
+        "en": "One experience cannot establish universal learning outcomes or justify invented prices or freshness."
+      },
+      "author": "Yila",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "id": "EX-21",
+      "kind": "fictional-editorial-example",
+      "title": {
+        "zh": "代码评审要有触发条件",
+        "en": "A code-review comment with a trigger"
+      },
+      "facts": {
+        "zh": "虚构代码：def first(items): return items[0]。函数可能收到空列表；审阅者尚未运行测试。接口约定空列表时应返回 None。",
+        "en": "Fictional code: def first(items): return items[0]. Empty lists are possible. The reviewer has not run tests. The interface specifies None for empty input."
+      },
+      "verbose_or_flawed": {
+        "zh": "这个实现可能不是很优雅，建议谨慎考虑一些边界问题，我测试过全部通过。",
+        "en": "This implementation might not be very elegant; consider some edge cases carefully. I tested it and everything passed."
+      },
+      "revision": {
+        "zh": "当 items 为空列表时，items[0] 会抛出 IndexError，与空输入返回 None 的接口约定不符。建议先判断空列表并返回 None。尚未执行测试。",
+        "en": "When items is empty, items[0] raises IndexError rather than returning None as the interface specifies. Add an empty-list check returning None. Tests have not been run."
+      },
+      "why": {
+        "zh": "指出可核对的触发条件和后果，删除模糊审美评价及虚构测试记录。",
+        "en": "State a verifiable trigger and consequence; remove vague aesthetic criticism and a fabricated test claim."
+      },
+      "preserve": {
+        "zh": "静态判断不能写成实际运行通过；若没有空输入约定，不能擅自决定返回值。",
+        "en": "A static assessment is not an executed test; without an empty-input contract, do not invent the return value."
+      },
+      "author": "Yila",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "id": "EX-22",
+      "kind": "fictional-editorial-example",
+      "title": {
+        "zh": "按目标选择，完整报告性能代价",
+        "en": "Choose against the goal and report the trade-off"
+      },
+      "facts": {
+        "zh": "情景选型：项目要求离线运行，优先降低延迟，可接受准确率下降不超过 1 个百分点。A、B 均已验证离线处理所需格式；同一机器和测试集下，A 准确率 90%、延迟 100 ms，B 准确率 89%、延迟 60 ms。未提供价格信息。",
+        "en": "Constructed selection task: offline operation is required, lower latency is the priority, and an accuracy decrease of up to 1 percentage point is acceptable. A and B both support the required offline format. On the same machine and test set, A has 90% accuracy and 100 ms latency; B has 89% accuracy and 60 ms latency. Pricing is not supplied."
+      },
+      "verbose_or_flawed": {
+        "zh": "两种工具各有优劣，存在很多不确定性，很难判断。B 的准确率还下降了，因此目前只能谨慎考虑，具体因人而异。",
+        "en": "Both tools have pros and cons, and there are many uncertainties, so it is difficult to judge. B also loses accuracy and can only be considered cautiously; it depends on the user."
+      },
+      "revision": {
+        "zh": "按当前目标选 B：两者都满足离线要求，B 将延迟从 100 ms 降至 60 ms，准确率由 90% 降至 89%，符合最多下降 1 个百分点的要求。",
+        "en": "Choose B for the stated goal. Both meet the offline requirement; B reduces latency from 100 to 60 ms while accuracy falls from 90% to 89%, meeting the allowed 1-percentage-point decrease."
+      },
+      "why": {
+        "zh": "把各有优劣变成同口径比较和有条件的选择，获益与代价同时写清。",
+        "en": "Turn empty balance into a comparable assessment and conditional choice, stating both gain and cost."
+      },
+      "preserve": {
+        "zh": "同时保留准确率下降和延迟改善；价格留待核实。",
+        "en": "Keep the accuracy loss alongside the latency gain; pricing remains to be checked."
+      },
+      "author": "Yila",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "id": "EX-23",
+      "kind": "fictional-editorial-example",
+      "title": {
+        "zh": "综述不能假装读过文献",
+        "en": "A review must not invent its sources"
+      },
+      "facts": {
+        "zh": "虚构文献笔记：文献甲在两个城市访谈，发现办理步骤不清楚；文献乙分析一个平台的办结记录，报告信息缺失与重复提交相关。检索仅限给定的两篇笔记，题目、作者、年份未提供。",
+        "en": "Fictional source notes: study A interviewed people in two cities and found unclear application steps. Study B analyzed one platform's completion records and reported an association between missing information and resubmissions. Only these two notes were searched; titles, authors and years are not supplied."
+      },
+      "verbose_or_flawed": {
+        "zh": "这个问题非常复杂，不同研究各有不同观点，可能需要辩证看待，目前似乎很难得出有价值的判断，还需要更多研究。",
+        "en": "The issue is very complex, and different studies have different views. A balanced perspective may be needed, and it currently seems hard to reach a useful judgment; more research is needed."
+      },
+      "revision": {
+        "zh": "两份笔记均涉及办理信息问题：文献甲关注步骤理解，文献乙报告信息缺失与重复提交的关联。它们研究对象与方法不同，现有材料不足以比较问题的普遍程度。",
+        "en": "Both notes concern application information: study A addresses understanding of steps, while study B reports an association between missing information and resubmission. Their populations and methods differ, and the supplied material cannot establish comparative prevalence."
+      },
+      "why": {
+        "zh": "围绕给定文献作具体综合，用研究对象、发现与方法差异替代空泛平衡句。",
+        "en": "Synthesize the supplied studies through their subjects, findings and methods instead of empty balance."
+      },
+      "preserve": {
+        "zh": "不能编作者、年份或引用；两份笔记不足以支持领域全面共识。",
+        "en": "Do not invent authors, dates or citations; two notes do not establish a field-wide consensus."
+      },
+      "author": "Yila",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "id": "EX-24",
+      "kind": "fictional-editorial-example",
+      "title": {
+        "zh": "直接回答费用问题",
+        "en": "Answer a pricing question directly"
+      },
+      "facts": {
+        "zh": "虚构产品规则：访客可看公开示例；导出功能属于付费方案；没有免费导出额度。用户问“我不付费能导出吗”。无需描述其他产品功能。",
+        "en": "Fictional product rules: visitors can view public examples; exporting requires a paid plan, with no free export allowance. The user asks whether export is available without payment. No other capabilities need describing."
+      },
+      "verbose_or_flawed": {
+        "zh": "我们非常重视不同用户的需求，具体情况可能有所不同，建议您自行探索。",
+        "en": "We value different user needs, and circumstances may vary; we suggest exploring for yourself."
+      },
+      "revision": {
+        "zh": "不能，导出需要付费方案，没有免费导出额度。你可以先查看公开示例。",
+        "en": "No. Export requires a paid plan and has no free allowance. You can view the public examples first."
+      },
+      "why": {
+        "zh": "明确回答已知规则，给真实可用选项，删回避式铺垫。",
+        "en": "Answer the known rule directly and offer a real available option instead of evasive filler."
+      },
+      "preserve": {
+        "zh": "保留明确回答和真实可用的查看入口，按目标产品填入价格规则。",
+        "en": "Keep the direct answer and real viewing option; supply the pricing rules of the target product."
+      },
+      "author": "Yila",
+      "license": "CC-BY-4.0"
+    }
+  ]
+}

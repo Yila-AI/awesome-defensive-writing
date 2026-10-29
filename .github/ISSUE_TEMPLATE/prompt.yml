@@ -1,0 +1,43 @@
+name: "Prompt or case · 提示词与案例"
+description: "Submit a useful prompt, worked case or boundary correction."
+title: "[Content] "
+body:
+  - type: dropdown
+    id: type
+    attributes:
+      label: "Contribution type · 内容类型"
+      options:
+        - "Prompt · 提示词"
+        - "Worked case · 情景案例"
+        - "Boundary correction · 条件保留纠错"
+        - "Model run record · 模型运行记录"
+    validations:
+      required: true
+  - type: input
+    id: task
+    attributes:
+      label: "Task and audience · 任务与读者"
+      placeholder: "Example: a weekly update for a project manager"
+    validations:
+      required: true
+  - type: textarea
+    id: material
+    attributes:
+      label: "Full input and prompt · 完整输入与提示词"
+      description: "Include the facts needed to judge the revision. Remove personal information."
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: "Revision and reasoning · 改写与理由"
+      description: "Identify the information removed and the conditions retained. Label authored examples or record the model and run date."
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: "Source and reuse rights · 来源与复用许可"
+      description: "State authorship, source links and applicable permissions."
+    validations:
+      required: true

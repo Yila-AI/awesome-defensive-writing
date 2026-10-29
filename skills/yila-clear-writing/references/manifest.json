@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "prompt_count": 60,
+  "example_count": 24,
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "content_type": "prompt-library",
+  "categories": [
+    {
+      "id": "clarity",
+      "title": {
+        "zh": "清晰表达",
+        "en": "Clear expression"
+      },
+      "files": {
+        "zh": "clarity-zh.md",
+        "en": "clarity-en.md"
+      }
+    },
+    {
+      "id": "research",
+      "title": {
+        "zh": "论文与研究",
+        "en": "Research writing"
+      },
+      "files": {
+        "zh": "research-zh.md",
+        "en": "research-en.md"
+      }
+    },
+    {
+      "id": "proposals",
+      "title": {
+        "zh": "项目与基金",
+        "en": "Proposals"
+      },
+      "files": {
+        "zh": "proposals-zh.md",
+        "en": "proposals-en.md"
+      }
+    },
+    {
+      "id": "work",
+      "title": {
+        "zh": "职场汇报",
+        "en": "Work updates"
+      },
+      "files": {
+        "zh": "work-zh.md",
+        "en": "work-en.md"
+      }
+    },
+    {
+      "id": "collaboration",
+      "title": {
+        "zh": "邮件与协作",
+        "en": "Collaboration"
+      },
+      "files": {
+        "zh": "collaboration-zh.md",
+        "en": "collaboration-en.md"
+      }
+    },
+    {
+      "id": "product",
+      "title": {
+        "zh": "产品与营销",
+        "en": "Product writing"
+      },
+      "files": {
+        "zh": "product-zh.md",
+        "en": "product-en.md"
+      }
+    },
+    {
+      "id": "public",
+      "title": {
+        "zh": "内容与公共表达",
+        "en": "Public communication"
+      },
+      "files": {
+        "zh": "public-zh.md",
+        "en": "public-en.md"
+      }
+    },
+    {
+      "id": "technical",
+      "title": {
+        "zh": "教学与技术说明",
+        "en": "Technical guidance"
+      },
+      "files": {
+        "zh": "technical-zh.md",
+        "en": "technical-en.md"
+      }
+    },
+    {
+      "id": "analysis",
+      "title": {
+        "zh": "数据与分析",
+        "en": "Data interpretation"
+      },
+      "files": {
+        "zh": "analysis-zh.md",
+        "en": "analysis-en.md"
+      }
+    },
+    {
+      "id": "learning",
+      "title": {
+        "zh": "学习与日常",
+        "en": "Learning and everyday writing"
+      },
+      "files": {
+        "zh": "learning-zh.md",
+        "en": "learning-en.md"
+      }
+    }
+  ]
+}

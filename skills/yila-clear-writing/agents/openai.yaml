@@ -1,0 +1,4 @@
+interface:
+  display_name: "Yila Clear Writing"
+  short_description: "Remove empty caveats while preserving evidence and scope"
+  default_prompt: "Use $yila-clear-writing to revise this passage while preserving the facts and meaningful boundaries."
